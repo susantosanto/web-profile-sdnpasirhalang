@@ -1,0 +1,2635 @@
+{
+  "meta": {
+    "nama": "SD NEGERI PASIRHALANG",
+    "npsn": "20205293",
+    "kecamatan": "Cikalongwetan",
+    "kabupaten": "Kabupaten Bandung Barat",
+    "tahunAjaran": "2026/2027",
+    "kepalaSekolah": "Ahmad, S.Pd.",
+    "email": "sdnpasirhalang123@gmail.com",
+    "telepon": "081809517491",
+    "alamat": "Kp. Pasirhalang RT.03 RW.14, Desa Mandalamukti, Kecamatan Cikalongwetan, Kabupaten Bandung Barat, Jawa Barat 40556",
+    "lintang": "-6.751900536454254",
+    "bujur": "107.45836266334244",
+    "koordinat": "-6.751900536454254, 107.45836266334244",
+    "diperbarui": "7 November 2026",
+    "sumberProfil": "Unduhan Dapodik 27 Oktober 2026",
+    "sumberPkks": "Master_Checklist_PKKS_2026_SDN_Pasirhalang.xlsx, STATE.md, Daftar_Tautan_Dokumen.md"
+  },
+  "profil": {
+    "identitas": [
+      [
+        "Nama satuan pendidikan",
+        "SD NEGERI PASIRHALANG"
+      ],
+      [
+        "NPSN",
+        "20205293"
+      ],
+      [
+        "Jenjang / status",
+        "SD · Negeri"
+      ],
+      [
+        "Alamat",
+        "Kp. Pasirhalang RT.03 RW.14, Desa Mandalamukti, Kecamatan Cikalongwetan"
+      ],
+      [
+        "Kabupaten / provinsi",
+        "Kabupaten Bandung Barat · Jawa Barat 40556"
+      ],
+      [
+        "SK pendirian",
+        "750/E-27/1982"
+      ],
+      [
+        "Tanggal SK pendirian",
+        "1982-01-27"
+      ],
+      [
+        "Status kepemilikan",
+        "Pemerintah Daerah"
+      ],
+      [
+        "SK izin operasional",
+        "750/E-27/1982"
+      ],
+      [
+        "Manajemen berbasis sekolah",
+        "Ya"
+      ],
+      [
+        "Waktu penyelenggaraan",
+        "Pagi/5 hari"
+      ],
+      [
+        "Sumber listrik",
+        "PLN · 450 watt"
+      ],
+      [
+        "Akses internet",
+        "BembyNet"
+      ],
+      [
+        "Sumber air",
+        "Ledeng/PAM"
+      ],
+      [
+        "Posisi geografis",
+        "-6.751900536454254, 107.45836266334244"
+      ],
+      [
+        "Kepala sekolah",
+        "Ahmad, S.Pd."
+      ],
+      [
+        "Tahun ajaran",
+        "2026/2027"
+      ]
+    ],
+    "statistik": [
+      {
+        "label": "Murid",
+        "value": "201",
+        "note": "95 L / 106 P · sheet Rombongan Belajar"
+      },
+      {
+        "label": "Rombongan belajar",
+        "value": "7",
+        "note": "Kelas 1–6, termasuk 5a dan 5b"
+      },
+      {
+        "label": "PTK",
+        "value": "10",
+        "note": "8 pendidik · 2 tenaga kependidikan"
+      },
+      {
+        "label": "Komposisi",
+        "value": "6 / 4",
+        "note": "ASN / Non-ASN"
+      },
+      {
+        "label": "Ruang kelas",
+        "value": "6",
+        "note": "1 rombel siang · memakai ruang guru untuk KBM"
+      },
+      {
+        "label": "Jumlah JP",
+        "value": "225",
+        "note": "Struktur kurikulum kelas I–VI"
+      }
+    ],
+    "rombongan": [
+      {
+        "nama": "Kelas 1",
+        "tingkat": "1",
+        "L": 17,
+        "P": 19,
+        "total": 36,
+        "wali": "Ahmad, S.Pd.",
+        "kurikulum": "Kurikulum SD Merdeka",
+        "ruang": "Ruang Kelas 1"
+      },
+      {
+        "nama": "Kelas 2",
+        "tingkat": "2",
+        "L": 18,
+        "P": 21,
+        "total": 39,
+        "wali": "Fika Agustina",
+        "kurikulum": "Kurikulum SD Merdeka",
+        "ruang": "Ruang Kelas 2"
+      },
+      {
+        "nama": "Kelas 3",
+        "tingkat": "3",
+        "L": 14,
+        "P": 19,
+        "total": 33,
+        "wali": "Vani",
+        "kurikulum": "Kurikulum SD Merdeka",
+        "ruang": "Ruang Kelas 3"
+      },
+      {
+        "nama": "Kelas 4",
+        "tingkat": "4",
+        "L": 15,
+        "P": 17,
+        "total": 32,
+        "wali": "Rinda Sri Agung Wahyuni",
+        "kurikulum": "Kurikulum SD Merdeka",
+        "ruang": "Ruang Guru"
+      },
+      {
+        "nama": "Kelas 5a",
+        "tingkat": "5",
+        "L": 13,
+        "P": 10,
+        "total": 23,
+        "wali": "Meyta Murthy Lasari",
+        "kurikulum": "Kurikulum SD Merdeka",
+        "ruang": "Ruang Kelas 4"
+      },
+      {
+        "nama": "Kelas 5b",
+        "tingkat": "5",
+        "L": 8,
+        "P": 14,
+        "total": 22,
+        "wali": "Siti Aisah Nur Fitri",
+        "kurikulum": "Kurikulum SD Merdeka",
+        "ruang": "Ruang Kelas 5"
+      },
+      {
+        "nama": "Kelas 6",
+        "tingkat": "6",
+        "L": 10,
+        "P": 6,
+        "total": 16,
+        "wali": "Deni Mulyani",
+        "kurikulum": "Kurikulum SD Merdeka",
+        "ruang": "Ruang Kelas 6"
+      }
+    ],
+    "ptk": {
+      "total": 10,
+      "status": [
+        {
+          "label": "PPPK",
+          "jumlah": 3
+        },
+        {
+          "label": "Tenaga Honor Sekolah",
+          "jumlah": 2
+        },
+        {
+          "label": "Guru Honor Sekolah",
+          "jumlah": 2
+        },
+        {
+          "label": "PPPK Paruh Waktu",
+          "jumlah": 2
+        },
+        {
+          "label": "PNS",
+          "jumlah": 1
+        }
+      ],
+      "jenis": [
+        {
+          "label": "Guru",
+          "jumlah": 8
+        },
+        {
+          "label": "Tenaga Kependidikan",
+          "jumlah": 2
+        }
+      ]
+    },
+    "prasarana": [
+      {
+        "no": "1",
+        "nama": "Ruang Guru",
+        "ukuran": "8 × 7 m"
+      },
+      {
+        "no": "2",
+        "nama": "Ruang Kelas 1",
+        "ukuran": "8 × 8 m"
+      },
+      {
+        "no": "3",
+        "nama": "Ruang Kelas 2",
+        "ukuran": "8 × 8 m"
+      },
+      {
+        "no": "4",
+        "nama": "Ruang Kelas 3",
+        "ukuran": "8 × 8 m"
+      },
+      {
+        "no": "5",
+        "nama": "Ruang Kelas 4",
+        "ukuran": "8 × 8 m"
+      },
+      {
+        "no": "6",
+        "nama": "Ruang Kelas 4b",
+        "ukuran": "7 × 8 m"
+      },
+      {
+        "no": "7",
+        "nama": "Ruang Kelas 5",
+        "ukuran": "8 × 8 m"
+      },
+      {
+        "no": "8",
+        "nama": "Ruang Kelas 6",
+        "ukuran": "8 × 7 m"
+      },
+      {
+        "no": "9",
+        "nama": "Ruang Kepala Sekolah",
+        "ukuran": "8 × 7 m"
+      },
+      {
+        "no": "10",
+        "nama": "Ruang Perpustakaan",
+        "ukuran": "8 × 7 m"
+      },
+      {
+        "no": "11",
+        "nama": "WC Guru",
+        "ukuran": "2 × 2 m"
+      },
+      {
+        "no": "12",
+        "nama": "WC Guru",
+        "ukuran": ""
+      },
+      {
+        "no": "13",
+        "nama": "WC Murid",
+        "ukuran": "2 × 2 m"
+      },
+      {
+        "no": "14",
+        "nama": "WC Murid",
+        "ukuran": ""
+      },
+      {
+        "no": "15",
+        "nama": "WC Siswi",
+        "ukuran": ""
+      },
+      {
+        "no": "16",
+        "nama": "WC Siswi",
+        "ukuran": "2 × 2 m"
+      }
+    ],
+    "catatanPrivasi": "Nomor rekening, NPWP, NIK, NUPTK, NIP, dan tanggal lahir PTK sengaja tidak ditampilkan pada situs publik.",
+    "catatanData": "Sheet Rombongan Belajar mencatat 201 murid (95 L / 106 P). Angka 201 dipakai mengikuti STATE.md dan AGENTS.md."
+  },
+  "capaian": [
+    {
+      "label": "Literasi",
+      "nilai": "56,08",
+      "note": "66,67% · Rapor Pendidikan 2025"
+    },
+    {
+      "label": "Numerasi",
+      "nilai": "46,38",
+      "note": "56,25% · Rapor Pendidikan 2025"
+    },
+    {
+      "label": "Karakter",
+      "nilai": "52,31",
+      "note": "Rapor Pendidikan 2025"
+    }
+  ],
+  "indikatorPbd": "D.1 53,09 · D.4 66,34 · D.8 60,94 · E.2 17,44 (Rapor PBD 2025)",
+  "maps": [
+    {
+      "no": 1,
+      "judul": "Menyusun perencanaan sekolah untuk berbagai tingkatan perencanaan",
+      "total": 12
+    },
+    {
+      "no": 2,
+      "judul": "Memimpin sekolah dalam pendayagunaan sumber daya sekolah secara optimal",
+      "total": 11
+    },
+    {
+      "no": 3,
+      "judul": "Mengelola perubahan dan pengembangan sekolah menuju organisasi pembelajar yang efektif",
+      "total": 10
+    },
+    {
+      "no": 4,
+      "judul": "Menciptakan budaya dan iklim sekolah yang kondusif dan inovatif bagi pembelajaran peserta didik",
+      "total": 9
+    },
+    {
+      "no": 5,
+      "judul": "Mengelola guru dan staf dalam rangka pendayagunaan sumber daya manusia secara optimal",
+      "total": 11
+    },
+    {
+      "no": 6,
+      "judul": "Mengelola peserta didik dalam rangka penerimaan murid baru, penempatan, dan pengembangan kapasitas",
+      "total": 9
+    },
+    {
+      "no": 7,
+      "judul": "Mengelola pengembangan kurikulum dan kegiatan pembelajaran sesuai arah dan tujuan pendidikan nasional",
+      "total": 13
+    },
+    {
+      "no": 8,
+      "judul": "Mengelola sumber daya sekolah sesuai prinsip pengelolaan yang efektif, efisien, dan akuntabel",
+      "total": 7
+    },
+    {
+      "no": 9,
+      "judul": "Memanfaatkan kemajuan teknologi informasi bagi peningkatan pembelajaran dan manajemen sekolah",
+      "total": 3
+    },
+    {
+      "no": 10,
+      "judul": "Merencanakan program supervisi akademik dalam rangka peningkatan profesionalisme guru",
+      "total": 3
+    },
+    {
+      "no": 11,
+      "judul": "Melaksanakan supervisi akademik terhadap guru dengan pendekatan dan teknik yang tepat",
+      "total": 8
+    },
+    {
+      "no": 12,
+      "judul": "Menindaklanjuti hasil supervisi akademik dalam rangka peningkatan profesionalisme guru",
+      "total": 6
+    }
+  ],
+  "docs": [
+    {
+      "kode": "1.1.a",
+      "map": 1,
+      "bidang": "Bidang I. Manajerial",
+      "indikator": "1.1 Mengembangkan RKJM, RKT/RKS dan program lainnya berdasarkan data hasil evaluasi dalam pemenuhan 8 SNP",
+      "bukti": "Dokumen program jangka menengah",
+      "sumber": "Template (sesuaikan data sekolah)",
+      "rujukan": "Rapor Pendidikan/PBD (data dasar RKT-RKAS); Permendikdasmen 8/2026 (Juknis BOSP, ARKAS)",
+      "berkas": "1.1.a - RKJM.docx",
+      "eksternal": false
+    },
+    {
+      "kode": "1.1.b",
+      "map": 1,
+      "bidang": "Bidang I. Manajerial",
+      "indikator": "1.1 Mengembangkan RKJM, RKT/RKS dan program lainnya berdasarkan data hasil evaluasi dalam pemenuhan 8 SNP",
+      "bukti": "Dokumen program tahunan",
+      "sumber": "Template (sesuaikan data sekolah)",
+      "rujukan": "Rapor Pendidikan/PBD (data dasar RKT-RKAS); Permendikdasmen 8/2026 (Juknis BOSP, ARKAS)",
+      "berkas": "1.1.b - RKT.docx",
+      "eksternal": false
+    },
+    {
+      "kode": "1.1.c",
+      "map": 1,
+      "bidang": "Bidang I. Manajerial",
+      "indikator": "1.1 Mengembangkan RKJM, RKT/RKS dan program lainnya berdasarkan data hasil evaluasi dalam pemenuhan 8 SNP",
+      "bukti": "Dokumen rencana kegiatan dan anggaran (RKAS)",
+      "sumber": "Aplikasi (ARKAS)",
+      "rujukan": "Permendikdasmen 8/2026; ARKAS",
+      "berkas": null,
+      "eksternal": true
+    },
+    {
+      "kode": "1.1.d",
+      "map": 1,
+      "bidang": "Bidang I. Manajerial",
+      "indikator": "1.1 Mengembangkan RKJM, RKT/RKS dan program lainnya berdasarkan data hasil evaluasi dalam pemenuhan 8 SNP",
+      "bukti": "Dokumen EDS",
+      "sumber": "Template (sesuaikan data sekolah)",
+      "rujukan": "EDS/Rapor Pendidikan (platform resmi)",
+      "berkas": "1.1.d - EDS.docx",
+      "eksternal": false
+    },
+    {
+      "kode": "1.2.a",
+      "map": 1,
+      "bidang": "Bidang I. Manajerial",
+      "indikator": "1.2 Merumuskan visi-misi sebagai arah pengembangan RKJM, RKT, RKAS dan program lainnya",
+      "bukti": "Visi sekolah",
+      "sumber": "Template (sesuaikan data sekolah)",
+      "rujukan": "Rapor Pendidikan/PBD (data dasar RKT-RKAS); Permendikdasmen 8/2026 (Juknis BOSP, ARKAS)",
+      "berkas": "1.2.a - Visi Misi Tujuan.docx",
+      "eksternal": false
+    },
+    {
+      "kode": "1.2.b",
+      "map": 1,
+      "bidang": "Bidang I. Manajerial",
+      "indikator": "1.2 Merumuskan visi-misi sebagai arah pengembangan RKJM, RKT, RKAS dan program lainnya",
+      "bukti": "Misi sekolah",
+      "sumber": "Template (sesuaikan data sekolah)",
+      "rujukan": "Rapor Pendidikan/PBD (data dasar RKT-RKAS); Permendikdasmen 8/2026 (Juknis BOSP, ARKAS)",
+      "berkas": "1.2.b - Visi Misi Tujuan.docx",
+      "eksternal": false
+    },
+    {
+      "kode": "1.2.c",
+      "map": 1,
+      "bidang": "Bidang I. Manajerial",
+      "indikator": "1.2 Merumuskan visi-misi sebagai arah pengembangan RKJM, RKT, RKAS dan program lainnya",
+      "bukti": "SK penyusunan visi dan misi",
+      "sumber": "Template (sesuaikan data sekolah)",
+      "rujukan": "Rapor Pendidikan/PBD (data dasar RKT-RKAS); Permendikdasmen 8/2026 (Juknis BOSP, ARKAS)",
+      "berkas": "1.2.c - SK Tim Visi.docx",
+      "eksternal": false
+    },
+    {
+      "kode": "1.2.d",
+      "map": 1,
+      "bidang": "Bidang I. Manajerial",
+      "indikator": "1.2 Merumuskan visi-misi sebagai arah pengembangan RKJM, RKT, RKAS dan program lainnya",
+      "bukti": "Daftar hadir dan berita acara penyusunan visi-misi",
+      "sumber": "Template (sesuaikan data sekolah)",
+      "rujukan": "Rapor Pendidikan/PBD (data dasar RKT-RKAS); Permendikdasmen 8/2026 (Juknis BOSP, ARKAS)",
+      "berkas": "1.2.d - BA Penetapan Visi.docx",
+      "eksternal": false
+    },
+    {
+      "kode": "1.3.a",
+      "map": 1,
+      "bidang": "Bidang I. Manajerial",
+      "indikator": "1.3 Menentukan strategi pencapaian tujuan sekolah dengan indikator terukur",
+      "bukti": "Dokumen analisis konteks / analisis SWOT",
+      "sumber": "Template (sesuaikan data sekolah)",
+      "rujukan": "Rapor Pendidikan/PBD (data dasar RKT-RKAS); Permendikdasmen 8/2026 (Juknis BOSP, ARKAS)",
+      "berkas": "1.3.a - Analisis Konteks SWOT.docx",
+      "eksternal": false
+    },
+    {
+      "kode": "1.3.b",
+      "map": 1,
+      "bidang": "Bidang I. Manajerial",
+      "indikator": "1.3 Menentukan strategi pencapaian tujuan sekolah dengan indikator terukur",
+      "bukti": "Dokumen strategi dan tujuan sekolah (RPS)",
+      "sumber": "Template (sesuaikan data sekolah)",
+      "rujukan": "Rapor Pendidikan/PBD (data dasar RKT-RKAS); Permendikdasmen 8/2026 (Juknis BOSP, ARKAS)",
+      "berkas": "1.3.b - RPS.docx",
+      "eksternal": false
+    },
+    {
+      "kode": "1.4.a",
+      "map": 1,
+      "bidang": "Bidang I. Manajerial",
+      "indikator": "1.4 Melengkapi program dengan rencana evaluasi keterlaksanaan dan pencapaian",
+      "bukti": "Dokumen rencana evaluasi program",
+      "sumber": "Template (sesuaikan data sekolah)",
+      "rujukan": "Rapor Pendidikan/PBD (data dasar RKT-RKAS); Permendikdasmen 8/2026 (Juknis BOSP, ARKAS)",
+      "berkas": "1.4.a - Rencana Evaluasi.docx",
+      "eksternal": false
+    },
+    {
+      "kode": "1.4.b",
+      "map": 1,
+      "bidang": "Bidang I. Manajerial",
+      "indikator": "1.4 Melengkapi program dengan rencana evaluasi keterlaksanaan dan pencapaian",
+      "bukti": "Dokumen keterlaksanaan dan pencapaian program",
+      "sumber": "Template (sesuaikan data sekolah)",
+      "rujukan": "Rapor Pendidikan/PBD (data dasar RKT-RKAS); Permendikdasmen 8/2026 (Juknis BOSP, ARKAS)",
+      "berkas": "1.4.b - Laporan Keterlaksanaan.docx",
+      "eksternal": false
+    },
+    {
+      "kode": "2.1.a",
+      "map": 2,
+      "bidang": "Bidang I. Manajerial",
+      "indikator": "2.1 Berdisiplin tepat waktu, menggunakan waktu, dan mengakhiri pekerjaan",
+      "bukti": "Buku daftar hadir",
+      "sumber": "Template (sesuaikan data sekolah)",
+      "rujukan": "PP 94/2021 (Disiplin PNS, mencabut PP 53/2010); ATISISBADA untuk aset",
+      "berkas": "2.1.a - Daftar Hadir KS.docx",
+      "eksternal": false
+    },
+    {
+      "kode": "2.1.b",
+      "map": 2,
+      "bidang": "Bidang I. Manajerial",
+      "indikator": "2.1 Berdisiplin tepat waktu, menggunakan waktu, dan mengakhiri pekerjaan",
+      "bukti": "Buku kegiatan kepala sekolah",
+      "sumber": "Template (sesuaikan data sekolah)",
+      "rujukan": "PP 94/2021 (Disiplin PNS, mencabut PP 53/2010); ATISISBADA untuk aset",
+      "berkas": "2.1.b - Buku Kegiatan KS.docx",
+      "eksternal": false
+    },
+    {
+      "kode": "2.2.a",
+      "map": 2,
+      "bidang": "Bidang I. Manajerial",
+      "indikator": "2.2 Berdisiplin dalam melaksanakan peraturan",
+      "bukti": "Dokumen tata tertib",
+      "sumber": "Template (sesuaikan data sekolah)",
+      "rujukan": "PP 94/2021 (Disiplin PNS, mencabut PP 53/2010); ATISISBADA untuk aset",
+      "berkas": "2.2.a - Tata Tertib.docx",
+      "eksternal": false
+    },
+    {
+      "kode": "2.2.b",
+      "map": 2,
+      "bidang": "Bidang I. Manajerial",
+      "indikator": "2.2 Berdisiplin dalam melaksanakan peraturan",
+      "bukti": "Dokumen PP No. 94 Tahun 2021 tentang Disiplin PNS",
+      "sumber": "Template (sesuaikan data sekolah)",
+      "rujukan": "PP 94/2021 (BUKAN PP 53/2010 seperti tertulis di cover - perbaiki cover)",
+      "berkas": "2.2.b - Disiplin PP94.docx",
+      "eksternal": false
+    },
+    {
+      "kode": "2.3.a",
+      "map": 2,
+      "bidang": "Bidang I. Manajerial",
+      "indikator": "2.3 Menjadi teladan dalam memanfaatkan sumber daya secara efektif dan efisien",
+      "bukti": "Dokumen lainnya",
+      "sumber": "Sumber belum jelas - tanya pengawas",
+      "rujukan": "PP 94/2021 (Disiplin PNS, mencabut PP 53/2010); ATISISBADA untuk aset",
+      "berkas": "2.3.a - Inventaris Umum.docx",
+      "eksternal": false
+    },
+    {
+      "kode": "2.3.b",
+      "map": 2,
+      "bidang": "Bidang I. Manajerial",
+      "indikator": "2.3 Menjadi teladan dalam memanfaatkan sumber daya secara efektif dan efisien",
+      "bukti": "Dokumen inventaris barang (ATISISBADA)",
+      "sumber": "Aplikasi (ATISISBADA)",
+      "rujukan": "ATISISBADA (KIB/inventaris barang)",
+      "berkas": null,
+      "eksternal": true
+    },
+    {
+      "kode": "2.3.c",
+      "map": 2,
+      "bidang": "Bidang I. Manajerial",
+      "indikator": "2.3 Menjadi teladan dalam memanfaatkan sumber daya secara efektif dan efisien",
+      "bukti": "Dokumen inventaris bangunan (ATISISBADA)",
+      "sumber": "Aplikasi (ATISISBADA)",
+      "rujukan": "ATISISBADA (KIB gedung & bangunan)",
+      "berkas": null,
+      "eksternal": true
+    },
+    {
+      "kode": "2.3.d",
+      "map": 2,
+      "bidang": "Bidang I. Manajerial",
+      "indikator": "2.3 Menjadi teladan dalam memanfaatkan sumber daya secara efektif dan efisien",
+      "bukti": "Dokumen pendidik dan tenaga kependidikan (Monografi)",
+      "sumber": "Template (sesuaikan data sekolah)",
+      "rujukan": "PP 94/2021 (Disiplin PNS, mencabut PP 53/2010); ATISISBADA untuk aset",
+      "berkas": "2.3.d - Monografi PTK.docx",
+      "eksternal": false
+    },
+    {
+      "kode": "2.4.a",
+      "map": 2,
+      "bidang": "Bidang I. Manajerial",
+      "indikator": "2.4 Menunjukkan kedisiplinan sebagai insan pembelajar",
+      "bukti": "Dokumen pembinaan",
+      "sumber": "Template (sesuaikan data sekolah)",
+      "rujukan": "PP 94/2021 (Disiplin PNS, mencabut PP 53/2010); ATISISBADA untuk aset",
+      "berkas": "2.4.a - Pembinaan.docx",
+      "eksternal": false
+    },
+    {
+      "kode": "2.4.b",
+      "map": 2,
+      "bidang": "Bidang I. Manajerial",
+      "indikator": "2.4 Menunjukkan kedisiplinan sebagai insan pembelajar",
+      "bukti": "Dokumen supervisi",
+      "sumber": "Template (sesuaikan data sekolah)",
+      "rujukan": "PP 94/2021 (Disiplin PNS, mencabut PP 53/2010); ATISISBADA untuk aset",
+      "berkas": "2.4.b - Supervisi.docx",
+      "eksternal": false
+    },
+    {
+      "kode": "2.4.c",
+      "map": 2,
+      "bidang": "Bidang I. Manajerial",
+      "indikator": "2.4 Menunjukkan kedisiplinan sebagai insan pembelajar",
+      "bukti": "Dokumen tindak lanjut supervisi",
+      "sumber": "Template (sesuaikan data sekolah)",
+      "rujukan": "PP 94/2021 (Disiplin PNS, mencabut PP 53/2010); ATISISBADA untuk aset",
+      "berkas": "2.4.c - Tindak Lanjut Supervisi.docx",
+      "eksternal": false
+    },
+    {
+      "kode": "3.1.a",
+      "map": 3,
+      "bidang": "Bidang I. Manajerial",
+      "indikator": "3.1 Mengembangkan program baru untuk meningkatkan pencapaian target yang lebih tinggi",
+      "bukti": "Dokumen program rencana pengembangan sekolah (RPS)",
+      "sumber": "Template (sesuaikan data sekolah)",
+      "rujukan": "Kepmendikdasmen 271/O/2025 (Pengelolaan Kinerja); Rapor Pendidikan",
+      "berkas": "3.1.a - RPS Perubahan.docx",
+      "eksternal": false
+    },
+    {
+      "kode": "3.2.a",
+      "map": 3,
+      "bidang": "Bidang I. Manajerial",
+      "indikator": "3.2 Terampil membangun tim kerja yang efektif",
+      "bukti": "Struktur organisasi",
+      "sumber": "Template (sesuaikan data sekolah)",
+      "rujukan": "Kepmendikdasmen 271/O/2025 (Pengelolaan Kinerja); Rapor Pendidikan",
+      "berkas": "3.2.a - Struktur Organisasi.docx",
+      "eksternal": false
+    },
+    {
+      "kode": "3.2.b",
+      "map": 3,
+      "bidang": "Bidang I. Manajerial",
+      "indikator": "3.2 Terampil membangun tim kerja yang efektif",
+      "bukti": "Dokumen pembagian tugas / SK pembagian tugas",
+      "sumber": "Template (sesuaikan data sekolah)",
+      "rujukan": "Kepmendikdasmen 271/O/2025 (Pengelolaan Kinerja); Rapor Pendidikan",
+      "berkas": "3.2.b - SK Pembagian Tugas.docx",
+      "eksternal": false
+    },
+    {
+      "kode": "3.2.c",
+      "map": 3,
+      "bidang": "Bidang I. Manajerial",
+      "indikator": "3.2 Terampil membangun tim kerja yang efektif",
+      "bukti": "Dokumen SKP / pengelolaan penilaian kinerja",
+      "sumber": "Aplikasi (Ruang GTK)",
+      "rujukan": "Ruang GTK - Pengelolaan Kinerja (SKP)",
+      "berkas": "3.2.c - SKP.docx",
+      "eksternal": false
+    },
+    {
+      "kode": "3.3.a",
+      "map": 3,
+      "bidang": "Bidang I. Manajerial",
+      "indikator": "3.3 Menerapkan berbagai teknik pembaruan dalam pengelolaan pembelajaran",
+      "bukti": "Dokumen program peningkatan mutu sekolah",
+      "sumber": "Template (sesuaikan data sekolah)",
+      "rujukan": "Kepmendikdasmen 271/O/2025 (Pengelolaan Kinerja); Rapor Pendidikan",
+      "berkas": "3.3.a - Mutu Sekolah.docx",
+      "eksternal": false
+    },
+    {
+      "kode": "3.3.b",
+      "map": 3,
+      "bidang": "Bidang I. Manajerial",
+      "indikator": "3.3 Menerapkan berbagai teknik pembaruan dalam pengelolaan pembelajaran",
+      "bukti": "Dokumen program peningkatan mutu guru",
+      "sumber": "Template (sesuaikan data sekolah)",
+      "rujukan": "Kepmendikdasmen 271/O/2025 (Pengelolaan Kinerja); Rapor Pendidikan",
+      "berkas": "3.3.b - Mutu Guru.docx",
+      "eksternal": false
+    },
+    {
+      "kode": "3.3.c",
+      "map": 3,
+      "bidang": "Bidang I. Manajerial",
+      "indikator": "3.3 Menerapkan berbagai teknik pembaruan dalam pengelolaan pembelajaran",
+      "bukti": "Dokumen program peningkatan mutu peserta didik",
+      "sumber": "Template (sesuaikan data sekolah)",
+      "rujukan": "Kepmendikdasmen 271/O/2025 (Pengelolaan Kinerja); Rapor Pendidikan",
+      "berkas": "3.3.c - Mutu Siswa.docx",
+      "eksternal": false
+    },
+    {
+      "kode": "3.4.a",
+      "map": 3,
+      "bidang": "Bidang I. Manajerial",
+      "indikator": "3.4 Mengembangkan potensi dan meningkatkan prestasi sekolah",
+      "bukti": "Dokumen prestasi sekolah",
+      "sumber": "Template (sesuaikan data sekolah)",
+      "rujukan": "Kepmendikdasmen 271/O/2025 (Pengelolaan Kinerja); Rapor Pendidikan",
+      "berkas": "3.4.a - Prestasi Sekolah.docx",
+      "eksternal": false
+    },
+    {
+      "kode": "3.4.b",
+      "map": 3,
+      "bidang": "Bidang I. Manajerial",
+      "indikator": "3.4 Mengembangkan potensi dan meningkatkan prestasi sekolah",
+      "bukti": "Dokumen prestasi guru",
+      "sumber": "Template (sesuaikan data sekolah)",
+      "rujukan": "Kepmendikdasmen 271/O/2025 (Pengelolaan Kinerja); Rapor Pendidikan",
+      "berkas": "3.4.b - Prestasi Guru.docx",
+      "eksternal": false
+    },
+    {
+      "kode": "3.4.c",
+      "map": 3,
+      "bidang": "Bidang I. Manajerial",
+      "indikator": "3.4 Mengembangkan potensi dan meningkatkan prestasi sekolah",
+      "bukti": "Dokumen prestasi peserta didik",
+      "sumber": "Template (sesuaikan data sekolah)",
+      "rujukan": "Kepmendikdasmen 271/O/2025 (Pengelolaan Kinerja); Rapor Pendidikan",
+      "berkas": "3.4.c - Prestasi Siswa.docx",
+      "eksternal": false
+    },
+    {
+      "kode": "4.1.a",
+      "map": 4,
+      "bidang": "Bidang I. Manajerial",
+      "indikator": "4.1 Menjadi contoh berbudaya mutu yang kompetitif untuk prestasi akademik dan non akademik",
+      "bukti": "Dokumen KKTP dan KKU",
+      "sumber": "Dari guru kelas",
+      "rujukan": "Permendikdasmen 1/2026 (Standar Proses); Panduan Pembelajaran & Asesmen 2025/2026",
+      "berkas": "4.1.a - KKTP KKU.docx",
+      "eksternal": false
+    },
+    {
+      "kode": "4.1.b",
+      "map": 4,
+      "bidang": "Bidang I. Manajerial",
+      "indikator": "4.1 Menjadi contoh berbudaya mutu yang kompetitif untuk prestasi akademik dan non akademik",
+      "bukti": "Dokumen KKTP tiap kelas",
+      "sumber": "Dari guru kelas",
+      "rujukan": "Permendikdasmen 1/2026 (Standar Proses); Panduan Pembelajaran & Asesmen 2025/2026",
+      "berkas": "4.1.b - KKTP Kelas.docx",
+      "eksternal": false
+    },
+    {
+      "kode": "4.1.c",
+      "map": 4,
+      "bidang": "Bidang I. Manajerial",
+      "indikator": "4.1 Menjadi contoh berbudaya mutu yang kompetitif untuk prestasi akademik dan non akademik",
+      "bukti": "Dokumen hasil TKA",
+      "sumber": "Dari guru kelas",
+      "rujukan": "Permendikdasmen 1/2026 (Standar Proses); Panduan Pembelajaran & Asesmen 2025/2026",
+      "berkas": "4.1.c - TKA.docx",
+      "eksternal": false
+    },
+    {
+      "kode": "4.2.a",
+      "map": 4,
+      "bidang": "Bidang I. Manajerial",
+      "indikator": "4.2 Melengkapi sarana dan prasarana untuk suasana belajar kondusif dan inovatif",
+      "bukti": "Suasana lingkungan asri, bersih, rindang, aman, dan menyenangkan (kondisi riil saat PKKS)",
+      "sumber": "Template (sesuaikan data sekolah)",
+      "rujukan": "Permendikdasmen 1/2026 (Standar Proses); Panduan Pembelajaran & Asesmen 2025/2026",
+      "berkas": "4.2.a - Iklim Asri.docx",
+      "eksternal": false
+    },
+    {
+      "kode": "4.2.b",
+      "map": 4,
+      "bidang": "Bidang I. Manajerial",
+      "indikator": "4.2 Melengkapi sarana dan prasarana untuk suasana belajar kondusif dan inovatif",
+      "bukti": "Lingkungan sekolah sebagai media pameran karya kreatif (sudut baca, papan kreasi dan informasi)",
+      "sumber": "Template (sesuaikan data sekolah)",
+      "rujukan": "Permendikdasmen 1/2026 (Standar Proses); Panduan Pembelajaran & Asesmen 2025/2026",
+      "berkas": "4.2.b - Pameran Karya.docx",
+      "eksternal": false
+    },
+    {
+      "kode": "4.3.a",
+      "map": 4,
+      "bidang": "Bidang I. Manajerial",
+      "indikator": "4.3 Memfasilitasi kegiatan untuk meningkatkan budaya baca dan budaya tulis",
+      "bukti": "Data kunjungan perpustakaan, peminjaman buku, pembaruan buku dan bahan bacaan, sumber belajar berbasis TIK",
+      "sumber": "Template (sesuaikan data sekolah)",
+      "rujukan": "Buku BOSP harus yang ditetapkan Kemendikdasmen (buku.kemendikdasmen.go.id)",
+      "berkas": "4.3.a - Perpustakaan.docx",
+      "eksternal": false
+    },
+    {
+      "kode": "4.3.b",
+      "map": 4,
+      "bidang": "Bidang I. Manajerial",
+      "indikator": "4.3 Memfasilitasi kegiatan untuk meningkatkan budaya baca dan budaya tulis",
+      "bukti": "Sarana publikasi karya tulis dan kompetisi karya tulis tingkat sekolah",
+      "sumber": "Template (sesuaikan data sekolah)",
+      "rujukan": "Permendikdasmen 1/2026 (Standar Proses); Panduan Pembelajaran & Asesmen 2025/2026",
+      "berkas": "4.3.b - Publikasi Karya.docx",
+      "eksternal": false
+    },
+    {
+      "kode": "4.4.a",
+      "map": 4,
+      "bidang": "Bidang I. Manajerial",
+      "indikator": "4.4 Memfasilitasi kegiatan lomba bidang akademik dan non akademik",
+      "bukti": "Dokumen penyelenggaraan kompetisi mulai tingkat sekolah",
+      "sumber": "Template (sesuaikan data sekolah)",
+      "rujukan": "Permendikdasmen 1/2026 (Standar Proses); Panduan Pembelajaran & Asesmen 2025/2026",
+      "berkas": "4.4.a - Kompetisi Sekolah.docx",
+      "eksternal": false
+    },
+    {
+      "kode": "4.4.b",
+      "map": 4,
+      "bidang": "Bidang I. Manajerial",
+      "indikator": "4.4 Memfasilitasi kegiatan lomba bidang akademik dan non akademik",
+      "bukti": "Piagam, piala, dan tropi lomba bidang akademik dan non akademik",
+      "sumber": "Template (sesuaikan data sekolah)",
+      "rujukan": "Permendikdasmen 1/2026 (Standar Proses); Panduan Pembelajaran & Asesmen 2025/2026",
+      "berkas": "4.4.b - Piagam Piala.docx",
+      "eksternal": false
+    },
+    {
+      "kode": "5.1.a",
+      "map": 5,
+      "bidang": "Bidang I. Manajerial",
+      "indikator": "5.1 Menyusun perencanaan pengembangan pendidik dan tenaga kependidikan",
+      "bukti": "Dokumen program pembinaan guru berkelanjutan berbasis hasil evaluasi kinerja",
+      "sumber": "Template (sesuaikan data sekolah)",
+      "rujukan": "Kepmendikdasmen 271/O/2025; pengembangan kompetensi = refleksi hasil belajar (tanpa wajib unggah sertifikat)",
+      "berkas": "5.1.a - Program Pembinaan Guru.docx",
+      "eksternal": false
+    },
+    {
+      "kode": "5.1.b",
+      "map": 5,
+      "bidang": "Bidang I. Manajerial",
+      "indikator": "5.1 Menyusun perencanaan pengembangan pendidik dan tenaga kependidikan",
+      "bukti": "Dokumen data hasil pemantauan keterlaksanaan",
+      "sumber": "Template (sesuaikan data sekolah)",
+      "rujukan": "Kepmendikdasmen 271/O/2025; pengembangan kompetensi = refleksi hasil belajar (tanpa wajib unggah sertifikat)",
+      "berkas": "5.1.b - Pemantauan.docx",
+      "eksternal": false
+    },
+    {
+      "kode": "5.1.c",
+      "map": 5,
+      "bidang": "Bidang I. Manajerial",
+      "indikator": "5.1 Menyusun perencanaan pengembangan pendidik dan tenaga kependidikan",
+      "bukti": "Dokumen data pencapaian program pembinaan (melibatkan tim pengembang sekolah, disepakati seluruh pendidik dan tendik)",
+      "sumber": "Template (sesuaikan data sekolah)",
+      "rujukan": "Kepmendikdasmen 271/O/2025; pengembangan kompetensi = refleksi hasil belajar (tanpa wajib unggah sertifikat)",
+      "berkas": "5.1.c - Pencapaian.docx",
+      "eksternal": false
+    },
+    {
+      "kode": "5.2.a",
+      "map": 5,
+      "bidang": "Bidang I. Manajerial",
+      "indikator": "5.2 Melakukan pembinaan berkala untuk meningkatkan mutu SDM sekolah",
+      "bukti": "Dokumen pelaksanaan pembinaan guru (notulen rapat, materi pelatihan)",
+      "sumber": "Template (sesuaikan data sekolah)",
+      "rujukan": "Kepmendikdasmen 271/O/2025; pengembangan kompetensi = refleksi hasil belajar (tanpa wajib unggah sertifikat)",
+      "berkas": "5.2.a - Pembinaan Rutin.docx",
+      "eksternal": false
+    },
+    {
+      "kode": "5.2.b",
+      "map": 5,
+      "bidang": "Bidang I. Manajerial",
+      "indikator": "5.2 Melakukan pembinaan berkala untuk meningkatkan mutu SDM sekolah",
+      "bukti": "Catatan pembinaan kegiatan rutin",
+      "sumber": "Template (sesuaikan data sekolah)",
+      "rujukan": "Kepmendikdasmen 271/O/2025; pengembangan kompetensi = refleksi hasil belajar (tanpa wajib unggah sertifikat)",
+      "berkas": "5.2.b - Catatan Pembinaan.docx",
+      "eksternal": false
+    },
+    {
+      "kode": "5.2.c",
+      "map": 5,
+      "bidang": "Bidang I. Manajerial",
+      "indikator": "5.2 Melakukan pembinaan berkala untuk meningkatkan mutu SDM sekolah",
+      "bukti": "Catatan pembinaan khusus individual atau kelompok",
+      "sumber": "Template (sesuaikan data sekolah)",
+      "rujukan": "Kepmendikdasmen 271/O/2025; pengembangan kompetensi = refleksi hasil belajar (tanpa wajib unggah sertifikat)",
+      "berkas": "5.2.c - Pembinaan Khusus.docx",
+      "eksternal": false
+    },
+    {
+      "kode": "5.2.d",
+      "map": 5,
+      "bidang": "Bidang I. Manajerial",
+      "indikator": "5.2 Melakukan pembinaan berkala untuk meningkatkan mutu SDM sekolah",
+      "bukti": "Catatan peningkatan kerja sama tim (outbound, training)",
+      "sumber": "Template (sesuaikan data sekolah)",
+      "rujukan": "Kepmendikdasmen 271/O/2025; pengembangan kompetensi = refleksi hasil belajar (tanpa wajib unggah sertifikat)",
+      "berkas": "5.2.d - Kerjasama Tim.docx",
+      "eksternal": false
+    },
+    {
+      "kode": "5.3.a",
+      "map": 5,
+      "bidang": "Bidang I. Manajerial",
+      "indikator": "5.3 Memfasilitasi guru dan staf administrasi meningkatkan kompetensi",
+      "bukti": "Surat tugas mengikuti kegiatan keprofesionalan berkelanjutan",
+      "sumber": "Dibuat/diarsip sekolah",
+      "rujukan": "Kepmendikdasmen 271/O/2025; pengembangan kompetensi = refleksi hasil belajar (tanpa wajib unggah sertifikat)",
+      "berkas": "5.3.a - Tugas Belajar.docx",
+      "eksternal": false
+    },
+    {
+      "kode": "5.3.b",
+      "map": 5,
+      "bidang": "Bidang I. Manajerial",
+      "indikator": "5.3 Memfasilitasi guru dan staf administrasi meningkatkan kompetensi",
+      "bukti": "Penelitian tindakan, karya inovatif, dan alokasi anggaran kegiatan",
+      "sumber": "Dibuat/diarsip sekolah",
+      "rujukan": "Kepmendikdasmen 271/O/2025; pengembangan kompetensi = refleksi hasil belajar (tanpa wajib unggah sertifikat)",
+      "berkas": "5.3.b - PTK Karya Inovatif.docx",
+      "eksternal": false
+    },
+    {
+      "kode": "5.4.a",
+      "map": 5,
+      "bidang": "Bidang I. Manajerial",
+      "indikator": "5.4 Memantau dan menilai penerapan hasil pelatihan di sekolah",
+      "bukti": "Dokumen program evaluasi pelatihan / pengembangan profesi (menguraikan tujuan)",
+      "sumber": "Template (sesuaikan data sekolah)",
+      "rujukan": "Kepmendikdasmen 271/O/2025; pengembangan kompetensi = refleksi hasil belajar (tanpa wajib unggah sertifikat)",
+      "berkas": "5.4.a - Evaluasi Pelatihan.docx",
+      "eksternal": false
+    },
+    {
+      "kode": "5.4.b",
+      "map": 5,
+      "bidang": "Bidang I. Manajerial",
+      "indikator": "5.4 Memantau dan menilai penerapan hasil pelatihan di sekolah",
+      "bukti": "Data hasil evaluasi ketercapaian tujuan dan tindak lanjut yang direalisasikan / Penilaian Kinerja Guru",
+      "sumber": "Template (sesuaikan data sekolah)",
+      "rujukan": "Kepmendikdasmen 271/O/2025; pengembangan kompetensi = refleksi hasil belajar (tanpa wajib unggah sertifikat)",
+      "berkas": "5.4.b - Hasil Evaluasi.docx",
+      "eksternal": false
+    },
+    {
+      "kode": "6.1.a",
+      "map": 6,
+      "bidang": "Bidang I. Manajerial",
+      "indikator": "6.1 Menyusun perencanaan penerimaan, pengelolaan, dan pengembangan kompetensi peserta didik",
+      "bukti": "Dokumen program penerimaan murid baru (SPMB)",
+      "sumber": "Template (sesuaikan data sekolah)",
+      "rujukan": "Permendikdasmen 3/2025; SE Dirjen 0301/C/HK.04.01/2026; Juknis SPMB Bupati KBB TA 2026/2027",
+      "berkas": "6.1.a - SPMB.docx",
+      "eksternal": false
+    },
+    {
+      "kode": "6.1.b",
+      "map": 6,
+      "bidang": "Bidang I. Manajerial",
+      "indikator": "6.1 Menyusun perencanaan penerimaan, pengelolaan, dan pengembangan kompetensi peserta didik",
+      "bukti": "Dokumen kriteria penerimaan peserta didik",
+      "sumber": "Template (sesuaikan data sekolah)",
+      "rujukan": "Permendikdasmen 3/2025 + SE Dirjen 0301/C/HK.04.01/2026 + Juknis SPMB Bupati Bandung Barat; Panduan 7 KAIH (SD)",
+      "berkas": "6.1.b - Kriteria SPMB.docx",
+      "eksternal": false
+    },
+    {
+      "kode": "6.1.c",
+      "map": 6,
+      "bidang": "Bidang I. Manajerial",
+      "indikator": "6.1 Menyusun perencanaan penerimaan, pengelolaan, dan pengembangan kompetensi peserta didik",
+      "bukti": "Data hasil analisis bekal ajar awal (MPLS / inventaris buku sumber)",
+      "sumber": "Template (sesuaikan data sekolah)",
+      "rujukan": "Permendikdasmen 3/2025 + SE Dirjen 0301/C/HK.04.01/2026 + Juknis SPMB Bupati Bandung Barat; Panduan 7 KAIH (SD)",
+      "berkas": "6.1.c - Bekal Ajar.docx",
+      "eksternal": false
+    },
+    {
+      "kode": "6.1.d",
+      "map": 6,
+      "bidang": "Bidang I. Manajerial",
+      "indikator": "6.1 Menyusun perencanaan penerimaan, pengelolaan, dan pengembangan kompetensi peserta didik",
+      "bukti": "Tata tertib akademik / kesepakatan sekolah dan kelas (SKL)",
+      "sumber": "Template (sesuaikan data sekolah)",
+      "rujukan": "Permendikdasmen 3/2025 + SE Dirjen 0301/C/HK.04.01/2026 + Juknis SPMB Bupati Bandung Barat; Panduan 7 KAIH (SD)",
+      "berkas": "6.1.d - Tata Tertib Akademik.docx",
+      "eksternal": false
+    },
+    {
+      "kode": "6.2.a",
+      "map": 6,
+      "bidang": "Bidang I. Manajerial",
+      "indikator": "6.2 Memiliki program pengembangan potensi diri dan prestasi peserta didik",
+      "bukti": "Strategi kreatif sekolah untuk kolaborasi pendidik dan tendik dalam pengembangan prestasi (diklat yang pernah diikuti kepala sekolah / guru)",
+      "sumber": "Template (sesuaikan data sekolah)",
+      "rujukan": "Permendikdasmen 3/2025 + SE Dirjen 0301/C/HK.04.01/2026 + Juknis SPMB Bupati Bandung Barat; Panduan 7 KAIH (SD)",
+      "berkas": "6.2.a - Kolaborasi.docx",
+      "eksternal": false
+    },
+    {
+      "kode": "6.3.a",
+      "map": 6,
+      "bidang": "Bidang I. Manajerial",
+      "indikator": "6.3 Memfasilitasi pengembangan diri peserta didik, pendidik, dan tenaga kependidikan",
+      "bukti": "Dokumen ekstrakurikuler (Pramuka, olahraga, kesenian, keagamaan, dll.)",
+      "sumber": "Template (sesuaikan data sekolah)",
+      "rujukan": "Permendikdasmen 3/2025 + SE Dirjen 0301/C/HK.04.01/2026 + Juknis SPMB Bupati Bandung Barat; Panduan 7 KAIH (SD)",
+      "berkas": "6.3.a - Ekstrakurikuler.docx",
+      "eksternal": false
+    },
+    {
+      "kode": "6.4.a",
+      "map": 6,
+      "bidang": "Bidang I. Manajerial",
+      "indikator": "6.4 Memfasilitasi pembiasaan melalui penanaman nilai-nilai",
+      "bukti": "Dokumen program PHBN",
+      "sumber": "Template (sesuaikan data sekolah)",
+      "rujukan": "Permendikdasmen 3/2025 + SE Dirjen 0301/C/HK.04.01/2026 + Juknis SPMB Bupati Bandung Barat; Panduan 7 KAIH (SD)",
+      "berkas": "6.4.a - PHBN.docx",
+      "eksternal": false
+    },
+    {
+      "kode": "6.4.b",
+      "map": 6,
+      "bidang": "Bidang I. Manajerial",
+      "indikator": "6.4 Memfasilitasi pembiasaan melalui penanaman nilai-nilai",
+      "bukti": "Dokumen kegiatan lomba PHBN",
+      "sumber": "Template (sesuaikan data sekolah)",
+      "rujukan": "Permendikdasmen 3/2025 + SE Dirjen 0301/C/HK.04.01/2026 + Juknis SPMB Bupati Bandung Barat; Panduan 7 KAIH (SD)",
+      "berkas": "6.4.b - Lomba PHBN.docx",
+      "eksternal": false
+    },
+    {
+      "kode": "6.4.c",
+      "map": 6,
+      "bidang": "Bidang I. Manajerial",
+      "indikator": "6.4 Memfasilitasi pembiasaan melalui penanaman nilai-nilai",
+      "bukti": "Program / dokumen 7 KAIH",
+      "sumber": "Template (sesuaikan data sekolah)",
+      "rujukan": "Panduan Gerakan 7 KAIH (jenjang SD)",
+      "berkas": "6.4.c - 7 KAIH.docx",
+      "eksternal": false
+    },
+    {
+      "kode": "7.1.a",
+      "map": 7,
+      "bidang": "Bidang I. Manajerial",
+      "indikator": "7.1 Mengarahkan penerapan prinsip pengembangan KTSP dalam IHT, workshop, rakor, dan KKG",
+      "bukti": "Dokumen hasil pengembangan kurikulum beserta dokumen kendali kegiatan (undangan, daftar hadir, susunan kegiatan, hasil perbaikan: dokumen 1 KTSP, silabus, CP, ATP, RPP)",
+      "sumber": "Dibuat/diarsip sekolah",
+      "rujukan": "Istilah baru: KOSP/KOSP (cover masih menulis KTSP/silabus/RPP)",
+      "berkas": "7.1.a - KOSP.docx",
+      "eksternal": false
+    },
+    {
+      "kode": "7.2.a",
+      "map": 7,
+      "bidang": "Bidang I. Manajerial",
+      "indikator": "7.2 Mengendalikan pelaksanaan KTSP (kalender pendidikan, SK tugas mengajar, aturan akademik)",
+      "bukti": "Kalender pendidikan tingkat sekolah",
+      "sumber": "Dibuat/diarsip sekolah",
+      "rujukan": "Permendikdasmen 1/2026; KOSP/KOSP, CP-TP-ATP-KKTP; Panduan PPA 2025/2026; Panduan 7 KAIH",
+      "berkas": "7.2.a - Kaldik.docx",
+      "eksternal": false
+    },
+    {
+      "kode": "7.2.b",
+      "map": 7,
+      "bidang": "Bidang I. Manajerial",
+      "indikator": "7.2 Mengendalikan pelaksanaan KTSP (kalender pendidikan, SK tugas mengajar, aturan akademik)",
+      "bukti": "SK pembagian tugas mengajar",
+      "sumber": "Dibuat/diarsip sekolah",
+      "rujukan": "Permendikdasmen 1/2026; KOSP/KOSP, CP-TP-ATP-KKTP; Panduan PPA 2025/2026; Panduan 7 KAIH",
+      "berkas": "7.2.b - Kaldik Info.docx",
+      "eksternal": false
+    },
+    {
+      "kode": "7.2.c",
+      "map": 7,
+      "bidang": "Bidang I. Manajerial",
+      "indikator": "7.2 Mengendalikan pelaksanaan KTSP (kalender pendidikan, SK tugas mengajar, aturan akademik)",
+      "bukti": "Aturan akademik",
+      "sumber": "Template (sesuaikan data sekolah)",
+      "rujukan": "Permendikdasmen 1/2026; KOSP/KOSP, CP-TP-ATP-KKTP; Panduan PPA 2025/2026; Panduan 7 KAIH",
+      "berkas": "7.2.c - Tata Tertib Akademik.docx",
+      "eksternal": false
+    },
+    {
+      "kode": "7.2.d",
+      "map": 7,
+      "bidang": "Bidang I. Manajerial",
+      "indikator": "7.2 Mengendalikan pelaksanaan KTSP (kalender pendidikan, SK tugas mengajar, aturan akademik)",
+      "bukti": "Jadwal pelajaran (pemenuhan standar isi)",
+      "sumber": "Dibuat/diarsip sekolah",
+      "rujukan": "Permendikdasmen 1/2026; KOSP/KOSP, CP-TP-ATP-KKTP; Panduan PPA 2025/2026; Panduan 7 KAIH",
+      "berkas": "7.2.d - Jadwal.docx",
+      "eksternal": false
+    },
+    {
+      "kode": "7.2.e",
+      "map": 7,
+      "bidang": "Bidang I. Manajerial",
+      "indikator": "7.2 Mengendalikan pelaksanaan KTSP (kalender pendidikan, SK tugas mengajar, aturan akademik)",
+      "bukti": "Standar proses dan standar penilaian",
+      "sumber": "Template (sesuaikan data sekolah)",
+      "rujukan": "Permendikdasmen 1/2026 (Standar Proses)",
+      "berkas": "7.2.e - Standar Proses.docx",
+      "eksternal": false
+    },
+    {
+      "kode": "7.2.f",
+      "map": 7,
+      "bidang": "Bidang I. Manajerial",
+      "indikator": "7.2 Mengendalikan pelaksanaan KTSP (kalender pendidikan, SK tugas mengajar, aturan akademik)",
+      "bukti": "SKL (CP, KKTP, KKU)",
+      "sumber": "Dari guru kelas",
+      "rujukan": "Permendikdasmen 1/2026; KOSP/KOSP, CP-TP-ATP-KKTP; Panduan PPA 2025/2026; Panduan 7 KAIH",
+      "berkas": "7.2.f - SKL.docx",
+      "eksternal": false
+    },
+    {
+      "kode": "7.2.g",
+      "map": 7,
+      "bidang": "Bidang I. Manajerial",
+      "indikator": "7.2 Mengendalikan pelaksanaan KTSP (kalender pendidikan, SK tugas mengajar, aturan akademik)",
+      "bukti": "Pengembangan karakter (7 KAIH)",
+      "sumber": "Template (sesuaikan data sekolah)",
+      "rujukan": "Panduan Gerakan 7 KAIH (jenjang SD)",
+      "berkas": "7.2.g - 7 KAIH.docx",
+      "eksternal": false
+    },
+    {
+      "kode": "7.3.a",
+      "map": 7,
+      "bidang": "Bidang I. Manajerial",
+      "indikator": "7.3 Memfasilitasi efektivitas tim kerja guru untuk meningkatkan mutu pembelajaran",
+      "bukti": "Dokumen kegiatan KKG / gugus untuk mutu perencanaan, proses, penilaian, kompetisi, dan kolaborasi",
+      "sumber": "Template (sesuaikan data sekolah)",
+      "rujukan": "Permendikdasmen 1/2026; KOSP/KOSP, CP-TP-ATP-KKTP; Panduan PPA 2025/2026; Panduan 7 KAIH",
+      "berkas": "7.3.a - KKG.docx",
+      "eksternal": false
+    },
+    {
+      "kode": "7.4.a",
+      "map": 7,
+      "bidang": "Bidang I. Manajerial",
+      "indikator": "7.4 Mengembangkan layanan belajar inovatif melalui perangkat dan sumber belajar terbarukan",
+      "bukti": "Dokumen alat peraga / media pembelajaran",
+      "sumber": "Template (sesuaikan data sekolah)",
+      "rujukan": "Permendikdasmen 1/2026; KOSP/KOSP, CP-TP-ATP-KKTP; Panduan PPA 2025/2026; Panduan 7 KAIH",
+      "berkas": "7.4.a - Alat Peraga.docx",
+      "eksternal": false
+    },
+    {
+      "kode": "7.4.b",
+      "map": 7,
+      "bidang": "Bidang I. Manajerial",
+      "indikator": "7.4 Mengembangkan layanan belajar inovatif melalui perangkat dan sumber belajar terbarukan",
+      "bukti": "Dokumen IT",
+      "sumber": "Template (sesuaikan data sekolah)",
+      "rujukan": "Permendikdasmen 1/2026; KOSP/KOSP, CP-TP-ATP-KKTP; Panduan PPA 2025/2026; Panduan 7 KAIH",
+      "berkas": "7.4.b - Aset TI.docx",
+      "eksternal": false
+    },
+    {
+      "kode": "7.4.c",
+      "map": 7,
+      "bidang": "Bidang I. Manajerial",
+      "indikator": "7.4 Mengembangkan layanan belajar inovatif melalui perangkat dan sumber belajar terbarukan",
+      "bukti": "Dokumen hasil publikasi ilmiah",
+      "sumber": "Template (sesuaikan data sekolah)",
+      "rujukan": "Permendikdasmen 1/2026; KOSP/KOSP, CP-TP-ATP-KKTP; Panduan PPA 2025/2026; Panduan 7 KAIH",
+      "berkas": "7.4.c - Publikasi Ilmiah.docx",
+      "eksternal": false
+    },
+    {
+      "kode": "7.5.a",
+      "map": 7,
+      "bidang": "Bidang I. Manajerial",
+      "indikator": "7.5 Memfasilitasi kolaborasi dan kompetisi peserta didik bidang akademik dan non akademik",
+      "bukti": "Dokumen lomba (tingkat sekolah, gugus, kecamatan, kabupaten, provinsi, nasional, internasional): program, data pelaksanaan, hasil kegiatan",
+      "sumber": "Template (sesuaikan data sekolah)",
+      "rujukan": "Permendikdasmen 1/2026; KOSP/KOSP, CP-TP-ATP-KKTP; Panduan PPA 2025/2026; Panduan 7 KAIH",
+      "berkas": "7.5.a - Lomba Gugus.docx",
+      "eksternal": false
+    },
+    {
+      "kode": "8.1.a",
+      "map": 8,
+      "bidang": "Bidang I. Manajerial",
+      "indikator": "8.1 Mengarahkan administrasi persuratan dan kearsipan",
+      "bukti": "Surat masuk, surat keluar, penggandaan, ekspedisi, dan kearsipan sesuai standar, tersusun rapi",
+      "sumber": "Template (sesuaikan data sekolah)",
+      "rujukan": "Permendikdasmen 8/2026 (BOSP/ARKAS); Dapodik; ATISISBADA; buku.kemendikdasmen.go.id (buku BOSP)",
+      "berkas": "8.1.a - Register Surat.docx",
+      "eksternal": false
+    },
+    {
+      "kode": "8.2.a",
+      "map": 8,
+      "bidang": "Bidang I. Manajerial",
+      "indikator": "8.2 Mengarahkan administrasi sarana prasarana",
+      "bukti": "Pengadaan, program pemeliharaan, data penggunaan, inventarisasi, data penghapusan, dan data terbarukan (ATISISBADA)",
+      "sumber": "Template (sesuaikan data sekolah)",
+      "rujukan": "Permendikdasmen 8/2026 (BOSP/ARKAS); Dapodik; ATISISBADA; buku.kemendikdasmen.go.id (buku BOSP)",
+      "berkas": "8.2.a - Sarpras.docx",
+      "eksternal": false
+    },
+    {
+      "kode": "8.3.a",
+      "map": 8,
+      "bidang": "Bidang I. Manajerial",
+      "indikator": "8.3 Mengarahkan administrasi kepegawaian",
+      "bukti": "Data pegawai, kehadiran, pembinaan, PAK, usulan naik pangkat, kenaikan gaji, cuti, PKG, pembinaan dan pengembangan",
+      "sumber": "Template (sesuaikan data sekolah)",
+      "rujukan": "Permendikdasmen 8/2026 (BOSP/ARKAS); Dapodik; ATISISBADA; buku.kemendikdasmen.go.id (buku BOSP)",
+      "berkas": "8.3.a - Kepegawaian.docx",
+      "eksternal": false
+    },
+    {
+      "kode": "8.4.a",
+      "map": 8,
+      "bidang": "Bidang I. Manajerial",
+      "indikator": "8.4 Mengarahkan administrasi keuangan",
+      "bukti": "Penyusunan anggaran (ARKAS), evaluasi, dan pertanggungjawaban anggaran secara terbuka (spesimen LPJ)",
+      "sumber": "Aplikasi (ARKAS)",
+      "rujukan": "Permendikdasmen 8/2026; ARKAS; laporan BOSP",
+      "berkas": "8.4.a - Keuangan ARKAS.docx",
+      "eksternal": false
+    },
+    {
+      "kode": "8.5.a",
+      "map": 8,
+      "bidang": "Bidang I. Manajerial",
+      "indikator": "8.5 Mengarahkan administrasi peserta didik",
+      "bukti": "Klaper, buku induk, absen (daftar kelas), buku mutasi, rapor, hasil US/UAS, data pribadi peserta didik (Dapodik)",
+      "sumber": "Aplikasi (Dapodik)",
+      "rujukan": "Permendikdasmen 8/2026 (BOSP/ARKAS); Dapodik; ATISISBADA; buku.kemendikdasmen.go.id (buku BOSP)",
+      "berkas": "8.5.a - Kesiswaan.docx",
+      "eksternal": false
+    },
+    {
+      "kode": "8.6.a",
+      "map": 8,
+      "bidang": "Bidang I. Manajerial",
+      "indikator": "8.6 Mengarahkan administrasi perpustakaan",
+      "bukti": "Penugasan pengelola, tata tertib, koleksi buku pelajaran dan referensi, laporan pengadaan, pencatatan dan pengkodean buku, data sirkulasi, kehadiran pengunjung, laporan tahunan",
+      "sumber": "Template (sesuaikan data sekolah)",
+      "rujukan": "Buku BOSP harus yang ditetapkan Kemendikdasmen (buku.kemendikdasmen.go.id)",
+      "berkas": "8.6.a - Perpustakaan.docx",
+      "eksternal": false
+    },
+    {
+      "kode": "8.7.a",
+      "map": 8,
+      "bidang": "Bidang I. Manajerial",
+      "indikator": "8.7 Mengarahkan administrasi laboratorium (jika ada)",
+      "bukti": "Tata tertib, jadwal penggunaan, sistem administrasi, program penggunaan, inventaris dan kartu pengadaan, catatan perawatan, usul pemutakhiran sarpras, data penghapusan",
+      "sumber": "Template (sesuaikan data sekolah)",
+      "rujukan": "Permendikdasmen 8/2026 (BOSP/ARKAS); Dapodik; ATISISBADA; buku.kemendikdasmen.go.id (buku BOSP)",
+      "berkas": "8.7.a - Sarpras Lab.docx",
+      "eksternal": false
+    },
+    {
+      "kode": "9.1.a",
+      "map": 9,
+      "bidang": "Bidang I. Manajerial",
+      "indikator": "9.1 Mengembangkan sistem administrasi dengan dukungan TIK",
+      "bukti": "Penerapan TIK dalam administrasi persuratan, sarana prasarana, kepegawaian, kepesertadidikan, dan keuangan",
+      "sumber": "Template (sesuaikan data sekolah)",
+      "rujukan": "ARKAS, Dapodik, Rapor Pendidikan, Ruang GTK sebagai bukti penerapan TIK",
+      "berkas": "9.1.a - TIK Administrasi.docx",
+      "eksternal": false
+    },
+    {
+      "kode": "9.2.a",
+      "map": 9,
+      "bidang": "Bidang I. Manajerial",
+      "indikator": "9.2 Mengelola administrasi pembelajaran dengan dukungan TIK",
+      "bukti": "Model penerapan TIK dalam administrasi kurikulum dan pembelajaran (komputer, intranet, internet)",
+      "sumber": "Template (sesuaikan data sekolah)",
+      "rujukan": "ARKAS, Dapodik, Rapor Pendidikan, Ruang GTK sebagai bukti penerapan TIK",
+      "berkas": "9.2.a - TIK Kurikulum.docx",
+      "eksternal": false
+    },
+    {
+      "kode": "9.3.a",
+      "map": 9,
+      "bidang": "Bidang I. Manajerial",
+      "indikator": "9.3 Mengembangkan pengelolaan perpustakaan dengan dukungan TIK",
+      "bukti": "Model pemanfaatan TIK dalam pengelolaan perpustakaan (komputer, intranet, internet)",
+      "sumber": "Template (sesuaikan data sekolah)",
+      "rujukan": "ARKAS, Dapodik, Rapor Pendidikan, Ruang GTK sebagai bukti penerapan TIK",
+      "berkas": "9.3.a - TIK Perpus.docx",
+      "eksternal": false
+    },
+    {
+      "kode": "10.1.a",
+      "map": 10,
+      "bidang": "Bidang Ii. Supervisi",
+      "indikator": "10.1 Mengidentifikasi masalah guru dalam pelaksanaan pembelajaran",
+      "bukti": "Rumusan masalah dari pemantauan perencanaan, pelaksanaan, dan penilaian pembelajaran (dokumen pengelolaan kinerja)",
+      "sumber": "Template + Pengelolaan Kinerja",
+      "rujukan": "Kepmendikdasmen 271/O/2025 (praktik kinerja, subindikator D3 Kepemimpinan Pembelajaran)",
+      "berkas": "10.1.a - Identitas Supervisi.docx",
+      "eksternal": false
+    },
+    {
+      "kode": "10.2.a",
+      "map": 10,
+      "bidang": "Bidang Ii. Supervisi",
+      "indikator": "10.2 Merumuskan tujuan dengan target pencapaian terukur",
+      "bukti": "Rumusan tujuan supervisi dan target terukur (dokumen pengelolaan kinerja)",
+      "sumber": "Template + Pengelolaan Kinerja",
+      "rujukan": "Kepmendikdasmen 271/O/2025 (praktik kinerja, subindikator D3 Kepemimpinan Pembelajaran)",
+      "berkas": "10.2.a - Tujuan Supervisi.docx",
+      "eksternal": false
+    },
+    {
+      "kode": "10.3.a",
+      "map": 10,
+      "bidang": "Bidang Ii. Supervisi",
+      "indikator": "10.3 Mengembangkan instrumen supervisi",
+      "bukti": "Instrumen relevan dengan indikator tujuan sekolah serta isi, proses, penilaian, dan SKL sekolah dan mata pelajaran (dokumen pengelolaan kinerja)",
+      "sumber": "Template + Pengelolaan Kinerja",
+      "rujukan": "Kepmendikdasmen 271/O/2025 (praktik kinerja, subindikator D3 Kepemimpinan Pembelajaran)",
+      "berkas": "10.3.a - Instrumen Supervisi.docx",
+      "eksternal": false
+    },
+    {
+      "kode": "11.1.a",
+      "map": 11,
+      "bidang": "Bidang Ii. Supervisi",
+      "indikator": "11.1 Mengadakan pertemuan awal dan menetapkan fokus supervisi",
+      "bukti": "Hasil pertemuan awal: masalah, tujuan, fokus utama, instrumen yang disepakati (dokumen pengelolaan kinerja)",
+      "sumber": "Sumber belum jelas - tanya pengawas",
+      "rujukan": "Kepmendikdasmen 271/O/2025; Permendikdasmen 1/2026 (penilaian proses pembelajaran)",
+      "berkas": "11.1.a - Pertemuan Awal.docx",
+      "eksternal": false
+    },
+    {
+      "kode": "11.2.a",
+      "map": 11,
+      "bidang": "Bidang Ii. Supervisi",
+      "indikator": "11.2 Memantau pembelajaran dan membuat catatan objektif dan selektif",
+      "bukti": "Catatan hasil observasi pembelajaran yang lengkap, objektif, selektif, dan relevan (dokumen pengelolaan kinerja)",
+      "sumber": "Sumber belum jelas - tanya pengawas",
+      "rujukan": "Kepmendikdasmen 271/O/2025; Permendikdasmen 1/2026 (penilaian proses pembelajaran)",
+      "berkas": "11.2.a - Observasi.docx",
+      "eksternal": false
+    },
+    {
+      "kode": "11.3.a",
+      "map": 11,
+      "bidang": "Bidang Ii. Supervisi",
+      "indikator": "11.3 Melakukan pertemuan refleksi, menganalisis, dan menyimpulkan hasil observasi",
+      "bukti": "Catatan pelaksanaan kegiatan supervisi (dokumen pengelolaan kinerja)",
+      "sumber": "Template + Pengelolaan Kinerja",
+      "rujukan": "Kepmendikdasmen 271/O/2025; Permendikdasmen 1/2026 (penilaian proses pembelajaran)",
+      "berkas": "11.3.a - Refleksi.docx",
+      "eksternal": false
+    },
+    {
+      "kode": "11.3.b",
+      "map": 11,
+      "bidang": "Bidang Ii. Supervisi",
+      "indikator": "11.3 Melakukan pertemuan refleksi, menganalisis, dan menyimpulkan hasil observasi",
+      "bukti": "Refleksi hasil supervisi (dokumen pengelolaan kinerja)",
+      "sumber": "Template + Pengelolaan Kinerja",
+      "rujukan": "Kepmendikdasmen 271/O/2025; Permendikdasmen 1/2026 (penilaian proses pembelajaran)",
+      "berkas": "11.3.b - Refleksi Lanjut.docx",
+      "eksternal": false
+    },
+    {
+      "kode": "11.3.c",
+      "map": 11,
+      "bidang": "Bidang Ii. Supervisi",
+      "indikator": "11.3 Melakukan pertemuan refleksi, menganalisis, dan menyimpulkan hasil observasi",
+      "bukti": "Himpunan data hasil supervisi, analisis, penafsiran, keunggulan dan kelemahan, serta rekomendasi perbaikan (dokumen pengelolaan kinerja)",
+      "sumber": "Template + Pengelolaan Kinerja",
+      "rujukan": "Kepmendikdasmen 271/O/2025; Permendikdasmen 1/2026 (penilaian proses pembelajaran)",
+      "berkas": "11.3.c - Rekap Supervisi.docx",
+      "eksternal": false
+    },
+    {
+      "kode": "11.4.a",
+      "map": 11,
+      "bidang": "Bidang Ii. Supervisi",
+      "indikator": "11.4 Menyusun rekomendasi tindak lanjut: analisis butir soal, remedial, pengayaan",
+      "bukti": "Dokumen kisi-kisi",
+      "sumber": "Dari guru kelas",
+      "rujukan": "Kepmendikdasmen 271/O/2025; Permendikdasmen 1/2026 (penilaian proses pembelajaran)",
+      "berkas": "11.4.a - Kisi.docx",
+      "eksternal": false
+    },
+    {
+      "kode": "11.4.b",
+      "map": 11,
+      "bidang": "Bidang Ii. Supervisi",
+      "indikator": "11.4 Menyusun rekomendasi tindak lanjut: analisis butir soal, remedial, pengayaan",
+      "bukti": "Dokumen pemeriksaan hasil ulangan",
+      "sumber": "Dari guru kelas",
+      "rujukan": "Kepmendikdasmen 271/O/2025; Permendikdasmen 1/2026 (penilaian proses pembelajaran)",
+      "berkas": "11.4.b - Pemeriksaan.docx",
+      "eksternal": false
+    },
+    {
+      "kode": "11.4.c",
+      "map": 11,
+      "bidang": "Bidang Ii. Supervisi",
+      "indikator": "11.4 Menyusun rekomendasi tindak lanjut: analisis butir soal, remedial, pengayaan",
+      "bukti": "Dokumen penyerahan hasil belajar",
+      "sumber": "Dari guru kelas",
+      "rujukan": "Kepmendikdasmen 271/O/2025; Permendikdasmen 1/2026 (penilaian proses pembelajaran)",
+      "berkas": "11.4.c - Penyerahan.docx",
+      "eksternal": false
+    },
+    {
+      "kode": "12.1.a",
+      "map": 12,
+      "bidang": "Bidang Ii. Supervisi",
+      "indikator": "12.1 Memfasilitasi guru merencanakan tindak lanjut perbaikan sistem penilaian hasil belajar",
+      "bukti": "Data tindak lanjut pelaksanaan supervisi penilaian (dokumen pengelolaan kinerja)",
+      "sumber": "Template + Pengelolaan Kinerja",
+      "rujukan": "Kepmendikdasmen 271/O/2025; Permendikdasmen 1/2026",
+      "berkas": "12.1.a - Tindak Lanjut.docx",
+      "eksternal": false
+    },
+    {
+      "kode": "12.1.b",
+      "map": 12,
+      "bidang": "Bidang Ii. Supervisi",
+      "indikator": "12.1 Memfasilitasi guru merencanakan tindak lanjut perbaikan sistem penilaian hasil belajar",
+      "bukti": "Bukti analisis butir soal",
+      "sumber": "Dari guru kelas",
+      "rujukan": "Kepmendikdasmen 271/O/2025; Permendikdasmen 1/2026",
+      "berkas": "12.1.b - Analisis Butir.docx",
+      "eksternal": false
+    },
+    {
+      "kode": "12.1.c",
+      "map": 12,
+      "bidang": "Bidang Ii. Supervisi",
+      "indikator": "12.1 Memfasilitasi guru merencanakan tindak lanjut perbaikan sistem penilaian hasil belajar",
+      "bukti": "Dokumen kegiatan remedial dan pengayaan",
+      "sumber": "Dari guru kelas",
+      "rujukan": "Kepmendikdasmen 271/O/2025; Permendikdasmen 1/2026",
+      "berkas": "12.1.c - Remedial.docx",
+      "eksternal": false
+    },
+    {
+      "kode": "12.2.a",
+      "map": 12,
+      "bidang": "Bidang Ii. Supervisi",
+      "indikator": "12.2 Mengecek ulang keterlaksanaan rekomendasi oleh guru",
+      "bukti": "Data hasil pengecekan keterlaksanaan rekomendasi perbaikan penilaian hasil belajar secara berkala",
+      "sumber": "Template + Pengelolaan Kinerja",
+      "rujukan": "Kepmendikdasmen 271/O/2025; Permendikdasmen 1/2026",
+      "berkas": "12.2.a - Pengecekan.docx",
+      "eksternal": false
+    },
+    {
+      "kode": "12.3.a",
+      "map": 12,
+      "bidang": "Bidang Ii. Supervisi",
+      "indikator": "12.3 Melaksanakan pembinaan dan pengembangan guru sebagai tindak lanjut supervisi",
+      "bukti": "Catatan atau laporan tindak lanjut supervisi sebagai dasar pembinaan guru (dokumen pengelolaan kinerja)",
+      "sumber": "Template + Pengelolaan Kinerja",
+      "rujukan": "Kepmendikdasmen 271/O/2025; Permendikdasmen 1/2026",
+      "berkas": "12.3.a - Pembinaan.docx",
+      "eksternal": false
+    },
+    {
+      "kode": "12.4.a",
+      "map": 12,
+      "bidang": "Bidang Ii. Supervisi",
+      "indikator": "12.4 Menggunakan data supervisi untuk pemetaan program dan perbaikan siklus berikutnya",
+      "bukti": "Data hasil supervisi untuk perbaikan program siklus berikutnya (hasil PKG, SKP)",
+      "sumber": "Template (sesuaikan data sekolah)",
+      "rujukan": "Kepmendikdasmen 271/O/2025; Permendikdasmen 1/2026",
+      "berkas": "12.4.a - Rekap Master.docx",
+      "eksternal": false
+    }
+  ],
+  "foto": {
+    "kategori": [
+      {
+        "id": "rapat",
+        "nama": "Rapat, musyawarah & penetapan",
+        "ringkas": "Rapat evaluasi program dan pertemuan penetapan yang dokumennya meminta foto.",
+        "jumlah": 2,
+        "wajib": 2
+      },
+      {
+        "id": "supervisi",
+        "nama": "Supervisi, observasi & pembinaan guru",
+        "ringkas": "Kategori referensi PKKS. Tidak ada butir yang meminta foto observasi kelas: buktinya berupa catatan dan instrumen tertulis.",
+        "jumlah": 0,
+        "wajib": 0
+      },
+      {
+        "id": "profesi",
+        "nama": "Pelatihan, KKG & pengembangan profesi",
+        "ringkas": "Pembinaan guru, PTK, diseminasi, dan gelar karya best practice.",
+        "jumlah": 3,
+        "wajib": 3
+      },
+      {
+        "id": "pembelajaran",
+        "nama": "Pembelajaran, asesmen & remedial",
+        "ringkas": "Media ajar, alat peraga, dan bukti pembelajaran berwujud visual.",
+        "jumlah": 2,
+        "wajib": 1
+      },
+      {
+        "id": "murid",
+        "nama": "Kegiatan murid & karakter",
+        "ringkas": "Peringatan hari besar nasional, lomba, dan kegiatan kesiswaan.",
+        "jumlah": 1,
+        "wajib": 1
+      },
+      {
+        "id": "prestasi",
+        "nama": "Lomba, prestasi & gelar karya",
+        "ringkas": "Kompetisi, piagam, piala, tropi, dan pameran karya murid.",
+        "jumlah": 4,
+        "wajib": 2
+      },
+      {
+        "id": "lingkungan",
+        "nama": "Lingkungan, sarana & literasi",
+        "ringkas": "Kondisi riil lingkungan asri, sanitasi, taman, pojok baca, dan papan display.",
+        "jumlah": 4,
+        "wajib": 2
+      },
+      {
+        "id": "administrasi",
+        "nama": "Bukti digital & administrasi",
+        "ringkas": "Kategori referensi. Bukti berupa tangkapan layar ARKAS/PMM, bukan foto kegiatan, sehingga tidak dihitung wajib foto.",
+        "jumlah": 0,
+        "wajib": 0
+      }
+    ],
+    "butir": {
+      "1.1.a": {
+        "t": "tidak",
+        "k": [],
+        "alasan": "Teks berkas .docx pada butir ini tidak memuat kata “foto”, “foto dokumentasi”, “foto bersama”, “foto kegiatan”, “cetak foto”, maupun “foto media ajar”. Bukti fisiknya berupa naskah tertulis (SK, rencana, data, instrumen, daftar hadir, notulen, atau berita acara) yang keabsahannya dibuktikan oleh dokumen itu sendiri, bukan oleh foto kegiatan.",
+        "bidikan": [],
+        "dasar": "Tidak ditemukan permintaan foto pada teks word/document.xml berkas ini."
+      },
+      "1.1.b": {
+        "t": "tidak",
+        "k": [],
+        "alasan": "Teks berkas .docx pada butir ini tidak memuat kata “foto”, “foto dokumentasi”, “foto bersama”, “foto kegiatan”, “cetak foto”, maupun “foto media ajar”. Bukti fisiknya berupa naskah tertulis (SK, rencana, data, instrumen, daftar hadir, notulen, atau berita acara) yang keabsahannya dibuktikan oleh dokumen itu sendiri, bukan oleh foto kegiatan.",
+        "bidikan": [],
+        "dasar": "Tidak ditemukan permintaan foto pada teks word/document.xml berkas ini."
+      },
+      "1.1.c": {
+        "t": "tidak",
+        "k": [],
+        "alasan": "Teks berkas .docx pada butir ini tidak memuat kata “foto”, “foto dokumentasi”, “foto bersama”, “foto kegiatan”, “cetak foto”, maupun “foto media ajar”. Bukti fisiknya berupa naskah tertulis (SK, rencana, data, instrumen, daftar hadir, notulen, atau berita acara) yang keabsahannya dibuktikan oleh dokumen itu sendiri, bukan oleh foto kegiatan.",
+        "bidikan": [],
+        "dasar": "Tidak ditemukan permintaan foto pada teks word/document.xml berkas ini."
+      },
+      "1.1.d": {
+        "t": "tidak",
+        "k": [],
+        "alasan": "Teks berkas .docx pada butir ini tidak memuat kata “foto”, “foto dokumentasi”, “foto bersama”, “foto kegiatan”, “cetak foto”, maupun “foto media ajar”. Bukti fisiknya berupa naskah tertulis (SK, rencana, data, instrumen, daftar hadir, notulen, atau berita acara) yang keabsahannya dibuktikan oleh dokumen itu sendiri, bukan oleh foto kegiatan.",
+        "bidikan": [],
+        "dasar": "Tidak ditemukan permintaan foto pada teks word/document.xml berkas ini."
+      },
+      "1.2.a": {
+        "t": "tidak",
+        "k": [],
+        "alasan": "Teks berkas .docx pada butir ini tidak memuat kata “foto”, “foto dokumentasi”, “foto bersama”, “foto kegiatan”, “cetak foto”, maupun “foto media ajar”. Bukti fisiknya berupa naskah tertulis (SK, rencana, data, instrumen, daftar hadir, notulen, atau berita acara) yang keabsahannya dibuktikan oleh dokumen itu sendiri, bukan oleh foto kegiatan.",
+        "bidikan": [],
+        "dasar": "Tidak ditemukan permintaan foto pada teks word/document.xml berkas ini."
+      },
+      "1.2.b": {
+        "t": "tidak",
+        "k": [],
+        "alasan": "Teks berkas .docx pada butir ini tidak memuat kata “foto”, “foto dokumentasi”, “foto bersama”, “foto kegiatan”, “cetak foto”, maupun “foto media ajar”. Bukti fisiknya berupa naskah tertulis (SK, rencana, data, instrumen, daftar hadir, notulen, atau berita acara) yang keabsahannya dibuktikan oleh dokumen itu sendiri, bukan oleh foto kegiatan.",
+        "bidikan": [],
+        "dasar": "Tidak ditemukan permintaan foto pada teks word/document.xml berkas ini."
+      },
+      "1.2.c": {
+        "t": "tidak",
+        "k": [],
+        "alasan": "Surat keputusan tim penyusun visi-misi. Teks berkas hanya memuat SK, rapat, daftar hadir, notulen, dan berita acara; tidak ada kata “foto” maupun “tangkapan layar”. Foto rapat BUKAN syarat butir ini.",
+        "bidikan": [],
+        "dasar": "Tidak ditemukan permintaan foto pada teks word/document.xml berkas ini."
+      },
+      "1.2.d": {
+        "t": "tidak",
+        "k": [],
+        "alasan": "Daftar hadir dan berita acara penetapan visi-misi. Pembuktiannya adalah naskah tertulis dan tanda tangan peserta, bukan foto kegiatan.",
+        "bidikan": [],
+        "dasar": "Tidak ditemukan permintaan foto pada teks word/document.xml berkas ini."
+      },
+      "1.3.a": {
+        "t": "tidak",
+        "k": [],
+        "alasan": "Teks berkas .docx pada butir ini tidak memuat kata “foto”, “foto dokumentasi”, “foto bersama”, “foto kegiatan”, “cetak foto”, maupun “foto media ajar”. Bukti fisiknya berupa naskah tertulis (SK, rencana, data, instrumen, daftar hadir, notulen, atau berita acara) yang keabsahannya dibuktikan oleh dokumen itu sendiri, bukan oleh foto kegiatan.",
+        "bidikan": [],
+        "dasar": "Tidak ditemukan permintaan foto pada teks word/document.xml berkas ini."
+      },
+      "1.3.b": {
+        "t": "tidak",
+        "k": [],
+        "alasan": "Teks berkas .docx pada butir ini tidak memuat kata “foto”, “foto dokumentasi”, “foto bersama”, “foto kegiatan”, “cetak foto”, maupun “foto media ajar”. Bukti fisiknya berupa naskah tertulis (SK, rencana, data, instrumen, daftar hadir, notulen, atau berita acara) yang keabsahannya dibuktikan oleh dokumen itu sendiri, bukan oleh foto kegiatan.",
+        "bidikan": [],
+        "dasar": "Tidak ditemukan permintaan foto pada teks word/document.xml berkas ini."
+      },
+      "1.4.a": {
+        "t": "wajib",
+        "k": [
+          "rapat"
+        ],
+        "alasan": "Berkas 1.4.a menyebut foto sebagai salah satu bukti proses evaluasi program.",
+        "bidikan": [
+          "Foto dokumentasi pelaksanaan program"
+        ],
+        "dasar": "Teks dokumen: “Daftar hadir, jurnal kegiatan, foto dokumentasi, notulen.”"
+      },
+      "1.4.b": {
+        "t": "tidak",
+        "k": [],
+        "alasan": "Teks berkas .docx pada butir ini tidak memuat kata “foto”, “foto dokumentasi”, “foto bersama”, “foto kegiatan”, “cetak foto”, maupun “foto media ajar”. Bukti fisiknya berupa naskah tertulis (SK, rencana, data, instrumen, daftar hadir, notulen, atau berita acara) yang keabsahannya dibuktikan oleh dokumen itu sendiri, bukan oleh foto kegiatan.",
+        "bidikan": [],
+        "dasar": "Tidak ditemukan permintaan foto pada teks word/document.xml berkas ini."
+      },
+      "2.1.a": {
+        "t": "tidak",
+        "k": [],
+        "alasan": "Teks berkas .docx pada butir ini tidak memuat kata “foto”, “foto dokumentasi”, “foto bersama”, “foto kegiatan”, “cetak foto”, maupun “foto media ajar”. Bukti fisiknya berupa naskah tertulis (SK, rencana, data, instrumen, daftar hadir, notulen, atau berita acara) yang keabsahannya dibuktikan oleh dokumen itu sendiri, bukan oleh foto kegiatan.",
+        "bidikan": [],
+        "dasar": "Tidak ditemukan permintaan foto pada teks word/document.xml berkas ini."
+      },
+      "2.1.b": {
+        "t": "tidak",
+        "k": [],
+        "alasan": "Teks berkas .docx pada butir ini tidak memuat kata “foto”, “foto dokumentasi”, “foto bersama”, “foto kegiatan”, “cetak foto”, maupun “foto media ajar”. Bukti fisiknya berupa naskah tertulis (SK, rencana, data, instrumen, daftar hadir, notulen, atau berita acara) yang keabsahannya dibuktikan oleh dokumen itu sendiri, bukan oleh foto kegiatan.",
+        "bidikan": [],
+        "dasar": "Tidak ditemukan permintaan foto pada teks word/document.xml berkas ini."
+      },
+      "2.2.a": {
+        "t": "tidak",
+        "k": [],
+        "alasan": "Teks berkas .docx pada butir ini tidak memuat kata “foto”, “foto dokumentasi”, “foto bersama”, “foto kegiatan”, “cetak foto”, maupun “foto media ajar”. Bukti fisiknya berupa naskah tertulis (SK, rencana, data, instrumen, daftar hadir, notulen, atau berita acara) yang keabsahannya dibuktikan oleh dokumen itu sendiri, bukan oleh foto kegiatan.",
+        "bidikan": [],
+        "dasar": "Tidak ditemukan permintaan foto pada teks word/document.xml berkas ini."
+      },
+      "2.2.b": {
+        "t": "tidak",
+        "k": [],
+        "alasan": "Teks berkas .docx pada butir ini tidak memuat kata “foto”, “foto dokumentasi”, “foto bersama”, “foto kegiatan”, “cetak foto”, maupun “foto media ajar”. Bukti fisiknya berupa naskah tertulis (SK, rencana, data, instrumen, daftar hadir, notulen, atau berita acara) yang keabsahannya dibuktikan oleh dokumen itu sendiri, bukan oleh foto kegiatan.",
+        "bidikan": [],
+        "dasar": "Tidak ditemukan permintaan foto pada teks word/document.xml berkas ini."
+      },
+      "2.3.a": {
+        "t": "tidak",
+        "k": [],
+        "alasan": "Teks berkas .docx pada butir ini tidak memuat kata “foto”, “foto dokumentasi”, “foto bersama”, “foto kegiatan”, “cetak foto”, maupun “foto media ajar”. Bukti fisiknya berupa naskah tertulis (SK, rencana, data, instrumen, daftar hadir, notulen, atau berita acara) yang keabsahannya dibuktikan oleh dokumen itu sendiri, bukan oleh foto kegiatan.",
+        "bidikan": [],
+        "dasar": "Tidak ditemukan permintaan foto pada teks word/document.xml berkas ini."
+      },
+      "2.3.b": {
+        "t": "tidak",
+        "k": [],
+        "alasan": "Teks berkas .docx pada butir ini tidak memuat kata “foto”, “foto dokumentasi”, “foto bersama”, “foto kegiatan”, “cetak foto”, maupun “foto media ajar”. Bukti fisiknya berupa naskah tertulis (SK, rencana, data, instrumen, daftar hadir, notulen, atau berita acara) yang keabsahannya dibuktikan oleh dokumen itu sendiri, bukan oleh foto kegiatan.",
+        "bidikan": [],
+        "dasar": "Tidak ditemukan permintaan foto pada teks word/document.xml berkas ini."
+      },
+      "2.3.c": {
+        "t": "tidak",
+        "k": [],
+        "alasan": "Teks berkas .docx pada butir ini tidak memuat kata “foto”, “foto dokumentasi”, “foto bersama”, “foto kegiatan”, “cetak foto”, maupun “foto media ajar”. Bukti fisiknya berupa naskah tertulis (SK, rencana, data, instrumen, daftar hadir, notulen, atau berita acara) yang keabsahannya dibuktikan oleh dokumen itu sendiri, bukan oleh foto kegiatan.",
+        "bidikan": [],
+        "dasar": "Tidak ditemukan permintaan foto pada teks word/document.xml berkas ini."
+      },
+      "2.3.d": {
+        "t": "tidak",
+        "k": [],
+        "alasan": "Teks berkas .docx pada butir ini tidak memuat kata “foto”, “foto dokumentasi”, “foto bersama”, “foto kegiatan”, “cetak foto”, maupun “foto media ajar”. Bukti fisiknya berupa naskah tertulis (SK, rencana, data, instrumen, daftar hadir, notulen, atau berita acara) yang keabsahannya dibuktikan oleh dokumen itu sendiri, bukan oleh foto kegiatan.",
+        "bidikan": [],
+        "dasar": "Tidak ditemukan permintaan foto pada teks word/document.xml berkas ini."
+      },
+      "2.4.a": {
+        "t": "tidak",
+        "k": [],
+        "alasan": "Teks berkas .docx pada butir ini tidak memuat kata “foto”, “foto dokumentasi”, “foto bersama”, “foto kegiatan”, “cetak foto”, maupun “foto media ajar”. Bukti fisiknya berupa naskah tertulis (SK, rencana, data, instrumen, daftar hadir, notulen, atau berita acara) yang keabsahannya dibuktikan oleh dokumen itu sendiri, bukan oleh foto kegiatan.",
+        "bidikan": [],
+        "dasar": "Tidak ditemukan permintaan foto pada teks word/document.xml berkas ini."
+      },
+      "2.4.b": {
+        "t": "tidak",
+        "k": [],
+        "alasan": "Dokumen supervisi. Sebutan “observasi” dan “kunjungan kelas” di dalam naskah bukan permintaan foto; buktinya berupa instrumen dan catatan supervisi.",
+        "bidikan": [],
+        "dasar": "Tidak ditemukan permintaan foto pada teks word/document.xml berkas ini."
+      },
+      "2.4.c": {
+        "t": "tidak",
+        "k": [],
+        "alasan": "Dokumen tindak lanjut supervisi. Tidak ada permintaan foto di dalam berkas; buktinya berupa catatan perbaikan tertulis.",
+        "bidikan": [],
+        "dasar": "Tidak ditemukan permintaan foto pada teks word/document.xml berkas ini."
+      },
+      "3.1.a": {
+        "t": "tidak",
+        "k": [],
+        "alasan": "Teks berkas .docx pada butir ini tidak memuat kata “foto”, “foto dokumentasi”, “foto bersama”, “foto kegiatan”, “cetak foto”, maupun “foto media ajar”. Bukti fisiknya berupa naskah tertulis (SK, rencana, data, instrumen, daftar hadir, notulen, atau berita acara) yang keabsahannya dibuktikan oleh dokumen itu sendiri, bukan oleh foto kegiatan.",
+        "bidikan": [],
+        "dasar": "Tidak ditemukan permintaan foto pada teks word/document.xml berkas ini."
+      },
+      "3.2.a": {
+        "t": "tidak",
+        "k": [],
+        "alasan": "Teks berkas .docx pada butir ini tidak memuat kata “foto”, “foto dokumentasi”, “foto bersama”, “foto kegiatan”, “cetak foto”, maupun “foto media ajar”. Bukti fisiknya berupa naskah tertulis (SK, rencana, data, instrumen, daftar hadir, notulen, atau berita acara) yang keabsahannya dibuktikan oleh dokumen itu sendiri, bukan oleh foto kegiatan.",
+        "bidikan": [],
+        "dasar": "Tidak ditemukan permintaan foto pada teks word/document.xml berkas ini."
+      },
+      "3.2.b": {
+        "t": "tidak",
+        "k": [],
+        "alasan": "Teks berkas .docx pada butir ini tidak memuat kata “foto”, “foto dokumentasi”, “foto bersama”, “foto kegiatan”, “cetak foto”, maupun “foto media ajar”. Bukti fisiknya berupa naskah tertulis (SK, rencana, data, instrumen, daftar hadir, notulen, atau berita acara) yang keabsahannya dibuktikan oleh dokumen itu sendiri, bukan oleh foto kegiatan.",
+        "bidikan": [],
+        "dasar": "Tidak ditemukan permintaan foto pada teks word/document.xml berkas ini."
+      },
+      "3.2.c": {
+        "t": "tidak",
+        "k": [],
+        "alasan": "Teks berkas .docx pada butir ini tidak memuat kata “foto”, “foto dokumentasi”, “foto bersama”, “foto kegiatan”, “cetak foto”, maupun “foto media ajar”. Bukti fisiknya berupa naskah tertulis (SK, rencana, data, instrumen, daftar hadir, notulen, atau berita acara) yang keabsahannya dibuktikan oleh dokumen itu sendiri, bukan oleh foto kegiatan.",
+        "bidikan": [],
+        "dasar": "Tidak ditemukan permintaan foto pada teks word/document.xml berkas ini."
+      },
+      "3.3.a": {
+        "t": "tidak",
+        "k": [],
+        "alasan": "Teks berkas .docx pada butir ini tidak memuat kata “foto”, “foto dokumentasi”, “foto bersama”, “foto kegiatan”, “cetak foto”, maupun “foto media ajar”. Bukti fisiknya berupa naskah tertulis (SK, rencana, data, instrumen, daftar hadir, notulen, atau berita acara) yang keabsahannya dibuktikan oleh dokumen itu sendiri, bukan oleh foto kegiatan.",
+        "bidikan": [],
+        "dasar": "Tidak ditemukan permintaan foto pada teks word/document.xml berkas ini."
+      },
+      "3.3.b": {
+        "t": "tidak",
+        "k": [],
+        "alasan": "Teks berkas .docx pada butir ini tidak memuat kata “foto”, “foto dokumentasi”, “foto bersama”, “foto kegiatan”, “cetak foto”, maupun “foto media ajar”. Bukti fisiknya berupa naskah tertulis (SK, rencana, data, instrumen, daftar hadir, notulen, atau berita acara) yang keabsahannya dibuktikan oleh dokumen itu sendiri, bukan oleh foto kegiatan.",
+        "bidikan": [],
+        "dasar": "Tidak ditemukan permintaan foto pada teks word/document.xml berkas ini."
+      },
+      "3.3.c": {
+        "t": "tidak",
+        "k": [],
+        "alasan": "Teks berkas .docx pada butir ini tidak memuat kata “foto”, “foto dokumentasi”, “foto bersama”, “foto kegiatan”, “cetak foto”, maupun “foto media ajar”. Bukti fisiknya berupa naskah tertulis (SK, rencana, data, instrumen, daftar hadir, notulen, atau berita acara) yang keabsahannya dibuktikan oleh dokumen itu sendiri, bukan oleh foto kegiatan.",
+        "bidikan": [],
+        "dasar": "Tidak ditemukan permintaan foto pada teks word/document.xml berkas ini."
+      },
+      "3.4.a": {
+        "t": "tidak",
+        "k": [],
+        "alasan": "Dokumen prestasi sekolah berbentuk rekapitulasi dan draf piagam internal. Foto fisik bukan bukti yang diminta pada butir ini.",
+        "bidikan": [],
+        "dasar": "Tidak ditemukan permintaan foto pada teks word/document.xml berkas ini."
+      },
+      "3.4.b": {
+        "t": "tidak",
+        "k": [],
+        "alasan": "Dokumen prestasi guru berbentuk rekapitulasi dan draf piagam internal. Tidak ada permintaan foto.",
+        "bidikan": [],
+        "dasar": "Tidak ditemukan permintaan foto pada teks word/document.xml berkas ini."
+      },
+      "3.4.c": {
+        "t": "tidak",
+        "k": [],
+        "alasan": "Dokumen prestasi murid berbentuk rekapitulasi dan draf piagam internal. Tidak ada permintaan foto.",
+        "bidikan": [],
+        "dasar": "Tidak ditemukan permintaan foto pada teks word/document.xml berkas ini."
+      },
+      "4.1.a": {
+        "t": "tidak",
+        "k": [],
+        "alasan": "Teks berkas .docx pada butir ini tidak memuat kata “foto”, “foto dokumentasi”, “foto bersama”, “foto kegiatan”, “cetak foto”, maupun “foto media ajar”. Bukti fisiknya berupa naskah tertulis (SK, rencana, data, instrumen, daftar hadir, notulen, atau berita acara) yang keabsahannya dibuktikan oleh dokumen itu sendiri, bukan oleh foto kegiatan.",
+        "bidikan": [],
+        "dasar": "Tidak ditemukan permintaan foto pada teks word/document.xml berkas ini."
+      },
+      "4.1.b": {
+        "t": "tidak",
+        "k": [],
+        "alasan": "Teks berkas .docx pada butir ini tidak memuat kata “foto”, “foto dokumentasi”, “foto bersama”, “foto kegiatan”, “cetak foto”, maupun “foto media ajar”. Bukti fisiknya berupa naskah tertulis (SK, rencana, data, instrumen, daftar hadir, notulen, atau berita acara) yang keabsahannya dibuktikan oleh dokumen itu sendiri, bukan oleh foto kegiatan.",
+        "bidikan": [],
+        "dasar": "Tidak ditemukan permintaan foto pada teks word/document.xml berkas ini."
+      },
+      "4.1.c": {
+        "t": "tidak",
+        "k": [],
+        "alasan": "Teks berkas .docx pada butir ini tidak memuat kata “foto”, “foto dokumentasi”, “foto bersama”, “foto kegiatan”, “cetak foto”, maupun “foto media ajar”. Bukti fisiknya berupa naskah tertulis (SK, rencana, data, instrumen, daftar hadir, notulen, atau berita acara) yang keabsahannya dibuktikan oleh dokumen itu sendiri, bukan oleh foto kegiatan.",
+        "bidikan": [],
+        "dasar": "Tidak ditemukan permintaan foto pada teks word/document.xml berkas ini."
+      },
+      "4.2.a": {
+        "t": "wajib",
+        "k": [
+          "lingkungan"
+        ],
+        "alasan": "Bukti fisiknya adalah kondisi riil saat PKKS dan berkas 4.2.a memuat 11 instruksi foto yang dirinci per aspek.",
+        "bidikan": [
+          "Foto taman & pot kelas",
+          "Foto fasad sekolah & plang ruangan",
+          "Foto sanitasi",
+          "Foto sarana sampah pilah",
+          "Foto wastafel CTPS & poster edukasi cuci tangan",
+          "Foto area teduh",
+          "Foto APAR & titik kumpul",
+          "Foto Gazebo Baca & Pojok Baca Kelas",
+          "Foto Mural Edukasi & Papan Display Karya",
+          "Foto penyambutan pagi",
+          "Foto Lapangan"
+        ],
+        "dasar": "Teks dokumen: “Foto taman & pot kelas, Denah Green Zone. … Foto fasad sekolah & plang ruangan. … Jadwal pembersihan toilet, Foto sanitasi.” (11 sebutan foto)."
+      },
+      "4.2.b": {
+        "t": "wajib",
+        "k": [
+          "lingkungan",
+          "prestasi"
+        ],
+        "alasan": "Bukti fisiknya adalah sarana pameran karya; berkas 4.2.b memuat 7 instruksi foto yang dirinci per sudut.",
+        "bidikan": [
+          "Foto Pojok Baca Kelas",
+          "Foto Gazebo Literasi Outdoor",
+          "Foto Papan Display Dalam Kelas",
+          "Foto Galeri P5",
+          "Foto Mading Utama",
+          "Foto Poster Kampanye Edukatif di Dinding/Selasar",
+          "Foto Papan Informasi Utama Kantor/Selasar Utama"
+        ],
+        "dasar": "Teks dokumen: “Foto Pojok Baca Kelas, Jurnal Pembiasaan Membaca. … Foto Gazebo Literasi Outdoor, Daftar Buku Taman.” (7 sebutan foto)."
+      },
+      "4.3.a": {
+        "t": "tidak",
+        "k": [],
+        "alasan": "Data kunjungan, peminjaman, dan pembaruan buku perpustakaan. Bukti berupa data dan jurnal tertulis; kondisi ruang dibuktikan terpisah lewat butir 4.2.b.",
+        "bidikan": [],
+        "dasar": "Tidak ditemukan permintaan foto pada teks word/document.xml berkas ini."
+      },
+      "4.3.b": {
+        "t": "pendukung",
+        "k": [
+          "prestasi",
+          "lingkungan"
+        ],
+        "alasan": "Bukti fisik pada Checklist berwujud sarana publikasi (mading/papan karya). Dokumen tidak meminta foto; foto benda ini bersifat pelengkap.",
+        "bidikan": [
+          "Foto papan publikasi karya tulis / mading sekolah"
+        ],
+        "dasar": "Bukti fisik Checklist: “Sarana publikasi karya tulis dan kompetisi karya tulis tingkat sekolah”. Teks dokumen menyebut “piala, piagam & dimuat di mading/web”, tanpa kata foto."
+      },
+      "4.4.a": {
+        "t": "tidak",
+        "k": [],
+        "alasan": "Teks berkas .docx pada butir ini tidak memuat kata “foto”, “foto dokumentasi”, “foto bersama”, “foto kegiatan”, “cetak foto”, maupun “foto media ajar”. Bukti fisiknya berupa naskah tertulis (SK, rencana, data, instrumen, daftar hadir, notulen, atau berita acara) yang keabsahannya dibuktikan oleh dokumen itu sendiri, bukan oleh foto kegiatan.",
+        "bidikan": [],
+        "dasar": "Tidak ditemukan permintaan foto pada teks word/document.xml berkas ini."
+      },
+      "4.4.b": {
+        "t": "pendukung",
+        "k": [
+          "prestasi"
+        ],
+        "alasan": "Bukti fisik pada Checklist adalah benda (piagam, piala, tropi), bukan naskah. Dokumen hanya meminta rekapitulasi tertulis, sehingga foto etalase opsional.",
+        "bidikan": [
+          "Foto etalase piagam, piala, dan tropi"
+        ],
+        "dasar": "Bukti fisik Checklist: “Piagam, piala, dan tropi lomba bidang akademik dan non akademik”. Teks dokumen memuat “dokumen rekapitulasi perolehan piagam, piala, dan tropi”, tanpa kata foto."
+      },
+      "5.1.a": {
+        "t": "tidak",
+        "k": [],
+        "alasan": "Teks berkas .docx pada butir ini tidak memuat kata “foto”, “foto dokumentasi”, “foto bersama”, “foto kegiatan”, “cetak foto”, maupun “foto media ajar”. Bukti fisiknya berupa naskah tertulis (SK, rencana, data, instrumen, daftar hadir, notulen, atau berita acara) yang keabsahannya dibuktikan oleh dokumen itu sendiri, bukan oleh foto kegiatan.",
+        "bidikan": [],
+        "dasar": "Tidak ditemukan permintaan foto pada teks word/document.xml berkas ini."
+      },
+      "5.1.b": {
+        "t": "tidak",
+        "k": [],
+        "alasan": "Teks berkas .docx pada butir ini tidak memuat kata “foto”, “foto dokumentasi”, “foto bersama”, “foto kegiatan”, “cetak foto”, maupun “foto media ajar”. Bukti fisiknya berupa naskah tertulis (SK, rencana, data, instrumen, daftar hadir, notulen, atau berita acara) yang keabsahannya dibuktikan oleh dokumen itu sendiri, bukan oleh foto kegiatan.",
+        "bidikan": [],
+        "dasar": "Tidak ditemukan permintaan foto pada teks word/document.xml berkas ini."
+      },
+      "5.1.c": {
+        "t": "tidak",
+        "k": [],
+        "alasan": "Teks berkas .docx pada butir ini tidak memuat kata “foto”, “foto dokumentasi”, “foto bersama”, “foto kegiatan”, “cetak foto”, maupun “foto media ajar”. Bukti fisiknya berupa naskah tertulis (SK, rencana, data, instrumen, daftar hadir, notulen, atau berita acara) yang keabsahannya dibuktikan oleh dokumen itu sendiri, bukan oleh foto kegiatan.",
+        "bidikan": [],
+        "dasar": "Tidak ditemukan permintaan foto pada teks word/document.xml berkas ini."
+      },
+      "5.2.a": {
+        "t": "wajib",
+        "k": [
+          "profesi",
+          "rapat"
+        ],
+        "alasan": "Agenda pembinaan guru pada berkas 5.2.a ditutup dengan foto bersama; ini permintaan foto eksplisit.",
+        "bidikan": [
+          "Foto bersama peserta pembinaan guru"
+        ],
+        "dasar": "Teks dokumen: “Perumusan Kesepakatan & Rencana Tindak Lanjut (RTL) Penutup & Foto Bersama”."
+      },
+      "5.2.b": {
+        "t": "tidak",
+        "k": [],
+        "alasan": "Teks berkas .docx pada butir ini tidak memuat kata “foto”, “foto dokumentasi”, “foto bersama”, “foto kegiatan”, “cetak foto”, maupun “foto media ajar”. Bukti fisiknya berupa naskah tertulis (SK, rencana, data, instrumen, daftar hadir, notulen, atau berita acara) yang keabsahannya dibuktikan oleh dokumen itu sendiri, bukan oleh foto kegiatan.",
+        "bidikan": [],
+        "dasar": "Tidak ditemukan permintaan foto pada teks word/document.xml berkas ini."
+      },
+      "5.2.c": {
+        "t": "tidak",
+        "k": [],
+        "alasan": "Teks berkas .docx pada butir ini tidak memuat kata “foto”, “foto dokumentasi”, “foto bersama”, “foto kegiatan”, “cetak foto”, maupun “foto media ajar”. Bukti fisiknya berupa naskah tertulis (SK, rencana, data, instrumen, daftar hadir, notulen, atau berita acara) yang keabsahannya dibuktikan oleh dokumen itu sendiri, bukan oleh foto kegiatan.",
+        "bidikan": [],
+        "dasar": "Tidak ditemukan permintaan foto pada teks word/document.xml berkas ini."
+      },
+      "5.2.d": {
+        "t": "tidak",
+        "k": [],
+        "alasan": "Teks berkas .docx pada butir ini tidak memuat kata “foto”, “foto dokumentasi”, “foto bersama”, “foto kegiatan”, “cetak foto”, maupun “foto media ajar”. Bukti fisiknya berupa naskah tertulis (SK, rencana, data, instrumen, daftar hadir, notulen, atau berita acara) yang keabsahannya dibuktikan oleh dokumen itu sendiri, bukan oleh foto kegiatan.",
+        "bidikan": [],
+        "dasar": "Tidak ditemukan permintaan foto pada teks word/document.xml berkas ini."
+      },
+      "5.3.a": {
+        "t": "tidak",
+        "k": [],
+        "alasan": "Bukti yang diminta adalah “Sertifikat, tangkapan layar” sistem, bukan foto kegiatan.",
+        "bidikan": [],
+        "dasar": "Tidak ditemukan permintaan foto pada teks word/document.xml berkas ini."
+      },
+      "5.3.b": {
+        "t": "wajib",
+        "k": [
+          "profesi"
+        ],
+        "alasan": "Berkas 5.3.b mencantumkan posisi anggaran untuk cetak foto dan mensyaratkan laporan PTK dengan bukti siklus serta dokumentasi.",
+        "bidikan": [
+          "Dokumentasi foto siklus PTK di kelas untuk laporan"
+        ],
+        "dasar": "Teks dokumen: “3 Dokumentasi Cetak foto dan penjilidan laporan 5 laporan” dan “Empat laporan PTK dengan bukti siklus, instrumen, dan dokumentasi”."
+      },
+      "5.4.a": {
+        "t": "tidak",
+        "k": [],
+        "alasan": "Teks berkas .docx pada butir ini tidak memuat kata “foto”, “foto dokumentasi”, “foto bersama”, “foto kegiatan”, “cetak foto”, maupun “foto media ajar”. Bukti fisiknya berupa naskah tertulis (SK, rencana, data, instrumen, daftar hadir, notulen, atau berita acara) yang keabsahannya dibuktikan oleh dokumen itu sendiri, bukan oleh foto kegiatan.",
+        "bidikan": [],
+        "dasar": "Tidak ditemukan permintaan foto pada teks word/document.xml berkas ini."
+      },
+      "5.4.b": {
+        "t": "tidak",
+        "k": [],
+        "alasan": "Teks berkas .docx pada butir ini tidak memuat kata “foto”, “foto dokumentasi”, “foto bersama”, “foto kegiatan”, “cetak foto”, maupun “foto media ajar”. Bukti fisiknya berupa naskah tertulis (SK, rencana, data, instrumen, daftar hadir, notulen, atau berita acara) yang keabsahannya dibuktikan oleh dokumen itu sendiri, bukan oleh foto kegiatan.",
+        "bidikan": [],
+        "dasar": "Tidak ditemukan permintaan foto pada teks word/document.xml berkas ini."
+      },
+      "6.1.a": {
+        "t": "tidak",
+        "k": [],
+        "alasan": "Teks berkas .docx pada butir ini tidak memuat kata “foto”, “foto dokumentasi”, “foto bersama”, “foto kegiatan”, “cetak foto”, maupun “foto media ajar”. Bukti fisiknya berupa naskah tertulis (SK, rencana, data, instrumen, daftar hadir, notulen, atau berita acara) yang keabsahannya dibuktikan oleh dokumen itu sendiri, bukan oleh foto kegiatan.",
+        "bidikan": [],
+        "dasar": "Tidak ditemukan permintaan foto pada teks word/document.xml berkas ini."
+      },
+      "6.1.b": {
+        "t": "tidak",
+        "k": [],
+        "alasan": "Teks berkas .docx pada butir ini tidak memuat kata “foto”, “foto dokumentasi”, “foto bersama”, “foto kegiatan”, “cetak foto”, maupun “foto media ajar”. Bukti fisiknya berupa naskah tertulis (SK, rencana, data, instrumen, daftar hadir, notulen, atau berita acara) yang keabsahannya dibuktikan oleh dokumen itu sendiri, bukan oleh foto kegiatan.",
+        "bidikan": [],
+        "dasar": "Tidak ditemukan permintaan foto pada teks word/document.xml berkas ini."
+      },
+      "6.1.c": {
+        "t": "tidak",
+        "k": [],
+        "alasan": "Data hasil analisis bekal ajar awal dan inventaris buku sumber. Bukti berupa data tertulis; kata “gambar” di dalamnya bukan permintaan foto.",
+        "bidikan": [],
+        "dasar": "Tidak ditemukan permintaan foto pada teks word/document.xml berkas ini."
+      },
+      "6.1.d": {
+        "t": "tidak",
+        "k": [],
+        "alasan": "Teks berkas .docx pada butir ini tidak memuat kata “foto”, “foto dokumentasi”, “foto bersama”, “foto kegiatan”, “cetak foto”, maupun “foto media ajar”. Bukti fisiknya berupa naskah tertulis (SK, rencana, data, instrumen, daftar hadir, notulen, atau berita acara) yang keabsahannya dibuktikan oleh dokumen itu sendiri, bukan oleh foto kegiatan.",
+        "bidikan": [],
+        "dasar": "Tidak ditemukan permintaan foto pada teks word/document.xml berkas ini."
+      },
+      "6.2.a": {
+        "t": "tidak",
+        "k": [],
+        "alasan": "Teks berkas .docx pada butir ini tidak memuat kata “foto”, “foto dokumentasi”, “foto bersama”, “foto kegiatan”, “cetak foto”, maupun “foto media ajar”. Bukti fisiknya berupa naskah tertulis (SK, rencana, data, instrumen, daftar hadir, notulen, atau berita acara) yang keabsahannya dibuktikan oleh dokumen itu sendiri, bukan oleh foto kegiatan.",
+        "bidikan": [],
+        "dasar": "Tidak ditemukan permintaan foto pada teks word/document.xml berkas ini."
+      },
+      "6.3.a": {
+        "t": "tidak",
+        "k": [],
+        "alasan": "Teks berkas .docx pada butir ini tidak memuat kata “foto”, “foto dokumentasi”, “foto bersama”, “foto kegiatan”, “cetak foto”, maupun “foto media ajar”. Bukti fisiknya berupa naskah tertulis (SK, rencana, data, instrumen, daftar hadir, notulen, atau berita acara) yang keabsahannya dibuktikan oleh dokumen itu sendiri, bukan oleh foto kegiatan.",
+        "bidikan": [],
+        "dasar": "Tidak ditemukan permintaan foto pada teks word/document.xml berkas ini."
+      },
+      "6.4.a": {
+        "t": "wajib",
+        "k": [
+          "murid"
+        ],
+        "alasan": "Berkas 6.4.a secara eksplisit mewajibkan LPJ PHBN dilengkapi foto dokumentasi kegiatan.",
+        "bidikan": [
+          "Foto dokumentasi kegiatan PHBN untuk LPJ"
+        ],
+        "dasar": "Teks dokumen: “LPJ tertulis dilengkapi foto dokumentasi kegiatan untuk dilaporkan kepada Kepala Sekolah dan Dinas Pendidikan”."
+      },
+      "6.4.b": {
+        "t": "tidak",
+        "k": [],
+        "alasan": "Dokumen kegiatan lomba PHBN berupa program, berita acara, dan hasil lomba. Foto kegiatan diminta secara eksplisit pada butir 6.4.a, bukan pada butir ini.",
+        "bidikan": [],
+        "dasar": "Tidak ditemukan permintaan foto pada teks word/document.xml berkas ini."
+      },
+      "6.4.c": {
+        "t": "tidak",
+        "k": [],
+        "alasan": "Teks berkas .docx pada butir ini tidak memuat kata “foto”, “foto dokumentasi”, “foto bersama”, “foto kegiatan”, “cetak foto”, maupun “foto media ajar”. Bukti fisiknya berupa naskah tertulis (SK, rencana, data, instrumen, daftar hadir, notulen, atau berita acara) yang keabsahannya dibuktikan oleh dokumen itu sendiri, bukan oleh foto kegiatan.",
+        "bidikan": [],
+        "dasar": "Tidak ditemukan permintaan foto pada teks word/document.xml berkas ini."
+      },
+      "7.1.a": {
+        "t": "tidak",
+        "k": [],
+        "alasan": "Dokumen hasil pengembangan kurikulum beserta dokumen kendali kegiatan. Meski memuat rapat, undangan, daftar hadir, notulen, dan berita acara, tidak ada satu pun permintaan foto; seluruh bukti berupa naskah tertulis.",
+        "bidikan": [],
+        "dasar": "Tidak ditemukan permintaan foto pada teks word/document.xml berkas ini."
+      },
+      "7.2.a": {
+        "t": "tidak",
+        "k": [],
+        "alasan": "Teks berkas .docx pada butir ini tidak memuat kata “foto”, “foto dokumentasi”, “foto bersama”, “foto kegiatan”, “cetak foto”, maupun “foto media ajar”. Bukti fisiknya berupa naskah tertulis (SK, rencana, data, instrumen, daftar hadir, notulen, atau berita acara) yang keabsahannya dibuktikan oleh dokumen itu sendiri, bukan oleh foto kegiatan.",
+        "bidikan": [],
+        "dasar": "Tidak ditemukan permintaan foto pada teks word/document.xml berkas ini."
+      },
+      "7.2.b": {
+        "t": "tidak",
+        "k": [],
+        "alasan": "Teks berkas .docx pada butir ini tidak memuat kata “foto”, “foto dokumentasi”, “foto bersama”, “foto kegiatan”, “cetak foto”, maupun “foto media ajar”. Bukti fisiknya berupa naskah tertulis (SK, rencana, data, instrumen, daftar hadir, notulen, atau berita acara) yang keabsahannya dibuktikan oleh dokumen itu sendiri, bukan oleh foto kegiatan.",
+        "bidikan": [],
+        "dasar": "Tidak ditemukan permintaan foto pada teks word/document.xml berkas ini."
+      },
+      "7.2.c": {
+        "t": "tidak",
+        "k": [],
+        "alasan": "Teks berkas .docx pada butir ini tidak memuat kata “foto”, “foto dokumentasi”, “foto bersama”, “foto kegiatan”, “cetak foto”, maupun “foto media ajar”. Bukti fisiknya berupa naskah tertulis (SK, rencana, data, instrumen, daftar hadir, notulen, atau berita acara) yang keabsahannya dibuktikan oleh dokumen itu sendiri, bukan oleh foto kegiatan.",
+        "bidikan": [],
+        "dasar": "Tidak ditemukan permintaan foto pada teks word/document.xml berkas ini."
+      },
+      "7.2.d": {
+        "t": "tidak",
+        "k": [],
+        "alasan": "Teks berkas .docx pada butir ini tidak memuat kata “foto”, “foto dokumentasi”, “foto bersama”, “foto kegiatan”, “cetak foto”, maupun “foto media ajar”. Bukti fisiknya berupa naskah tertulis (SK, rencana, data, instrumen, daftar hadir, notulen, atau berita acara) yang keabsahannya dibuktikan oleh dokumen itu sendiri, bukan oleh foto kegiatan.",
+        "bidikan": [],
+        "dasar": "Tidak ditemukan permintaan foto pada teks word/document.xml berkas ini."
+      },
+      "7.2.e": {
+        "t": "tidak",
+        "k": [],
+        "alasan": "Teks berkas .docx pada butir ini tidak memuat kata “foto”, “foto dokumentasi”, “foto bersama”, “foto kegiatan”, “cetak foto”, maupun “foto media ajar”. Bukti fisiknya berupa naskah tertulis (SK, rencana, data, instrumen, daftar hadir, notulen, atau berita acara) yang keabsahannya dibuktikan oleh dokumen itu sendiri, bukan oleh foto kegiatan.",
+        "bidikan": [],
+        "dasar": "Tidak ditemukan permintaan foto pada teks word/document.xml berkas ini."
+      },
+      "7.2.f": {
+        "t": "tidak",
+        "k": [],
+        "alasan": "Teks berkas .docx pada butir ini tidak memuat kata “foto”, “foto dokumentasi”, “foto bersama”, “foto kegiatan”, “cetak foto”, maupun “foto media ajar”. Bukti fisiknya berupa naskah tertulis (SK, rencana, data, instrumen, daftar hadir, notulen, atau berita acara) yang keabsahannya dibuktikan oleh dokumen itu sendiri, bukan oleh foto kegiatan.",
+        "bidikan": [],
+        "dasar": "Tidak ditemukan permintaan foto pada teks word/document.xml berkas ini."
+      },
+      "7.2.g": {
+        "t": "tidak",
+        "k": [],
+        "alasan": "Teks berkas .docx pada butir ini tidak memuat kata “foto”, “foto dokumentasi”, “foto bersama”, “foto kegiatan”, “cetak foto”, maupun “foto media ajar”. Bukti fisiknya berupa naskah tertulis (SK, rencana, data, instrumen, daftar hadir, notulen, atau berita acara) yang keabsahannya dibuktikan oleh dokumen itu sendiri, bukan oleh foto kegiatan.",
+        "bidikan": [],
+        "dasar": "Tidak ditemukan permintaan foto pada teks word/document.xml berkas ini."
+      },
+      "7.3.a": {
+        "t": "tidak",
+        "k": [],
+        "alasan": "Dokumen kegiatan KKG/gugus. Pertemuan profesi dibuktikan dengan daftar hadir dan notulen, bukan foto.",
+        "bidikan": [],
+        "dasar": "Tidak ditemukan permintaan foto pada teks word/document.xml berkas ini."
+      },
+      "7.4.a": {
+        "t": "pendukung",
+        "k": [
+          "pembelajaran",
+          "lingkungan"
+        ],
+        "alasan": "Bukti fisiknya adalah dokumen inventaris alat peraga, bukan foto. Foto media ajar justru diminta secara eksplisit pada butir 11.3.b, sehingga di sini hanya pelengkap.",
+        "bidikan": [
+          "Foto alat peraga / media pembelajaran"
+        ],
+        "dasar": "Bukti fisik Checklist: “Dokumen alat peraga / media pembelajaran”. Permintaan foto media ajar ada pada 11.3.b: “Modul Ajar & Foto Media Ajar”."
+      },
+      "7.4.b": {
+        "t": "tidak",
+        "k": [],
+        "alasan": "Teks berkas .docx pada butir ini tidak memuat kata “foto”, “foto dokumentasi”, “foto bersama”, “foto kegiatan”, “cetak foto”, maupun “foto media ajar”. Bukti fisiknya berupa naskah tertulis (SK, rencana, data, instrumen, daftar hadir, notulen, atau berita acara) yang keabsahannya dibuktikan oleh dokumen itu sendiri, bukan oleh foto kegiatan.",
+        "bidikan": [],
+        "dasar": "Tidak ditemukan permintaan foto pada teks word/document.xml berkas ini."
+      },
+      "7.4.c": {
+        "t": "wajib",
+        "k": [
+          "profesi"
+        ],
+        "alasan": "Tabel publikasi ilmiah pada berkas 7.4.c mencantumkan Foto sebagai salah satu lampiran gelar karya.",
+        "bidikan": [
+          "Foto gelar karya / publikasi ilmiah guru"
+        ],
+        "dasar": "Teks dokumen: “Undangan, Berita Acara, Daftar Hadir, Foto”."
+      },
+      "7.5.a": {
+        "t": "wajib",
+        "k": [
+          "prestasi"
+        ],
+        "alasan": "Tabel arsip lomba pada berkas 7.5.a mencantumkan “Foto kegiatan” sebagai berkas bukti.",
+        "bidikan": [
+          "Foto kegiatan lomba"
+        ],
+        "dasar": "Teks dokumen: “Surat Tugas, Undangan, LPJ Biaya, Foto kegiatan”."
+      },
+      "8.1.a": {
+        "t": "tidak",
+        "k": [],
+        "alasan": "Teks berkas .docx pada butir ini tidak memuat kata “foto”, “foto dokumentasi”, “foto bersama”, “foto kegiatan”, “cetak foto”, maupun “foto media ajar”. Bukti fisiknya berupa naskah tertulis (SK, rencana, data, instrumen, daftar hadir, notulen, atau berita acara) yang keabsahannya dibuktikan oleh dokumen itu sendiri, bukan oleh foto kegiatan.",
+        "bidikan": [],
+        "dasar": "Tidak ditemukan permintaan foto pada teks word/document.xml berkas ini."
+      },
+      "8.2.a": {
+        "t": "tidak",
+        "k": [],
+        "alasan": "Administrasi sarana prasarana (ATISISBADA) berupa data pengadaan, pemeliharaan, dan inventarisasi, bukan foto kondisi.",
+        "bidikan": [],
+        "dasar": "Tidak ditemukan permintaan foto pada teks word/document.xml berkas ini."
+      },
+      "8.3.a": {
+        "t": "tidak",
+        "k": [],
+        "alasan": "Teks berkas .docx pada butir ini tidak memuat kata “foto”, “foto dokumentasi”, “foto bersama”, “foto kegiatan”, “cetak foto”, maupun “foto media ajar”. Bukti fisiknya berupa naskah tertulis (SK, rencana, data, instrumen, daftar hadir, notulen, atau berita acara) yang keabsahannya dibuktikan oleh dokumen itu sendiri, bukan oleh foto kegiatan.",
+        "bidikan": [],
+        "dasar": "Tidak ditemukan permintaan foto pada teks word/document.xml berkas ini."
+      },
+      "8.4.a": {
+        "t": "tidak",
+        "k": [],
+        "alasan": "Lampiran bukti yang diminta adalah notulen, berita acara, dan “tangkapan layar ARKAS”, bukan foto kegiatan.",
+        "bidikan": [],
+        "dasar": "Tidak ditemukan permintaan foto pada teks word/document.xml berkas ini."
+      },
+      "8.5.a": {
+        "t": "tidak",
+        "k": [],
+        "alasan": "Teks berkas .docx pada butir ini tidak memuat kata “foto”, “foto dokumentasi”, “foto bersama”, “foto kegiatan”, “cetak foto”, maupun “foto media ajar”. Bukti fisiknya berupa naskah tertulis (SK, rencana, data, instrumen, daftar hadir, notulen, atau berita acara) yang keabsahannya dibuktikan oleh dokumen itu sendiri, bukan oleh foto kegiatan.",
+        "bidikan": [],
+        "dasar": "Tidak ditemukan permintaan foto pada teks word/document.xml berkas ini."
+      },
+      "8.6.a": {
+        "t": "tidak",
+        "k": [],
+        "alasan": "Teks berkas .docx pada butir ini tidak memuat kata “foto”, “foto dokumentasi”, “foto bersama”, “foto kegiatan”, “cetak foto”, maupun “foto media ajar”. Bukti fisiknya berupa naskah tertulis (SK, rencana, data, instrumen, daftar hadir, notulen, atau berita acara) yang keabsahannya dibuktikan oleh dokumen itu sendiri, bukan oleh foto kegiatan.",
+        "bidikan": [],
+        "dasar": "Tidak ditemukan permintaan foto pada teks word/document.xml berkas ini."
+      },
+      "8.7.a": {
+        "t": "tidak",
+        "k": [],
+        "alasan": "Teks berkas .docx pada butir ini tidak memuat kata “foto”, “foto dokumentasi”, “foto bersama”, “foto kegiatan”, “cetak foto”, maupun “foto media ajar”. Bukti fisiknya berupa naskah tertulis (SK, rencana, data, instrumen, daftar hadir, notulen, atau berita acara) yang keabsahannya dibuktikan oleh dokumen itu sendiri, bukan oleh foto kegiatan.",
+        "bidikan": [],
+        "dasar": "Tidak ditemukan permintaan foto pada teks word/document.xml berkas ini."
+      },
+      "9.1.a": {
+        "t": "tidak",
+        "k": [],
+        "alasan": "Teks berkas .docx pada butir ini tidak memuat kata “foto”, “foto dokumentasi”, “foto bersama”, “foto kegiatan”, “cetak foto”, maupun “foto media ajar”. Bukti fisiknya berupa naskah tertulis (SK, rencana, data, instrumen, daftar hadir, notulen, atau berita acara) yang keabsahannya dibuktikan oleh dokumen itu sendiri, bukan oleh foto kegiatan.",
+        "bidikan": [],
+        "dasar": "Tidak ditemukan permintaan foto pada teks word/document.xml berkas ini."
+      },
+      "9.2.a": {
+        "t": "tidak",
+        "k": [],
+        "alasan": "Teks berkas .docx pada butir ini tidak memuat kata “foto”, “foto dokumentasi”, “foto bersama”, “foto kegiatan”, “cetak foto”, maupun “foto media ajar”. Bukti fisiknya berupa naskah tertulis (SK, rencana, data, instrumen, daftar hadir, notulen, atau berita acara) yang keabsahannya dibuktikan oleh dokumen itu sendiri, bukan oleh foto kegiatan.",
+        "bidikan": [],
+        "dasar": "Tidak ditemukan permintaan foto pada teks word/document.xml berkas ini."
+      },
+      "9.3.a": {
+        "t": "tidak",
+        "k": [],
+        "alasan": "Teks berkas .docx pada butir ini tidak memuat kata “foto”, “foto dokumentasi”, “foto bersama”, “foto kegiatan”, “cetak foto”, maupun “foto media ajar”. Bukti fisiknya berupa naskah tertulis (SK, rencana, data, instrumen, daftar hadir, notulen, atau berita acara) yang keabsahannya dibuktikan oleh dokumen itu sendiri, bukan oleh foto kegiatan.",
+        "bidikan": [],
+        "dasar": "Tidak ditemukan permintaan foto pada teks word/document.xml berkas ini."
+      },
+      "10.1.a": {
+        "t": "tidak",
+        "k": [],
+        "alasan": "Teks berkas .docx pada butir ini tidak memuat kata “foto”, “foto dokumentasi”, “foto bersama”, “foto kegiatan”, “cetak foto”, maupun “foto media ajar”. Bukti fisiknya berupa naskah tertulis (SK, rencana, data, instrumen, daftar hadir, notulen, atau berita acara) yang keabsahannya dibuktikan oleh dokumen itu sendiri, bukan oleh foto kegiatan.",
+        "bidikan": [],
+        "dasar": "Tidak ditemukan permintaan foto pada teks word/document.xml berkas ini."
+      },
+      "10.2.a": {
+        "t": "tidak",
+        "k": [],
+        "alasan": "Teks berkas .docx pada butir ini tidak memuat kata “foto”, “foto dokumentasi”, “foto bersama”, “foto kegiatan”, “cetak foto”, maupun “foto media ajar”. Bukti fisiknya berupa naskah tertulis (SK, rencana, data, instrumen, daftar hadir, notulen, atau berita acara) yang keabsahannya dibuktikan oleh dokumen itu sendiri, bukan oleh foto kegiatan.",
+        "bidikan": [],
+        "dasar": "Tidak ditemukan permintaan foto pada teks word/document.xml berkas ini."
+      },
+      "10.3.a": {
+        "t": "tidak",
+        "k": [],
+        "alasan": "Teks berkas .docx pada butir ini tidak memuat kata “foto”, “foto dokumentasi”, “foto bersama”, “foto kegiatan”, “cetak foto”, maupun “foto media ajar”. Bukti fisiknya berupa naskah tertulis (SK, rencana, data, instrumen, daftar hadir, notulen, atau berita acara) yang keabsahannya dibuktikan oleh dokumen itu sendiri, bukan oleh foto kegiatan.",
+        "bidikan": [],
+        "dasar": "Tidak ditemukan permintaan foto pada teks word/document.xml berkas ini."
+      },
+      "11.1.a": {
+        "t": "tidak",
+        "k": [],
+        "alasan": "Hasil pertemuan awal supervisi berupa kesepakatan tertulis. Tidak ada permintaan foto.",
+        "bidikan": [],
+        "dasar": "Tidak ditemukan permintaan foto pada teks word/document.xml berkas ini."
+      },
+      "11.2.a": {
+        "t": "tidak",
+        "k": [],
+        "alasan": "Catatan hasil observasi pembelajaran yang objektif dan selektif adalah naskah tertulis; tidak ada permintaan foto observasi kelas.",
+        "bidikan": [],
+        "dasar": "Tidak ditemukan permintaan foto pada teks word/document.xml berkas ini."
+      },
+      "11.3.a": {
+        "t": "tidak",
+        "k": [],
+        "alasan": "Teks berkas .docx pada butir ini tidak memuat kata “foto”, “foto dokumentasi”, “foto bersama”, “foto kegiatan”, “cetak foto”, maupun “foto media ajar”. Bukti fisiknya berupa naskah tertulis (SK, rencana, data, instrumen, daftar hadir, notulen, atau berita acara) yang keabsahannya dibuktikan oleh dokumen itu sendiri, bukan oleh foto kegiatan.",
+        "bidikan": [],
+        "dasar": "Tidak ditemukan permintaan foto pada teks word/document.xml berkas ini."
+      },
+      "11.3.b": {
+        "t": "wajib",
+        "k": [
+          "pembelajaran"
+        ],
+        "alasan": "Matriks refleksi hasil supervisi pada berkas 11.3.b menyebut foto media ajar sebagai bukti tindak lanjut.",
+        "bidikan": [
+          "Foto media ajar yang digunakan"
+        ],
+        "dasar": "Teks dokumen: “Modul Ajar & Foto Media Ajar”."
+      },
+      "11.3.c": {
+        "t": "tidak",
+        "k": [],
+        "alasan": "Teks berkas .docx pada butir ini tidak memuat kata “foto”, “foto dokumentasi”, “foto bersama”, “foto kegiatan”, “cetak foto”, maupun “foto media ajar”. Bukti fisiknya berupa naskah tertulis (SK, rencana, data, instrumen, daftar hadir, notulen, atau berita acara) yang keabsahannya dibuktikan oleh dokumen itu sendiri, bukan oleh foto kegiatan.",
+        "bidikan": [],
+        "dasar": "Tidak ditemukan permintaan foto pada teks word/document.xml berkas ini."
+      },
+      "11.4.a": {
+        "t": "tidak",
+        "k": [],
+        "alasan": "Teks berkas .docx pada butir ini tidak memuat kata “foto”, “foto dokumentasi”, “foto bersama”, “foto kegiatan”, “cetak foto”, maupun “foto media ajar”. Bukti fisiknya berupa naskah tertulis (SK, rencana, data, instrumen, daftar hadir, notulen, atau berita acara) yang keabsahannya dibuktikan oleh dokumen itu sendiri, bukan oleh foto kegiatan.",
+        "bidikan": [],
+        "dasar": "Tidak ditemukan permintaan foto pada teks word/document.xml berkas ini."
+      },
+      "11.4.b": {
+        "t": "tidak",
+        "k": [],
+        "alasan": "Teks berkas .docx pada butir ini tidak memuat kata “foto”, “foto dokumentasi”, “foto bersama”, “foto kegiatan”, “cetak foto”, maupun “foto media ajar”. Bukti fisiknya berupa naskah tertulis (SK, rencana, data, instrumen, daftar hadir, notulen, atau berita acara) yang keabsahannya dibuktikan oleh dokumen itu sendiri, bukan oleh foto kegiatan.",
+        "bidikan": [],
+        "dasar": "Tidak ditemukan permintaan foto pada teks word/document.xml berkas ini."
+      },
+      "11.4.c": {
+        "t": "tidak",
+        "k": [],
+        "alasan": "Teks berkas .docx pada butir ini tidak memuat kata “foto”, “foto dokumentasi”, “foto bersama”, “foto kegiatan”, “cetak foto”, maupun “foto media ajar”. Bukti fisiknya berupa naskah tertulis (SK, rencana, data, instrumen, daftar hadir, notulen, atau berita acara) yang keabsahannya dibuktikan oleh dokumen itu sendiri, bukan oleh foto kegiatan.",
+        "bidikan": [],
+        "dasar": "Tidak ditemukan permintaan foto pada teks word/document.xml berkas ini."
+      },
+      "12.1.a": {
+        "t": "tidak",
+        "k": [],
+        "alasan": "“Dokumentasi & Bukti Dukung PMM” berupa unggahan sistem, bukan foto kegiatan.",
+        "bidikan": [],
+        "dasar": "Tidak ditemukan permintaan foto pada teks word/document.xml berkas ini."
+      },
+      "12.1.b": {
+        "t": "tidak",
+        "k": [],
+        "alasan": "Teks berkas .docx pada butir ini tidak memuat kata “foto”, “foto dokumentasi”, “foto bersama”, “foto kegiatan”, “cetak foto”, maupun “foto media ajar”. Bukti fisiknya berupa naskah tertulis (SK, rencana, data, instrumen, daftar hadir, notulen, atau berita acara) yang keabsahannya dibuktikan oleh dokumen itu sendiri, bukan oleh foto kegiatan.",
+        "bidikan": [],
+        "dasar": "Tidak ditemukan permintaan foto pada teks word/document.xml berkas ini."
+      },
+      "12.1.c": {
+        "t": "tidak",
+        "k": [],
+        "alasan": "Dokumen kegiatan remedial dan pengayaan berupa jurnal dan catatan pelaksanaan; tidak ada permintaan foto.",
+        "bidikan": [],
+        "dasar": "Tidak ditemukan permintaan foto pada teks word/document.xml berkas ini."
+      },
+      "12.2.a": {
+        "t": "tidak",
+        "k": [],
+        "alasan": "Teks berkas .docx pada butir ini tidak memuat kata “foto”, “foto dokumentasi”, “foto bersama”, “foto kegiatan”, “cetak foto”, maupun “foto media ajar”. Bukti fisiknya berupa naskah tertulis (SK, rencana, data, instrumen, daftar hadir, notulen, atau berita acara) yang keabsahannya dibuktikan oleh dokumen itu sendiri, bukan oleh foto kegiatan.",
+        "bidikan": [],
+        "dasar": "Tidak ditemukan permintaan foto pada teks word/document.xml berkas ini."
+      },
+      "12.3.a": {
+        "t": "tidak",
+        "k": [],
+        "alasan": "Teks berkas .docx pada butir ini tidak memuat kata “foto”, “foto dokumentasi”, “foto bersama”, “foto kegiatan”, “cetak foto”, maupun “foto media ajar”. Bukti fisiknya berupa naskah tertulis (SK, rencana, data, instrumen, daftar hadir, notulen, atau berita acara) yang keabsahannya dibuktikan oleh dokumen itu sendiri, bukan oleh foto kegiatan.",
+        "bidikan": [],
+        "dasar": "Tidak ditemukan permintaan foto pada teks word/document.xml berkas ini."
+      },
+      "12.4.a": {
+        "t": "tidak",
+        "k": [],
+        "alasan": "Teks berkas .docx pada butir ini tidak memuat kata “foto”, “foto dokumentasi”, “foto bersama”, “foto kegiatan”, “cetak foto”, maupun “foto media ajar”. Bukti fisiknya berupa naskah tertulis (SK, rencana, data, instrumen, daftar hadir, notulen, atau berita acara) yang keabsahannya dibuktikan oleh dokumen itu sendiri, bukan oleh foto kegiatan.",
+        "bidikan": [],
+        "dasar": "Tidak ditemukan permintaan foto pada teks word/document.xml berkas ini."
+      }
+    },
+    "ringkasan": {
+      "wajib": 9,
+      "pendukung": 3,
+      "tidak": 90,
+      "bidikan": 28
+    },
+    "audit": {
+      "dokumenDipindai": 101,
+      "dokumenBukti": 99,
+      "gambarTertanam": 103,
+      "hashGambarUnik": 2,
+      "gambarLokal": 119,
+      "fotoKegiatanTersedia": 0,
+      "kataKunci": {
+        "kegiatan": 330,
+        "pembinaan": 194,
+        "supervisi": 187,
+        "observasi": 147,
+        "lomba": 144,
+        "pelatihan": 96,
+        "rapat": 68,
+        "kkg": 67,
+        "foto": 25,
+        "dokumentasi": 15,
+        "gambar": 13
+      },
+      "kutipan": [
+        {
+          "kode": "1.4.a",
+          "jenis": "foto",
+          "teks": "Daftar hadir, jurnal kegiatan, foto dokumentasi, notulen."
+        },
+        {
+          "kode": "4.2.a",
+          "jenis": "foto",
+          "teks": "Foto taman & pot kelas, Denah Green Zone. Foto fasad sekolah & plang ruangan. Jadwal pembersihan toilet, Foto sanitasi. Foto sarana sampah pilah. Foto wastafel CTPS & poster edukasi."
+        },
+        {
+          "kode": "4.2.b",
+          "jenis": "foto",
+          "teks": "Foto Pojok Baca Kelas, Jurnal Pembiasaan Membaca. Foto Gazebo Literasi Outdoor, Daftar Buku Taman. Foto Papan Display Dalam Kelas. Foto Galeri P5."
+        },
+        {
+          "kode": "5.2.a",
+          "jenis": "foto",
+          "teks": "Perumusan Kesepakatan & Rencana Tindak Lanjut (RTL) Penutup & Foto Bersama."
+        },
+        {
+          "kode": "5.3.b",
+          "jenis": "foto",
+          "teks": "3 Dokumentasi Cetak foto dan penjilidan laporan 5 laporan. Empat laporan PTK dengan bukti siklus, instrumen, dan dokumentasi."
+        },
+        {
+          "kode": "6.4.a",
+          "jenis": "foto",
+          "teks": "LPJ tertulis dilengkapi foto dokumentasi kegiatan untuk dilaporkan kepada Kepala Sekolah dan Dinas Pendidikan."
+        },
+        {
+          "kode": "7.4.c",
+          "jenis": "foto",
+          "teks": "Undangan, Berita Acara, Daftar Hadir, Foto."
+        },
+        {
+          "kode": "7.5.a",
+          "jenis": "foto",
+          "teks": "Surat Tugas, Undangan, LPJ Biaya, Foto kegiatan."
+        },
+        {
+          "kode": "11.3.b",
+          "jenis": "foto",
+          "teks": "Modul Ajar & Foto Media Ajar."
+        },
+        {
+          "kode": "5.3.a",
+          "jenis": "bukan foto",
+          "teks": "Sertifikat, tangkapan layar."
+        },
+        {
+          "kode": "8.4.a",
+          "jenis": "bukan foto",
+          "teks": "Lampiran bukti: (1) notulen rapat penyusunan RKAS, (2) berita acara penetapan, (3) tangkapan layar ARKAS, (4) laporan realisasi triwulan."
+        }
+      ],
+      "dibatalkan": [
+        {
+          "kode": "1.2.c",
+          "bukti": "SK penyusunan visi dan misi"
+        },
+        {
+          "kode": "1.2.d",
+          "bukti": "Daftar hadir dan berita acara penyusunan visi-misi"
+        },
+        {
+          "kode": "1.4.b",
+          "bukti": "Dokumen keterlaksanaan dan pencapaian program"
+        },
+        {
+          "kode": "11.1.a",
+          "bukti": "Hasil pertemuan awal: masalah, tujuan, fokus utama, instrumen yang disepakati (dokumen pengelolaan kinerja)"
+        },
+        {
+          "kode": "11.2.a",
+          "bukti": "Catatan hasil observasi pembelajaran yang lengkap, objektif, selektif, dan relevan (dokumen pengelolaan kinerja)"
+        },
+        {
+          "kode": "11.3.a",
+          "bukti": "Catatan pelaksanaan kegiatan supervisi (dokumen pengelolaan kinerja)"
+        },
+        {
+          "kode": "11.3.c",
+          "bukti": "Himpunan data hasil supervisi, analisis, penafsiran, keunggulan dan kelemahan, serta rekomendasi perbaikan (dokumen pengelolaan kinerja)"
+        },
+        {
+          "kode": "11.4.c",
+          "bukti": "Dokumen penyerahan hasil belajar"
+        },
+        {
+          "kode": "12.1.a",
+          "bukti": "Data tindak lanjut pelaksanaan supervisi penilaian (dokumen pengelolaan kinerja)"
+        },
+        {
+          "kode": "12.1.c",
+          "bukti": "Dokumen kegiatan remedial dan pengayaan"
+        },
+        {
+          "kode": "12.2.a",
+          "bukti": "Data hasil pengecekan keterlaksanaan rekomendasi perbaikan penilaian hasil belajar secara berkala"
+        },
+        {
+          "kode": "12.3.a",
+          "bukti": "Catatan atau laporan tindak lanjut supervisi sebagai dasar pembinaan guru (dokumen pengelolaan kinerja)"
+        },
+        {
+          "kode": "2.1.b",
+          "bukti": "Buku kegiatan kepala sekolah"
+        },
+        {
+          "kode": "2.3.a",
+          "bukti": "Dokumen lainnya"
+        },
+        {
+          "kode": "2.4.a",
+          "bukti": "Dokumen pembinaan"
+        },
+        {
+          "kode": "2.4.b",
+          "bukti": "Dokumen supervisi"
+        },
+        {
+          "kode": "2.4.c",
+          "bukti": "Dokumen tindak lanjut supervisi"
+        },
+        {
+          "kode": "3.2.c",
+          "bukti": "Dokumen SKP / pengelolaan penilaian kinerja"
+        },
+        {
+          "kode": "3.3.c",
+          "bukti": "Dokumen program peningkatan mutu peserta didik"
+        },
+        {
+          "kode": "3.4.a",
+          "bukti": "Dokumen prestasi sekolah"
+        },
+        {
+          "kode": "3.4.b",
+          "bukti": "Dokumen prestasi guru"
+        },
+        {
+          "kode": "3.4.c",
+          "bukti": "Dokumen prestasi peserta didik"
+        },
+        {
+          "kode": "4.3.a",
+          "bukti": "Data kunjungan perpustakaan, peminjaman buku, pembaruan buku dan bahan bacaan, sumber belajar berbasis TIK"
+        },
+        {
+          "kode": "4.4.a",
+          "bukti": "Dokumen penyelenggaraan kompetisi mulai tingkat sekolah"
+        },
+        {
+          "kode": "5.1.b",
+          "bukti": "Dokumen data hasil pemantauan keterlaksanaan"
+        },
+        {
+          "kode": "5.1.c",
+          "bukti": "Dokumen data pencapaian program pembinaan (melibatkan tim pengembang sekolah, disepakati seluruh pendidik dan tendik)"
+        },
+        {
+          "kode": "5.2.b",
+          "bukti": "Catatan pembinaan kegiatan rutin"
+        },
+        {
+          "kode": "5.2.c",
+          "bukti": "Catatan pembinaan khusus individual atau kelompok"
+        },
+        {
+          "kode": "5.2.d",
+          "bukti": "Catatan peningkatan kerja sama tim (outbound, training)"
+        },
+        {
+          "kode": "5.3.a",
+          "bukti": "Surat tugas mengikuti kegiatan keprofesionalan berkelanjutan"
+        },
+        {
+          "kode": "5.4.b",
+          "bukti": "Data hasil evaluasi ketercapaian tujuan dan tindak lanjut yang direalisasikan / Penilaian Kinerja Guru"
+        },
+        {
+          "kode": "6.1.c",
+          "bukti": "Data hasil analisis bekal ajar awal (MPLS / inventaris buku sumber)"
+        },
+        {
+          "kode": "6.2.a",
+          "bukti": "Strategi kreatif sekolah untuk kolaborasi pendidik dan tendik dalam pengembangan prestasi (diklat yang pernah diikuti kepala sekolah / guru)"
+        },
+        {
+          "kode": "6.3.a",
+          "bukti": "Dokumen ekstrakurikuler (Pramuka, olahraga, kesenian, keagamaan, dll.)"
+        },
+        {
+          "kode": "6.4.b",
+          "bukti": "Dokumen kegiatan lomba PHBN"
+        },
+        {
+          "kode": "6.4.c",
+          "bukti": "Program / dokumen 7 KAIH"
+        },
+        {
+          "kode": "7.1.a",
+          "bukti": "Dokumen hasil pengembangan kurikulum beserta dokumen kendali kegiatan (undangan, daftar hadir, susunan kegiatan, hasil perbaikan: dokumen 1 KTSP, silabus, CP, ATP, RPP)"
+        },
+        {
+          "kode": "7.3.a",
+          "bukti": "Dokumen kegiatan KKG / gugus untuk mutu perencanaan, proses, penilaian, kompetisi, dan kolaborasi"
+        },
+        {
+          "kode": "7.4.b",
+          "bukti": "Dokumen IT"
+        },
+        {
+          "kode": "8.2.a",
+          "bukti": "Pengadaan, program pemeliharaan, data penggunaan, inventarisasi, data penghapusan, dan data terbarukan (ATISISBADA)"
+        },
+        {
+          "kode": "8.4.a",
+          "bukti": "Penyusunan anggaran (ARKAS), evaluasi, dan pertanggungjawaban anggaran secara terbuka (spesimen LPJ)"
+        },
+        {
+          "kode": "8.6.a",
+          "bukti": "Penugasan pengelola, tata tertib, koleksi buku pelajaran dan referensi, laporan pengadaan, pencatatan dan pengkodean buku, data sirkulasi, kehadiran pengunjung, laporan tahunan"
+        },
+        {
+          "kode": "8.7.a",
+          "bukti": "Tata tertib, jadwal penggunaan, sistem administrasi, program penggunaan, inventaris dan kartu pengadaan, catatan perawatan, usul pemutakhiran sarpras, data penghapusan"
+        },
+        {
+          "kode": "9.1.a",
+          "bukti": "Penerapan TIK dalam administrasi persuratan, sarana prasarana, kepegawaian, kepesertadidikan, dan keuangan"
+        },
+        {
+          "kode": "9.2.a",
+          "bukti": "Model penerapan TIK dalam administrasi kurikulum dan pembelajaran (komputer, intranet, internet)"
+        },
+        {
+          "kode": "9.3.a",
+          "bukti": "Model pemanfaatan TIK dalam pengelolaan perpustakaan (komputer, intranet, internet)"
+        }
+      ],
+      "jumlahDibatalkan": 46,
+      "metode": "Klasifikasi ketat berbasis bukti tekstual. Teks setiap berkas diekstrak dari simpul <w:t> pada word/document.xml memakai parser XML (bukan regex), lalu dicari permintaan foto eksplisit. Frekuensi kata 'rapat', 'observasi', 'supervisi', 'pembinaan', atau 'kegiatan' TIDAK lagi dijadikan dasar.",
+      "catatan": "Seluruh berkas .docx memuat tepat satu gambar tertanam yang identik (logo resmi kop surat, GIF 21.335 byte); tidak ada satu pun foto kegiatan. Kata 'fotokopi' pada 6.1.a, 6.1.b, dan 8.1.a, 'terdokumentasi' pada naskah perencanaan, serta 'tangkapan layar ARKAS/PMM' bukanlah permintaan foto kegiatan. Hasil audit ulang: 9 butir wajib foto (semuanya memiliki kutipan eksplisit), 3 butir foto pendukung untuk bukti berwujud benda, dan 90 butir tidak memerlukan foto."
+    }
+  }
+}

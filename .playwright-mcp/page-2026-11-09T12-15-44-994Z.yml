@@ -1,0 +1,375 @@
+- generic [ref=e2]:
+  - link "Lewati ke konten" [ref=e3] [cursor=pointer]:
+    - /url: "#konten"
+  - generic [ref=e5]:
+    - generic [ref=e6]:
+      - img "Logo Kabupaten Bandung Barat" [ref=e7]
+      - generic [ref=e8]: Pemerintah Kabupaten Bandung Barat · Dinas Pendidikan
+    - generic [ref=e9]: Situs resmi · NPSN 20205293 · Tahun ajaran 2026/2027
+  - banner [ref=e10]:
+    - generic [ref=e11]:
+      - link "Beranda SD Negeri Pasirhalang" [ref=e12] [cursor=pointer]:
+        - /url: "#beranda"
+        - img "Lambang SD Negeri Pasirhalang" [ref=e14]
+        - generic [ref=e15]:
+          - generic [ref=e16]: SD Negeri Pasirhalang
+          - generic [ref=e17]: Cikalongwetan · Bandung Barat
+      - navigation "Navigasi utama" [ref=e18]:
+        - link "Beranda" [ref=e20] [cursor=pointer]:
+          - /url: "#beranda"
+          - text: Beranda
+        - link "Profil sekolah" [ref=e23] [cursor=pointer]:
+          - /url: "#profil"
+        - link "PKKS" [ref=e25] [cursor=pointer]:
+          - /url: "#pkks"
+          - text: PKKS
+          - img [ref=e26]
+        - link "Foto kegiatan" [ref=e29] [cursor=pointer]:
+          - /url: "#foto"
+          - text: Foto kegiatan
+          - img [ref=e30]
+        - link "Kontak" [ref=e33] [cursor=pointer]:
+          - /url: "#kontak"
+      - link "Hubungi kami" [ref=e35] [cursor=pointer]:
+        - /url: "#kontak"
+        - text: Hubungi kami
+        - img [ref=e36]
+  - main [ref=e39]:
+    - generic [ref=e40]:
+      - generic [ref=e41]:
+        - generic [ref=e43]:
+          - paragraph [ref=e44]: Visi SD Negeri Pasirhalang · TA 2026/2027 s.d. 2029/2030
+          - paragraph [ref=e46]: Mewujudkan siswa SDN Pasirhalang yang
+          - heading "berbudi luhur, prima dalam prestasi, santun & berkarakter." [level=1] [ref=e47]:
+            - generic [ref=e48]: berbudi luhur,
+            - generic [ref=e49]: prima dalam prestasi,
+            - generic [ref=e50]: santun & berkarakter.
+          - paragraph [ref=e51]: Disertai sebelas misi KOSP yang menuntun hari demi hari di SDN Pasirhalang — penanaman iman, IMTAQ–IPTEK, pembelajaran berpusat pada siswa, budi pekerti luhur, budaya 5S, dan budaya baca.
+          - list "Pilar misi sekolah" [ref=e52]:
+            - listitem [ref=e53]: Iman & IMTAQ-IPTEK
+            - listitem [ref=e54]: Berpusat pada siswa
+            - listitem [ref=e55]: Budi pekerti luhur
+            - listitem [ref=e56]: Budaya 5S
+            - listitem [ref=e57]: Budaya baca
+          - generic [ref=e58]:
+            - link "Profil sekolah" [ref=e59] [cursor=pointer]:
+              - /url: "#profil-identitas"
+              - text: Profil sekolah
+              - img [ref=e60]
+            - link "Dokumentasi kegiatan" [ref=e62] [cursor=pointer]:
+              - /url: "#foto-galeri"
+              - text: Dokumentasi kegiatan
+              - img [ref=e63]
+          - generic [ref=e66]:
+            - generic [ref=e67]:
+              - term [ref=e68]: "201"
+              - definition [ref=e69]: Peserta didik
+            - generic [ref=e70]:
+              - term [ref=e71]: "10"
+              - definition [ref=e72]: Pendidik & tendik
+            - generic [ref=e73]:
+              - term [ref=e74]: "7"
+              - definition [ref=e75]: Rombongan belajar
+            - generic [ref=e76]:
+              - term [ref=e77]: "1982"
+              - definition [ref=e78]: Tahun berdiri
+        - generic [ref=e79]:
+          - img "Foto resmi 10 pendidik dan tendik SDN Pasirhalang" [ref=e80]
+          - generic [ref=e81]: Dokumentasi resmi · Dewan guru & tendik 2026
+      - generic [ref=e83]:
+        - generic [ref=e84]: Tahun ajaran 2026/2027
+        - generic [ref=e85]: ·
+        - generic [ref=e86]: Dinas Pendidikan Kab. Bandung Barat
+        - generic [ref=e87]: ·
+        - generic [ref=e88]: NPSN 20205293
+    - generic [ref=e90]:
+      - generic [ref=e92]:
+        - paragraph [ref=e93]: 01 / Data pokok
+        - heading "Sekolah dalam angka" [level=2] [ref=e94]
+      - generic [ref=e96]:
+        - generic [ref=e97]:
+          - generic [ref=e98]: "01"
+          - generic [ref=e99]: "0"
+          - generic [ref=e100]: Murid
+          - generic [ref=e101]: 95 L / 106 P · sheet Rombongan Belajar
+        - generic [ref=e102]:
+          - generic [ref=e103]: "02"
+          - generic [ref=e104]: "0"
+          - generic [ref=e105]: Rombongan belajar
+          - generic [ref=e106]: Kelas 1–6, termasuk 5a dan 5b
+        - generic [ref=e107]:
+          - generic [ref=e108]: "03"
+          - generic [ref=e109]: "0"
+          - generic [ref=e110]: PTK
+          - generic [ref=e111]: 8 pendidik · 2 tenaga kependidikan
+        - generic [ref=e112]:
+          - generic [ref=e113]: "04"
+          - generic [ref=e114]: 6 / 4
+          - generic [ref=e115]: Komposisi
+          - generic [ref=e116]: ASN / Non-ASN
+        - generic [ref=e117]:
+          - generic [ref=e118]: "05"
+          - generic [ref=e119]: "0"
+          - generic [ref=e120]: Ruang kelas
+          - generic [ref=e121]: 1 rombel siang · memakai ruang guru untuk KBM
+        - generic [ref=e122]:
+          - generic [ref=e123]: "06"
+          - generic [ref=e124]: "0"
+          - generic [ref=e125]: Jumlah JP
+          - generic [ref=e126]: Struktur kurikulum kelas I–VI
+      - generic [ref=e127]: "Sumber: Unduhan Dapodik 27 Oktober 2026. Sheet Rombongan Belajar mencatat 201 murid (95 L / 106 P). Angka 201 dipakai mengikuti STATE.md dan AGENTS.md."
+    - generic [ref=e129]:
+      - generic [ref=e131]:
+        - paragraph [ref=e132]: 02 / Identitas
+        - heading "Sekolah Dasar Negeri Pasirhalang" [level=2] [ref=e133]
+      - generic [ref=e135]:
+        - generic [ref=e136]:
+          - img "Lambang SD Negeri Pasirhalang" [ref=e137]
+          - paragraph [ref=e139]: Identitas sekolah
+          - paragraph [ref=e140]: Identitas visual situs resmi SD Negeri Pasirhalang. Buku, bintang, pensil, dan obor melambangkan ilmu, cita-cita, dan penerangan.
+          - generic [ref=e141]:
+            - img "Logo Pemerintah Kabupaten Bandung Barat" [ref=e142]
+            - generic [ref=e143]:
+              - text: Di bawah naungan
+              - text: Pemerintah Kabupaten Bandung Barat
+        - generic [ref=e144]:
+          - table [ref=e145]:
+            - rowgroup [ref=e146]:
+              - row "Nama satuan pendidikan SD NEGERI PASIRHALANG" [ref=e147]:
+                - cell "Nama satuan pendidikan" [ref=e148]
+                - cell "SD NEGERI PASIRHALANG" [ref=e149]
+              - row "NPSN 20205293" [ref=e150]:
+                - cell "NPSN" [ref=e151]
+                - cell "20205293" [ref=e152]
+              - row "Jenjang / status SD · Negeri" [ref=e153]:
+                - cell "Jenjang / status" [ref=e154]
+                - cell "SD · Negeri" [ref=e155]
+              - row "Alamat Kp. Pasirhalang RT.03 RW.14, Desa Mandalamukti, Kecamatan Cikalongwetan" [ref=e156]:
+                - cell "Alamat" [ref=e157]
+                - cell "Kp. Pasirhalang RT.03 RW.14, Desa Mandalamukti, Kecamatan Cikalongwetan" [ref=e158]
+              - row "Kabupaten / provinsi Kabupaten Bandung Barat · Jawa Barat 40556" [ref=e159]:
+                - cell "Kabupaten / provinsi" [ref=e160]
+                - cell "Kabupaten Bandung Barat · Jawa Barat 40556" [ref=e161]
+              - row "SK pendirian 750/E-27/1982" [ref=e162]:
+                - cell "SK pendirian" [ref=e163]
+                - cell "750/E-27/1982" [ref=e164]
+              - row "Tanggal SK pendirian 1982-01-27" [ref=e165]:
+                - cell "Tanggal SK pendirian" [ref=e166]
+                - cell "1982-01-27" [ref=e167]
+              - row "Status kepemilikan Pemerintah Daerah" [ref=e168]:
+                - cell "Status kepemilikan" [ref=e169]
+                - cell "Pemerintah Daerah" [ref=e170]
+              - row "SK izin operasional 750/E-27/1982" [ref=e171]:
+                - cell "SK izin operasional" [ref=e172]
+                - cell "750/E-27/1982" [ref=e173]
+          - paragraph [ref=e174]:
+            - link "Lihat profil lengkap, rombongan belajar, dan sarana prasarana →" [ref=e175] [cursor=pointer]:
+              - /url: "#profil"
+    - generic [ref=e177]:
+      - generic [ref=e179]:
+        - paragraph [ref=e180]: 03 / Arsip akademik
+        - heading "Penilaian Kinerja Kepala Sekolah" [level=2] [ref=e181]
+      - generic [ref=e183]:
+        - generic [ref=e185]:
+          - paragraph [ref=e186]: Tahun ajaran 2026/2027
+          - heading "Arsip yang tertata, mudah diverifikasi" [level=3] [ref=e187]
+          - paragraph [ref=e188]: Indeks bukti fisik PKKS 2026 disusun per 12 map kompetensi, 102 butir, dengan 99 berkas dokumen aktif dan 3 butir yang bersumber dari aplikasi eksternal. Hanya butir yang secara eksplisit meminta foto di dalam dokumennya yang tercantum pada daftar kelengkapan foto.
+          - link "Buka menu PKKS" [ref=e189] [cursor=pointer]:
+            - /url: "#pkks/indeks"
+            - text: Buka menu PKKS
+            - img [ref=e190]
+        - table [ref=e194]:
+          - rowgroup [ref=e195]:
+            - row "Tahun ajaran 2026/2027" [ref=e196]:
+              - cell "Tahun ajaran" [ref=e197]
+              - cell "2026/2027" [ref=e198]
+            - row "Map kompetensi 12 map" [ref=e199]:
+              - cell "Map kompetensi" [ref=e200]
+              - cell "12 map" [ref=e201]
+            - row "Bukti fisik 102 butir" [ref=e202]:
+              - cell "Bukti fisik" [ref=e203]
+              - cell "102 butir" [ref=e204]
+            - row "Berkas aktif 99 dokumen" [ref=e205]:
+              - cell "Berkas aktif" [ref=e206]
+              - cell "99 dokumen" [ref=e207]
+            - row "Materi yang memerlukan foto 12 butir" [ref=e208]:
+              - cell "Materi yang memerlukan foto" [ref=e209]
+              - cell "12 butir" [ref=e210]
+            - row "Sumber eksternal 3 butir · ARKAS / ATISISBADA" [ref=e211]:
+              - cell "Sumber eksternal" [ref=e212]
+              - cell "3 butir · ARKAS / ATISISBADA" [ref=e213]
+    - generic [ref=e215]:
+      - generic [ref=e217]:
+        - paragraph [ref=e218]: 04 / Untuk pengawas
+        - heading "Akses cepat verifikasi" [level=2] [ref=e219]
+      - generic [ref=e221]:
+        - link "01 / ARSIP DOKUMEN Indeks 12 map PKKS Telusuri 102 butir bukti fisik berdasarkan kode, nama berkas, dan rujukan. Buka indeks" [ref=e223] [cursor=pointer]:
+          - /url: "#pkks/indeks"
+          - img [ref=e225]
+          - generic [ref=e227]: 01 / ARSIP DOKUMEN
+          - strong [ref=e228]: Indeks 12 map PKKS
+          - paragraph [ref=e229]: Telusuri 102 butir bukti fisik berdasarkan kode, nama berkas, dan rujukan.
+          - emphasis [ref=e230]:
+            - text: Buka indeks
+            - img [ref=e231]
+        - link "02 / DOKUMENTASI KEGIATAN Foto per materi PKKS Setiap materi tertaut ke kategori kegiatan dan daftar bidikan foto yang harus tersedia. Buka dokumentasi" [ref=e235] [cursor=pointer]:
+          - /url: "#foto/kelengkapan"
+          - img [ref=e237]
+          - generic [ref=e240]: 02 / DOKUMENTASI KEGIATAN
+          - strong [ref=e241]: Foto per materi PKKS
+          - paragraph [ref=e242]: Setiap materi tertaut ke kategori kegiatan dan daftar bidikan foto yang harus tersedia.
+          - emphasis [ref=e243]:
+            - text: Buka dokumentasi
+            - img [ref=e244]
+        - link "03 / DASAR KLASIFIKASI Riset kebutuhan foto Audit 102 butir dan 99 berkas dokumen, termasuk hasil pemindaian gambar tertanam. Lihat metodologi" [ref=e248] [cursor=pointer]:
+          - /url: "#foto/metodologi"
+          - img [ref=e250]
+          - generic [ref=e253]: 03 / DASAR KLASIFIKASI
+          - strong [ref=e254]: Riset kebutuhan foto
+          - paragraph [ref=e255]: Audit 102 butir dan 99 berkas dokumen, termasuk hasil pemindaian gambar tertanam.
+          - emphasis [ref=e256]:
+            - text: Lihat metodologi
+            - img [ref=e257]
+    - generic [ref=e261]:
+      - generic [ref=e262]:
+        - generic [ref=e263]:
+          - paragraph [ref=e264]: 05 / Peta arsip
+          - heading "Dua belas map kompetensi" [level=2] [ref=e265]
+        - paragraph [ref=e267]: Indeks resmi PKKS 2026/2027. Pilih map untuk menelusuri butir di dalamnya.
+      - generic [ref=e268]:
+        - link "01 Menyusun perencanaan sekolah untuk berbagai tingkatan perencanaan 12 butir" [ref=e270] [cursor=pointer]:
+          - /url: "#pkks/indeks"
+          - generic [ref=e271]: "01"
+          - generic [ref=e272]: Menyusun perencanaan sekolah untuk berbagai tingkatan perencanaan
+          - generic [ref=e273]:
+            - text: 12 butir
+            - img [ref=e274]
+        - link "02 Memimpin sekolah dalam pendayagunaan sumber daya sekolah secara optimal 11 butir" [ref=e277] [cursor=pointer]:
+          - /url: "#pkks/indeks"
+          - generic [ref=e278]: "02"
+          - generic [ref=e279]: Memimpin sekolah dalam pendayagunaan sumber daya sekolah secara optimal
+          - generic [ref=e280]:
+            - text: 11 butir
+            - img [ref=e281]
+        - link "03 Mengelola perubahan dan pengembangan sekolah menuju organisasi pembelajar yang efektif 10 butir" [ref=e284] [cursor=pointer]:
+          - /url: "#pkks/indeks"
+          - generic [ref=e285]: "03"
+          - generic [ref=e286]: Mengelola perubahan dan pengembangan sekolah menuju organisasi pembelajar yang efektif
+          - generic [ref=e287]:
+            - text: 10 butir
+            - img [ref=e288]
+        - link "04 Menciptakan budaya dan iklim sekolah yang kondusif dan inovatif bagi pembelajaran peserta didik 9 butir" [ref=e291] [cursor=pointer]:
+          - /url: "#pkks/indeks"
+          - generic [ref=e292]: "04"
+          - generic [ref=e293]: Menciptakan budaya dan iklim sekolah yang kondusif dan inovatif bagi pembelajaran peserta didik
+          - generic [ref=e294]:
+            - text: 9 butir
+            - img [ref=e295]
+        - link "05 Mengelola guru dan staf dalam rangka pendayagunaan sumber daya manusia secara optimal 11 butir" [ref=e298] [cursor=pointer]:
+          - /url: "#pkks/indeks"
+          - generic [ref=e299]: "05"
+          - generic [ref=e300]: Mengelola guru dan staf dalam rangka pendayagunaan sumber daya manusia secara optimal
+          - generic [ref=e301]:
+            - text: 11 butir
+            - img [ref=e302]
+        - link "06 Mengelola peserta didik dalam rangka penerimaan murid baru, penempatan, dan pengembangan kapasitas 9 butir" [ref=e305] [cursor=pointer]:
+          - /url: "#pkks/indeks"
+          - generic [ref=e306]: "06"
+          - generic [ref=e307]: Mengelola peserta didik dalam rangka penerimaan murid baru, penempatan, dan pengembangan kapasitas
+          - generic [ref=e308]:
+            - text: 9 butir
+            - img [ref=e309]
+        - link "07 Mengelola pengembangan kurikulum dan kegiatan pembelajaran sesuai arah dan tujuan pendidikan nasional 13 butir" [ref=e312] [cursor=pointer]:
+          - /url: "#pkks/indeks"
+          - generic [ref=e313]: "07"
+          - generic [ref=e314]: Mengelola pengembangan kurikulum dan kegiatan pembelajaran sesuai arah dan tujuan pendidikan nasional
+          - generic [ref=e315]:
+            - text: 13 butir
+            - img [ref=e316]
+        - link "08 Mengelola sumber daya sekolah sesuai prinsip pengelolaan yang efektif, efisien, dan akuntabel 7 butir" [ref=e319] [cursor=pointer]:
+          - /url: "#pkks/indeks"
+          - generic [ref=e320]: "08"
+          - generic [ref=e321]: Mengelola sumber daya sekolah sesuai prinsip pengelolaan yang efektif, efisien, dan akuntabel
+          - generic [ref=e322]:
+            - text: 7 butir
+            - img [ref=e323]
+        - link "09 Memanfaatkan kemajuan teknologi informasi bagi peningkatan pembelajaran dan manajemen sekolah 3 butir" [ref=e326] [cursor=pointer]:
+          - /url: "#pkks/indeks"
+          - generic [ref=e327]: "09"
+          - generic [ref=e328]: Memanfaatkan kemajuan teknologi informasi bagi peningkatan pembelajaran dan manajemen sekolah
+          - generic [ref=e329]:
+            - text: 3 butir
+            - img [ref=e330]
+        - link "10 Merencanakan program supervisi akademik dalam rangka peningkatan profesionalisme guru 3 butir" [ref=e333] [cursor=pointer]:
+          - /url: "#pkks/indeks"
+          - generic [ref=e334]: "10"
+          - generic [ref=e335]: Merencanakan program supervisi akademik dalam rangka peningkatan profesionalisme guru
+          - generic [ref=e336]:
+            - text: 3 butir
+            - img [ref=e337]
+        - link "11 Melaksanakan supervisi akademik terhadap guru dengan pendekatan dan teknik yang tepat 8 butir" [ref=e340] [cursor=pointer]:
+          - /url: "#pkks/indeks"
+          - generic [ref=e341]: "11"
+          - generic [ref=e342]: Melaksanakan supervisi akademik terhadap guru dengan pendekatan dan teknik yang tepat
+          - generic [ref=e343]:
+            - text: 8 butir
+            - img [ref=e344]
+        - link "12 Menindaklanjuti hasil supervisi akademik dalam rangka peningkatan profesionalisme guru 6 butir" [ref=e347] [cursor=pointer]:
+          - /url: "#pkks/indeks"
+          - generic [ref=e348]: "12"
+          - generic [ref=e349]: Menindaklanjuti hasil supervisi akademik dalam rangka peningkatan profesionalisme guru
+          - generic [ref=e350]:
+            - text: 6 butir
+            - img [ref=e351]
+  - contentinfo [ref=e353]:
+    - generic [ref=e355]:
+      - generic [ref=e356]:
+        - generic [ref=e357]:
+          - img "Lambang SD Negeri Pasirhalang" [ref=e358]
+          - generic [ref=e359]:
+            - paragraph [ref=e360]: Situs resmi · NPSN 20205293
+            - heading "SD Negeri Pasirhalang" [level=3] [ref=e361]
+            - generic [ref=e362]: Kecamatan Cikalongwetan, Kabupaten Bandung Barat, Jawa Barat 40556
+        - paragraph [ref=e363]: Dokumen dan foto kegiatan Penilaian Kinerja Kepala Sekolah Tahun Ajaran 2026/2027. Seluruh data bersumber dari berkas resmi sekolah dan unduhan Dapodik 27 Oktober 2026.
+      - generic [ref=e364]:
+        - heading "Jelajahi" [level=4] [ref=e365]
+        - link "Profil sekolah" [ref=e366] [cursor=pointer]:
+          - /url: "#profil"
+          - text: Profil sekolah
+          - img [ref=e367]
+        - link "PKKS" [ref=e370] [cursor=pointer]:
+          - /url: "#pkks"
+          - text: PKKS
+          - img [ref=e371]
+        - link "Foto kegiatan" [ref=e374] [cursor=pointer]:
+          - /url: "#foto"
+          - text: Foto kegiatan
+          - img [ref=e375]
+        - link "Kontak" [ref=e378] [cursor=pointer]:
+          - /url: "#kontak"
+          - text: Kontak
+          - img [ref=e379]
+      - generic [ref=e382]:
+        - heading "Kontak" [level=4] [ref=e383]
+        - link "sdnpasirhalang123@gmail.com" [ref=e384] [cursor=pointer]:
+          - /url: mailto:sdnpasirhalang123@gmail.com
+          - img [ref=e385]
+          - text: sdnpasirhalang123@gmail.com
+        - link "081809517491" [ref=e388] [cursor=pointer]:
+          - /url: tel:081809517491
+          - img [ref=e389]
+          - text: "081809517491"
+        - generic [ref=e391]:
+          - img [ref=e392]
+          - text: Kp. Pasirhalang RT.03 RW.14, Desa Mandalamukti
+      - generic [ref=e395]:
+        - img "Logo Pemerintah Kabupaten Bandung Barat" [ref=e396]
+        - generic [ref=e397]:
+          - text: Pemerintah Kabupaten Bandung Barat
+          - text: Dinas Pendidikan
+        - generic [ref=e398]:
+          - generic [ref=e399]: Kepala Sekolah
+          - generic [ref=e400]: Ahmad, S.Pd.
+    - generic [ref=e401]:
+      - generic [ref=e402]: © 2026 SD Negeri Pasirhalang · Diperbarui 7 November 2026
+      - generic [ref=e403]: Dokumen & foto kegiatan PKKS 2026/2027

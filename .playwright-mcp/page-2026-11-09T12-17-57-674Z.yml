@@ -1,0 +1,385 @@
+- generic [ref=e2]:
+  - link "Skip to main content" [ref=e3] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner "Harvard University" [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e7]:
+        - link "Harvard University" [ref=e9] [cursor=pointer]:
+          - /url: https://www.harvard.edu/
+          - generic [ref=e10]: Harvard University
+        - generic [ref=e11]:
+          - navigation "Site Notifications" [ref=e13]:
+            - list [ref=e15]:
+              - listitem [ref=e16]:
+                - link "Learn about our lawsuits to protect our students and researchers" [ref=e17] [cursor=pointer]:
+                  - /url: https://www.harvard.edu/federal-lawsuits/
+          - navigation "Search and Navigation" [ref=e18]:
+            - button "Open Site Search" [ref=e20] [cursor=pointer]:
+              - generic [ref=e21]: 
+              - generic [ref=e22]: Search
+            - button "Menu" [ref=e24] [cursor=pointer]:
+              - generic [ref=e25]: 
+              - generic [ref=e26]: Menu
+      - generic [ref=e27]: 
+  - main [ref=e28]:
+    - heading "Harvard University" [level=1] [ref=e29]
+    - generic [ref=e30]:
+      - generic [ref=e32]:
+        - img "Student wearing military regalia stand at attention" [ref=e33]
+        - generic [ref=e35]:
+          - heading "Harvard and the Military" [level=2] [ref=e36]
+          - paragraph [ref=e37]: Since colonial times, Harvard has had strong ties to America’s military, and continues to advance scholarship in defense, leadership, and diplomacy.
+          - paragraph [ref=e39]:
+            - link "Learn more about Harvard’s military legacy" [ref=e40] [cursor=pointer]:
+              - /url: https://news.harvard.edu/gazette/story/series/harvard-and-the-military/
+              - text:  Learn more about Harvard’s military legacy
+      - generic [ref=e43]:
+        - generic [ref=e45]:
+          - heading "Generations of service" [level=2] [ref=e46]
+          - generic [ref=e47]:
+            - paragraph [ref=e49]: Dating back to the American Revolution, Harvard University has shared a deeply interwoven history with the U.S. military.
+            - paragraph [ref=e50]:
+              - link "Learn more about these ties" [ref=e51] [cursor=pointer]:
+                - /url: https://news.harvard.edu/gazette/story/2017/01/the-long-crimson-line/
+                - text:  Learn more about these ties
+        - list [ref=e53]:
+          - listitem [ref=e54]:
+            - generic [ref=e55]:
+              - generic [ref=e56]: "1776"
+              - paragraph [ref=e58]:
+                - text: During the American Revolution, students were dismissed early and the
+                - link "Harvard campus was turned over to the Continental Army" [ref=e59] [cursor=pointer]:
+                  - /url: https://news.harvard.edu/gazette/story/2011/10/harvards-year-of-exile/
+                - text: . More than 1,600 soldiers were housed in Harvard buildings.
+          - listitem [ref=e60]:
+            - generic [ref=e61]:
+              - generic [ref=e62]: "1861"
+              - paragraph [ref=e64]:
+                - link "Harvard undergraduates joined" [ref=e65] [cursor=pointer]:
+                  - /url: https://news.harvard.edu/gazette/story/2012/03/blue-gray-and-crimson/
+                - text: the 20th Massachusetts Volunteer Regiment, nicknamed “the Harvard regiment.” On campus, Harvard students
+                - link "rushed to protect" [ref=e66] [cursor=pointer]:
+                  - /url: https://news.harvard.edu/gazette/story/2004/04/this-month-in-harvard-history-58-2/
+                - text: the cannons and ammunition held at the Cambridge Arsenal.
+          - listitem [ref=e67]:
+            - generic [ref=e68]:
+              - generic [ref=e69]: "1941"
+              - paragraph [ref=e71]:
+                - text: During World War II, the U.S. Naval Reserve operated a Supply Corps School at Harvard for the training of officers, including members of the
+                - link "Women Accepted for Volunteer Emergency Service (WAVES)" [ref=e72] [cursor=pointer]:
+                  - /url: https://guides.library.harvard.edu/c.php?g=357201&p=4105344
+                - text: .
+      - generic [ref=e75]:
+        - generic [ref=e77]:
+          - figure [ref=e79]:
+            - img "A woman sits on a step with her service dog" [ref=e80]
+          - generic [ref=e81]:
+            - heading "Shannon Jackson" [level=3] [ref=e82]
+            - paragraph [ref=e84]: After a career in the U.S. Navy, Shannon came to the Harvard Kennedy School as part of the inaugural cohort of American Service Fellows.
+          - generic [ref=e86] [cursor=pointer]:  Read more about Shannon
+          - link "Shannon Jackson" [ref=e87] [cursor=pointer]:
+            - /url: https://www.hks.harvard.edu/more/student-life/student-stories/us-navy-veteran-following-her-own-path
+            - text: Read more about Shannon
+        - generic [ref=e89]:
+          - figure [ref=e91]:
+            - img "Daniel Evrard stands outside with his arms crossed." [ref=e92]
+          - generic [ref=e93]:
+            - heading "Daniel Evrard" [level=3] [ref=e94]
+            - paragraph [ref=e96]: Daniel, an Air Force veteran and GSAS Ph.D. student, examines decarbonization, social ties, and policy in California’s oil country.
+          - generic [ref=e98] [cursor=pointer]:  Read more about Daniel
+          - link "Daniel Evrard" [ref=e99] [cursor=pointer]:
+            - /url: https://gsas.harvard.edu/news/seeing-decarbonization-through-lens-deindustrialization
+            - text: Read more about Daniel
+      - blockquote [ref=e103]:
+        - generic [ref=e104]:
+          - generic [ref=e105]: During my three years in the Air Force, I counseled many young service members. It was a privilege to serve alongside those who serve our country.”
+          - generic [ref=e106]:
+            - paragraph [ref=e108]: Jenna Carson
+            - paragraph [ref=e110]: Former military chaplain, U.S. Air Force
+            - link "Read more about Jenna's work" [ref=e112] [cursor=pointer]:
+              - /url: https://www.hds.harvard.edu/news/2025/11/10/ministry-her-mission
+              - text:  Read more about Jenna’s work
+        - img "A woman with a black background." [ref=e115]
+      - generic [ref=e117]:
+        - generic [ref=e120]:
+          - generic [ref=e122]:
+            - generic [ref=e123]: 
+            - generic [ref=e124]: An alum's journey
+          - link "An alum's journey" [ref=e125] [cursor=pointer]:
+            - /url: https://www.youtube.com/watch?v=dsX7Cuhg1qo
+            - text: Click to Play Video
+        - generic [ref=e127]:
+          - heading "Blake Lusty" [level=3] [ref=e128]
+          - generic [ref=e129]:
+            - paragraph [ref=e131]: A Harvard Business School alum, Blake spent more than a decade in the U.S. Navy, completing four combat deployments across 25 seas and four oceans and rising to the rank of lieutenant commander. What his military record doesn’t capture is that he did it all while navigating repeated cancer diagnoses and major health setbacks.
+            - paragraph [ref=e132]:
+              - link "Learn more about Blake" [ref=e133] [cursor=pointer]:
+                - /url: https://news.harvard.edu/gazette/story/2026/05/i-didnt-know-how-much-time-i-had-left-but-i-wanted-to-go-down-fighting-for-what-i-believe-in/
+                - text:  Learn more about Blake
+      - generic [ref=e135]:
+        - generic [ref=e136]:
+          - heading "On campus and beyond" [level=2] [ref=e137]
+          - paragraph [ref=e140]: From academic resources to dental care, a variety of Harvard programs focus on veterans and their needs.
+        - separator [ref=e141]
+      - generic [ref=e144]:
+        - generic [ref=e146]:
+          - figure [ref=e147]:
+            - img "Two dental students wearing scrubs pose with an older man wearing a U.S. Navy hat." [ref=e148]
+          - heading "Providing care" [level=3] [ref=e149]
+          - paragraph [ref=e150]: To help address a critical gap in care for veterans, students at Harvard School of Dental Medicine host the annual “Give Veterans a Smile” clinic, which provides free dental care to veterans and their spouses.
+          - link "Providing care" [ref=e151] [cursor=pointer]:
+            - /url: https://www.hsdm.harvard.edu/news/2025/10/day-care-and-gratitude-veterans
+        - generic [ref=e152]:
+          - generic [ref=e153]:
+            - generic [ref=e154]:
+              - heading "Preparing for service" [level=3] [ref=e155]
+              - paragraph [ref=e156]: Harvard was home to the first Army Reserve Officers’ Training Corps (ROTC) battalion, formed in 1916. In recent years, there has been an increase in students interested in military service.
+            - link "Preparing for service" [ref=e157] [cursor=pointer]:
+              - /url: https://news.harvard.edu/gazette/story/2026/05/he-took-that-explosion-himself-to-save-his-men/
+          - generic [ref=e158]:
+            - generic [ref=e159]:
+              - heading "Supporting scholarship" [level=3] [ref=e160]
+              - paragraph [ref=e161]: Harvard Kennedy School’s American Service Fellowship provides full scholarships for public servants and military veterans for a one-year master’s degree.
+            - link "Supporting scholarship" [ref=e162] [cursor=pointer]:
+              - /url: https://www.hks.harvard.edu/american-service-fellowship
+          - generic [ref=e163]:
+            - generic [ref=e164]:
+              - heading "Protecting rights" [level=3] [ref=e165]
+              - paragraph [ref=e166]: Students in Harvard Law School’s Veterans Law and Disability Benefits Clinic work to protect the rights of veterans and their families.
+            - link "Protecting rights" [ref=e167] [cursor=pointer]:
+              - /url: https://hls.harvard.edu/clinics/in-house-clinics/veterans-law-and-disability-benefits-clinic/
+          - generic [ref=e168]:
+            - generic [ref=e169]:
+              - heading "Showcasing photojournalism" [level=3] [ref=e170]
+              - paragraph [ref=e171]: The Harvard Art Museums hold a collection of Vietnam War photographs produced for the U.S. Army.
+            - link "Showcasing photojournalism" [ref=e172] [cursor=pointer]:
+              - /url: https://harvardartmuseums.org/tour/19
+      - generic [ref=e174]:
+        - generic [ref=e175]:
+          - heading "Research and innovation" [level=2] [ref=e176]
+          - paragraph [ref=e179]: Members of the Harvard community are working to solve the problems and alleviate the issues encountered by veterans and the U.S. military.
+        - separator [ref=e180]
+      - generic [ref=e182]:
+        - generic [ref=e185]:
+          - generic [ref=e187]:
+            - generic [ref=e188]: 
+            - generic [ref=e189]: Explore Maithili's work
+          - link "Explore Maithili's work" [ref=e190] [cursor=pointer]:
+            - /url: https://youtu.be/CiCFxmKXeTc
+            - text: Click to Play Video
+        - generic [ref=e192]:
+          - heading "Life-saving treatment for wounded soldiers" [level=3] [ref=e193]
+          - generic [ref=e194]:
+            - paragraph [ref=e196]: Harvard bioengineering graduate Maithili Joshi developed an injectable, self-assembling peptide that rapidly targets internal bleeding, binds to platelets, and speeds clotting without disrupting normal blood function, offering a new treatment for one of the leading causes of preventable trauma death.
+            - paragraph [ref=e197]:
+              - link "Learn more about the research" [ref=e198] [cursor=pointer]:
+                - /url: https://gsas.harvard.edu/news/life-saving-treatment-wounded-warriors
+                - text:  Learn more about the research
+      - generic [ref=e201]:
+        - generic [ref=e202]:
+          - heading "Safer surgery in the field" [level=3] [ref=e204]:
+            - link "Safer surgery in the field" [ref=e205] [cursor=pointer]:
+              - /url: https://innovationlabs.harvard.edu/articles/surgibox-impact-video
+          - paragraph [ref=e207]: Incubated at MIT and Harvard, SurgiBox SurgiField is a portable operating room that creates a safe environment to treat patients in war zones and disaster-affected areas.
+          - figure [ref=e208]:
+            - img "<h3><a href=\"https://innovationlabs.harvard.edu/articles/surgibox-impact-video\">Safer surgery in the field</a></h3>" [ref=e209]
+        - generic [ref=e210]:
+          - heading "Military radio frequency monitoring" [level=3] [ref=e212]:
+            - link "Military radio frequency monitoring" [ref=e213] [cursor=pointer]:
+              - /url: https://seas.harvard.edu/news/finding-right-frequency
+          - paragraph [ref=e215]: Three Harvard School of Engineering students created Distributed Spectrum, a low-cost network of radio-frequency sensors that detects and locates signal interference, helping the military identify jamming or electronic attacks and protect communications.
+          - figure [ref=e216]:
+            - img "<h3><a href=\"https://seas.harvard.edu/news/finding-right-frequency\">Military radio frequency monitoring </a></h3>" [ref=e217]
+        - generic [ref=e218]:
+          - heading "ALS risk research" [level=3] [ref=e220]:
+            - link "ALS risk research" [ref=e221] [cursor=pointer]:
+              - /url: https://hsph.harvard.edu/news/in-veterans-als-risk-linked-with-military-branch-rank/
+          - paragraph [ref=e223]: Researchers at Harvard T.H. Chan School of Public Health are studying veterans’ risk of ALS, a fatal nervous system disease.
+          - figure [ref=e224]:
+            - img "<h3><a href=\"https://hsph.harvard.edu/news/in-veterans-als-risk-linked-with-military-branch-rank/\">ALS risk research</a></h3>" [ref=e225]
+        - generic [ref=e226]:
+          - heading "Mobility challenges" [level=3] [ref=e228]:
+            - link "Mobility challenges" [ref=e229] [cursor=pointer]:
+              - /url: https://innovationlabs.harvard.edu/articles/sole1
+          - paragraph [ref=e231]: Inspired by injured soldiers, former U.S. Army airborne engineer Bradley Scott Wagman co-founded Sole 1, which uses embedded robotics to help people with mobility challenges walk with confidence.
+          - figure [ref=e232]:
+            - img "<h3><a href=\"https://innovationlabs.harvard.edu/articles/sole1\">Mobility challenges</a></h3>" [ref=e233]
+        - generic [ref=e234]:
+          - heading "Veterans at risk of suicide" [level=3] [ref=e236]:
+            - link "Veterans at risk of suicide" [ref=e237] [cursor=pointer]:
+              - /url: https://magazine.hms.harvard.edu/articles/enormous-potential-save-veterans-lives
+          - paragraph [ref=e239]: Harvard Medical School’s Ronald Kessler is developing prediction models to try to pinpoint who is at risk of suicide and determine the best ways to help them. The work has enormous potential to save veterans’ lives.
+          - figure [ref=e240]:
+            - img "<h3><a href=\"https://magazine.hms.harvard.edu/articles/enormous-potential-save-veterans-lives\">Veterans at risk of suicide</a></h3>" [ref=e241]
+      - generic [ref=e243]:
+        - generic [ref=e244]:
+          - heading "Education and service" [level=2] [ref=e245]
+          - paragraph [ref=e248]: Meet some of the Harvard students and alumni who have served in the U.S. military.
+        - separator [ref=e249]
+      - generic [ref=e252]:
+        - generic [ref=e254]:
+          - figure [ref=e256]:
+            - img "A solider on a submarine" [ref=e257]
+          - generic [ref=e258]:
+            - heading "Elam Jones" [level=3] [ref=e259]
+            - paragraph [ref=e261]: An alum of both Harvard Divinity School and Harvard Law School, Elam, a current Ph.D. student, is also an ordained Baptist minister, hospital chaplain, and eight-year veteran of the U.S. Navy Reserve.
+          - generic [ref=e263] [cursor=pointer]:  Read more about Elam
+          - link "Elam Jones" [ref=e264] [cursor=pointer]:
+            - /url: https://gsas.harvard.edu/news/monuments-man
+            - text: Read more about Elam
+        - generic [ref=e266]:
+          - figure [ref=e268]:
+            - img "A solider in uniform stands in front of an Abrams tank." [ref=e269]
+          - generic [ref=e270]:
+            - heading "Leah Foodman" [level=3] [ref=e271]
+            - paragraph [ref=e273]: Before coming to Harvard Law School, Leah, a West Point graduate, served as an Armor officer in the U.S. Army, managing tanks and cavalry operations.
+          - generic [ref=e275] [cursor=pointer]:  Read about Leah
+          - link "Leah Foodman" [ref=e276] [cursor=pointer]:
+            - /url: https://hls.harvard.edu/today/army-veteran-leah-foodman-feel-the-fear-and-do-it-anyway/
+            - text: Read about Leah
+        - generic [ref=e278]:
+          - figure [ref=e280]:
+            - img "A man in military uniform" [ref=e281]
+          - generic [ref=e282]:
+            - heading "Patrick Kuiper" [level=3] [ref=e283]
+            - paragraph [ref=e285]: A Harvard School of Engineering alum, Patrick is teaching math to the next generation of Army cadets at West Point.
+          - generic [ref=e287] [cursor=pointer]:  Read about Patrick
+          - link "Patrick Kuiper" [ref=e288] [cursor=pointer]:
+            - /url: https://seas.harvard.edu/news/alumni-profile-patrick-kuiper-me-16
+            - text: Read about Patrick
+      - generic [ref=e290]:
+        - generic [ref=e293]:
+          - generic [ref=e295]:
+            - generic [ref=e296]: 
+            - generic [ref=e297]: Meet Lindsey
+          - link "Meet Lindsey" [ref=e298] [cursor=pointer]:
+            - /url: https://www.youtube.com/watch?v=Qo2doOm_Dus
+            - text: Click to Play Video
+        - generic [ref=e300]:
+          - heading "Lindsey Chrismon" [level=3] [ref=e301]
+          - generic [ref=e302]:
+            - paragraph [ref=e304]: While attending West Point, Lindsey, a U.S. Army veteran and recent Harvard Business School graduate, made history as the first female pilot of the AH-6M Little Bird helicopter in the elite 160th Special Operations Aviation Regiment. She also served as Brigade Commander and First Captain, becoming only the fourth woman to hold the academy’s top leadership role.
+            - paragraph [ref=e305]:
+              - link "Learn more about Lindsey" [ref=e306] [cursor=pointer]:
+                - /url: https://news.harvard.edu/gazette/story/2025/05/after-flying-apaches-she-needed-a-new-challenge/
+                - text:  Learn more about Lindsey
+      - generic [ref=e309]:
+        - generic [ref=e311]:
+          - figure [ref=e313]:
+            - img "A soldier participating in the Nijmegen 100 Mile March in the Netherlands." [ref=e314]
+          - generic [ref=e315]:
+            - heading "Cory Garbe" [level=3] [ref=e316]
+            - paragraph [ref=e318]: After retiring from the Army following 24 years of service, Cory first came to campus as part of the Warrior-Scholar Project, a program that helps veterans prepare for college.
+          - generic [ref=e320] [cursor=pointer]:  Read about Cory
+          - link "Cory Garbe" [ref=e321] [cursor=pointer]:
+            - /url: https://college.harvard.edu/about/news/army-veteran-attends-harvard-after-20-years-service
+            - text: Read about Cory
+        - generic [ref=e323]:
+          - figure [ref=e325]:
+            - img "A man in military uniform." [ref=e326]
+          - generic [ref=e327]:
+            - heading "Gary Whipple" [level=3] [ref=e328]
+            - paragraph [ref=e330]: Before enrolling at Harvard Extension School, Gary spent two decades leading soldiers, deploying multiple times worldwide, and commanding air defense and military intelligence units.
+          - generic [ref=e332] [cursor=pointer]:  Read more about Gary
+          - link "Gary Whipple" [ref=e333] [cursor=pointer]:
+            - /url: https://extension.harvard.edu/student-story/gary-j-whipple-ii/
+            - text: Read more about Gary
+        - generic [ref=e335]:
+          - figure [ref=e337]:
+            - img "A man in an army uniform." [ref=e338]
+          - generic [ref=e339]:
+            - heading "Raman Solanki" [level=3] [ref=e340]
+            - paragraph [ref=e342]: After serving as a sergeant in the U.S. Army, Raman became an Empowerment and Impact Fellow at the Graduate School of Education to hone the leadership skills needed to address conflict in complex situations.
+          - generic [ref=e344] [cursor=pointer]:  Read about Raman
+          - link "Raman Solanki" [ref=e345] [cursor=pointer]:
+            - /url: https://www.gse.harvard.edu/ideas/news/25/11/army-student-mission
+            - text: Read about Raman
+      - generic [ref=e347]:
+        - figure
+        - generic [ref=e348]:
+          - generic [ref=e350]:
+            - paragraph [ref=e351]: You may also like
+            - heading "Related In Focus topics" [level=2] [ref=e352]
+          - list [ref=e354]:
+            - listitem [ref=e355]:
+              - link "Public Service, Public Good" [ref=e356] [cursor=pointer]:
+                - /url: https://www.harvard.edu/in-focus/public-service-public-good/
+            - listitem [ref=e357]:
+              - link "Inspiring the Next Generation" [ref=e358] [cursor=pointer]:
+                - /url: https://www.harvard.edu/in-focus/mentorship/
+            - listitem [ref=e359]:
+              - link "Driving American Innovation" [ref=e360] [cursor=pointer]:
+                - /url: https://www.harvard.edu/in-focus/driving-american-innovation/
+  - contentinfo [ref=e361]:
+    - generic [ref=e362]:
+      - generic [ref=e363]:
+        - generic [ref=e364]:
+          - heading "Security & Brand" [level=2] [ref=e365]
+          - navigation "Security & Brand Navigation" [ref=e366]:
+            - list [ref=e367]:
+              - listitem [ref=e368]:
+                - link "Report Copyright Infringement" [ref=e369] [cursor=pointer]:
+                  - /url: https://www.harvard.edu/copyright-issue/
+              - listitem [ref=e370]:
+                - link "Report Security Issue" [ref=e371] [cursor=pointer]:
+                  - /url: https://www.harvard.edu/security-issue/
+              - listitem [ref=e372]:
+                - link "Trademark Notice" [ref=e373] [cursor=pointer]:
+                  - /url: https://trademark.harvard.edu/pages/trademark-notice
+        - generic [ref=e374]:
+          - heading "Website" [level=2] [ref=e375]
+          - navigation "Website Navigation" [ref=e376]:
+            - list [ref=e377]:
+              - listitem [ref=e378]:
+                - link "Accessibility" [ref=e379] [cursor=pointer]:
+                  - /url: https://accessibility.harvard.edu/
+              - listitem [ref=e380]:
+                - link "Digital Accessibility" [ref=e381] [cursor=pointer]:
+                  - /url: https://accessibility.huit.harvard.edu/digital-accessibility-policy
+              - listitem [ref=e382]:
+                - link "Privacy Statement" [ref=e383] [cursor=pointer]:
+                  - /url: https://privsec.harvard.edu/harvard-university-umbrella-privacy-statement
+        - generic [ref=e384]:
+          - heading "Get In Touch" [level=2] [ref=e385]
+          - navigation "Get In Touch Navigation" [ref=e386]:
+            - list [ref=e387]:
+              - listitem [ref=e388]:
+                - link "Contact Harvard" [ref=e389] [cursor=pointer]:
+                  - /url: /contact-harvard
+              - listitem [ref=e390]:
+                - link "Maps & Directions" [ref=e391] [cursor=pointer]:
+                  - /url: /maps-directions
+              - listitem [ref=e392]:
+                - link "Jobs" [ref=e393] [cursor=pointer]:
+                  - /url: https://hr.harvard.edu/careers
+      - generic [ref=e394]:
+        - paragraph [ref=e396]: Copyright © 2026 The President and Fellows of Harvard College
+        - link "Harvard University" [ref=e398] [cursor=pointer]:
+          - /url: https://www.harvard.edu/
+          - img "Harvard University" [ref=e399]
+        - list [ref=e402]:
+          - listitem [ref=e403]:
+            - link "Instagram" [ref=e404] [cursor=pointer]:
+              - /url: https://www.instagram.com/harvard/
+              - generic [ref=e405]: Instagram
+              - img [ref=e406]
+          - listitem [ref=e407]:
+            - link "TikTok" [ref=e408] [cursor=pointer]:
+              - /url: https://www.tiktok.com/@harvard
+              - generic [ref=e409]: TikTok
+              - img [ref=e410]
+          - listitem [ref=e411]:
+            - link "LinkedIn" [ref=e412] [cursor=pointer]:
+              - /url: https://www.linkedin.com/school/harvard-university
+              - generic [ref=e413]: LinkedIn
+              - img [ref=e414]
+          - listitem [ref=e415]:
+            - link "Facebook" [ref=e416] [cursor=pointer]:
+              - /url: https://www.facebook.com/Harvard/
+              - generic [ref=e417]: Facebook
+              - img [ref=e418]
+          - listitem [ref=e419]:
+            - link "YouTube" [ref=e420] [cursor=pointer]:
+              - /url: https://www.youtube.com/harvard
+              - generic [ref=e421]: YouTube
+              - img [ref=e422]
