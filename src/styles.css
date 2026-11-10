@@ -175,6 +175,17 @@ ul, ol, dl { margin: 0; padding: 0; }
 .lambang-baru { display: grid; place-items: center; position: relative; z-index: 2; margin-bottom: 18px; }
 .lambang-baru .logo-sekolah { filter: drop-shadow(0 18px 40px rgba(90,10,16,.25)); }
 .lambang-card__teks b { color: var(--merah-tua); }
+
+/* ---------- prakata Plt. Kepala Sekolah ---------- */
+.prakata-grid { display: grid; grid-template-columns: .82fr 1.18fr; gap: 52px; align-items: start; }
+.prakata-foto { background: #fff; border: 1px solid var(--emas); outline: 1px solid var(--emas); outline-offset: 5px; padding: 12px 12px 0; box-shadow: var(--shadow); }
+.prakata-foto img { width: 100%; aspect-ratio: 3 / 4; object-fit: cover; object-position: 50% 18%; background: var(--kertas-2); }
+.prakata-foto__nama { border-top: 2px solid var(--emas); margin-top: 12px; padding: 14px 6px 16px; text-align: center; }
+.prakata-foto__nama b { display: block; font-family: var(--serif); font-size: 21px; }
+.prakata-foto__nama small { display: block; font-size: 10px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: #8A6716; margin-top: 4px; }
+.prakata-quote { position: relative; font-family: var(--serif); font-style: italic; font-size: clamp(19px, 2vw, 23px); line-height: 1.6; color: var(--merah-gelap); padding-left: 26px; border-left: 2px solid var(--emas); margin-bottom: 20px !important; }
+.prakata-teks p { margin-bottom: 14px; }
+.prakata-salam { font-weight: 700; color: var(--tinta); }
 .footer__emblem--baru { display: inline-grid; place-items: center; width: 66px; flex: 0 0 auto; }
 .footer__emblem--baru .logo-sekolah { width: 100%; height: auto; }
 .hi__emblemling--baru { background: transparent; border: 0; backdrop-filter: none; width: 34px; height: 34px; }
@@ -865,7 +876,7 @@ ul, ol, dl { margin: 0; padding: 0; }
   .govbar__right { display: none; }
   .header__aksi .btn--ghost { display: none; }
   .btn-kontak { padding: 10px 13px; font-size: 12px; }
-  .dua-kolom, .identitas-grid { grid-template-columns: 1fr; gap: 30px; }
+  .dua-kolom, .identitas-grid, .prakata-grid { grid-template-columns: 1fr; gap: 30px; }
   .stat-grid, .stat-grid--empat, .foto-ringkas, .capaian-grid { grid-template-columns: repeat(2, 1fr); }
   .akses-grid, .map-grid, .kat-grid, .kontak-cards, .guru-grid, .kaldik-grid { grid-template-columns: repeat(2, 1fr); }
   .section { padding: 60px 0; }
@@ -910,6 +921,7 @@ ul, ol, dl { margin: 0; padding: 0; }
   .stat-card { padding: 20px; }
   .stat-card__value { font-size: 34px; }
   .lambang-card { padding: 28px 20px; }
+  .prakata-foto { max-width: 340px; margin-inline: auto; }
   .lambang-card__ring { width: 190px; height: 190px; }
   .akses-card { padding: 24px 20px; }
   .guru-card { padding: 22px 18px; }

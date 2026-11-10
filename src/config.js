@@ -37,5 +37,6 @@ export const asset = (p) => `${BASE}${p}`;
 export const GAMBAR = {
   lambang: asset('images/emblem-sekolah.png'),
   logoKbb: asset('images/logo-kbb.png'),
-  guru: asset('images/foto-guru.png')
+  guru: asset('images/foto-guru.png'),
+  kepalaSekolah: asset('images/foto-kepala-sekolah.png')
 };

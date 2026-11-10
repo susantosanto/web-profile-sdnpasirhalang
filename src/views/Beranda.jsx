@@ -67,9 +67,39 @@ export default function Beranda() {
         </div>
       </section>
 
+      <section className="section section--paper" id="beranda-prakata">
+        <div className="wrap">
+          <Reveal className="section__intro">
+            <div>
+              <p className="eyebrow">03 / Prakata</p>
+              <h2>Sambutan Plt. Kepala Sekolah</h2>
+            </div>
+            <GoldRule />
+          </Reveal>
+          <div className="prakata-grid">
+            <Reveal className="prakata-foto" variant="zoom">
+              <img src={GAMBAR.kepalaSekolah} alt="Foto Plt. Kepala Sekolah SD Negeri Pasirhalang, Ahmad, S.Pd." />
+              <div className="prakata-foto__nama">
+                <b>Ahmad, S.Pd.</b>
+                <small>Plt. Kepala Sekolah</small>
+              </div>
+            </Reveal>
+            <Reveal delay={0.12} variant="right">
+              <div className="editorial prakata-teks">
+                <p className="prakata-quote">“Anak-anakku sekalian, sekolah ini adalah rumah kedua kalian — tempat kalian tumbuh menjadi pribadi yang berbudi luhur, berani bermimpi besar, dan santun dalam setiap langkah.”</p>
+                <p>Assalamu’alaikum warahmatullahi wabarakatuh. Selamat datang di situs resmi SD Negeri Pasirhalang. Setiap anak yang datang ke gerbang sekolah ini adalah amanah — titipan orang tua yang kami jaga dengan hati, kami didik dengan ilmu, dan kami antar dengan doa.</p>
+                <p>Visi kami — mewujudkan siswa yang berbudi luhur, prima dalam prestasi, santun dan berkarakter — bukan sekadar tulisan di dinding. Ia hidup dalam pembiasaan pagi, dalam tegur sapa yang santun, dalam keberanian anak-anak mencoba dan tidak takut salah. Prestasi akan menyusul ketika akhlak didahulukan.</p>
+                <p>Kepada Bapak/Ibu orang tua, terima kasih atas kepercayaan dan kebersamaannya. Kepada anak-anakku, teruslah rajin belajar dan jangan pernah berhenti bermimpi. Dari Pasirhalang yang sederhana ini, insyaallah lahir generasi yang membanggakan.</p>
+                <p className="prakata-salam">Wassalamu’alaikum warahmatullahi wabarakatuh.</p>
+              </div>
+            </Reveal>
+          </div>
+        </div>
+      </section>
+
       <section className="section" id="beranda-pkks">
         <div className="wrap">
-          <SectionHead kode="03 / Arsip akademik" title="Penilaian Kinerja Kepala Sekolah" />
+          <SectionHead kode="04 / Arsip akademik" title="Penilaian Kinerja Kepala Sekolah" />
           <div className="dua-kolom">
             <Reveal>
               <div className="editorial">
@@ -97,7 +127,7 @@ export default function Beranda() {
         <div className="wrap">
           <Reveal className="section__intro section__intro--terang">
             <div>
-              <p className="eyebrow">04 / Untuk pengawas</p>
+              <p className="eyebrow">05 / Untuk pengawas</p>
               <h2>Akses cepat verifikasi</h2>
             </div>
             <GoldRule />
@@ -136,7 +166,7 @@ export default function Beranda() {
 
       <section className="section" id="beranda-map">
         <div className="wrap">
-          <SectionHead kode="05 / Peta arsip" title="Dua belas map kompetensi" desc="Indeks resmi PKKS 2026/2027. Pilih map untuk menelusuri butir di dalamnya." />
+          <SectionHead kode="06 / Peta arsip" title="Dua belas map kompetensi" desc="Indeks resmi PKKS 2026/2027. Pilih map untuk menelusuri butir di dalamnya." />
           <Stagger className="map-grid">
             {data.maps.map((mp) => (
               <Item key={mp.no}>
