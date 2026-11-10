@@ -86,10 +86,10 @@ export default function Beranda() {
             </Reveal>
             <Reveal delay={0.12} variant="right">
               <div className="editorial prakata-teks">
-                <p className="prakata-quote">“Anak-anakku sekalian, sekolah ini adalah rumah kedua kalian — tempat kalian tumbuh menjadi pribadi yang berbudi luhur, berani bermimpi besar, dan santun dalam setiap langkah.”</p>
-                <p>Assalamu’alaikum warahmatullahi wabarakatuh. Selamat datang di situs resmi SD Negeri Pasirhalang. Setiap anak yang datang ke gerbang sekolah ini adalah amanah — titipan orang tua yang kami jaga dengan hati, kami didik dengan ilmu, dan kami antar dengan doa.</p>
-                <p>Visi kami — mewujudkan siswa yang berbudi luhur, prima dalam prestasi, santun dan berkarakter — bukan sekadar tulisan di dinding. Ia hidup dalam pembiasaan pagi, dalam tegur sapa yang santun, dalam keberanian anak-anak mencoba dan tidak takut salah. Prestasi akan menyusul ketika akhlak didahulukan.</p>
-                <p>Kepada Bapak/Ibu orang tua, terima kasih atas kepercayaan dan kebersamaannya. Kepada anak-anakku, teruslah rajin belajar dan jangan pernah berhenti bermimpi. Dari Pasirhalang yang sederhana ini, insyaallah lahir generasi yang membanggakan.</p>
+                <p className="prakata-quote">“Visi sekolah ini adalah janji kami — kepada setiap anak dan setiap orang tua — bahwa dari gerbang SD Negeri Pasirhalang, putra-putri kita diantar tumbuh menjadi pribadi yang berbudi luhur, prima dalam prestasi, santun dan berkarakter.”</p>
+                <p>Assalamu’alaikum warahmatullahi wabarakatuh. Visi tersebut menjadi kompas seluruh langkah kami: menanamkan keyakinan kepada Tuhan Yang Maha Esa, menyiapkan generasi yang unggul dalam IMTAQ dan IPTEK, serta membentuk insan yang aktif, kreatif, dan inovatif mengikuti perkembangan zaman.</p>
+                <p>Untuk mewujudkannya, pembelajaran kami pusatkan pada siswa; budi pekerti luhur kami bina menuju bangsa yang santun; budaya 5S — salam, senyum, sapa, sopan, santun — kami hidupkan setiap hari; lingkungan sekolah kami jaga agar bersih, rindang, dan nyaman; budaya baca kami tumbuhkan; dan profesionalisme guru terus kami asah. Semua itu kami tempuh bersama warga sekolah dan masyarakat, karena sekolah yang maju lahir dari kemandirian dan kebersamaan.</p>
+                <p>Kepada Bapak/Ibu orang tua, terima kasih atas amanah dan kepercayaan yang dititipkan kepada kami. Mari bergandengan tangan — dari Pasirhalang yang sederhana ini, insyaallah tumbuh generasi yang membanggakan agama, bangsa, dan keluarga.</p>
                 <p className="prakata-salam">Wassalamu’alaikum warahmatullahi wabarakatuh.</p>
               </div>
             </Reveal>
