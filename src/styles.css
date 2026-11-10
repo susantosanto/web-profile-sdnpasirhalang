@@ -764,6 +764,9 @@ ul, ol, dl { margin: 0; padding: 0; }
 .kontak-card a { display: inline-flex; align-items: center; gap: 5px; font-size: 11.5px; font-weight: 700; color: var(--merah); margin-top: 12px; }
 .note-card { background: #fff; border-left: 3px solid var(--emas); padding: 22px 24px; }
 .note-card b { font-size: 13.5px; }
+.note-card--visi { border-left-width: 3px; }
+.note-card--visi b { display: block; font-family: var(--serif); font-style: italic; font-weight: 600; font-size: clamp(18px, 2vw, 23px); line-height: 1.6; color: var(--merah-gelap); }
+.langkah--misi { display: grid; grid-template-columns: 1fr 1fr; gap: 0 52px; margin-top: 34px; }
 .note-card p { font-size: 12.8px; color: var(--muted); line-height: 1.75; margin-top: 8px; }
 .ptk-total { display: flex; align-items: center; gap: 16px; background: var(--merah-wash); padding: 22px 26px; border: 1px solid var(--merah-garis); margin-bottom: 22px; }
 .ptk-total__angka { font-family: var(--serif); font-size: 54px; line-height: 1; color: var(--merah); }
@@ -877,6 +880,7 @@ ul, ol, dl { margin: 0; padding: 0; }
   .header__aksi .btn--ghost { display: none; }
   .btn-kontak { padding: 10px 13px; font-size: 12px; }
   .dua-kolom, .identitas-grid, .prakata-grid { grid-template-columns: 1fr; gap: 30px; }
+  .langkah--misi { grid-template-columns: 1fr; margin-top: 26px; }
   .stat-grid, .stat-grid--empat, .foto-ringkas, .capaian-grid { grid-template-columns: repeat(2, 1fr); }
   .akses-grid, .map-grid, .kat-grid, .kontak-cards, .guru-grid, .kaldik-grid { grid-template-columns: repeat(2, 1fr); }
   .section { padding: 60px 0; }

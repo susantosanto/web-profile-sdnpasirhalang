@@ -1,12 +1,26 @@
 import { motion } from 'framer-motion';
-import { ArrowUpRight, BookOpen, Camera, FolderOpen, Images } from 'lucide-react';
+import { ArrowUpRight, BookOpen, CalendarDays, FolderOpen, Images } from 'lucide-react';
 import { useSite } from '../App';
 import { GAMBAR } from '../config';
 import LogoSekolah from '../components/LogoSekolah';
 import { CountUp, EASE, GoldRule, Item, Reveal, Stagger } from '../components/motion';
-import { ActionLink, KeyValue, SectionHead, StatTile } from '../components/Ui';
+import { KeyValue, SectionHead, StatTile } from '../components/Ui';
 import Hero from '../components/Hero';
 import { pad } from '../lib/site';
+
+const MISI = [
+  'Menanamkan keyakinan terhadap Tuhan Yang Maha Esa',
+  'Menyiapkan generasi unggul yang memiliki potensi di bidang IMTAQ dan IPTEK',
+  'Membentuk sumber daya manusia yang aktif, kreatif, inovatif sesuai dengan perkembangan zaman',
+  'Meningkatkan kualitas dan efektivitas PBM melalui pendekatan pembelajaran yang berpusat pada siswa',
+  'Membina dan mengembangkan budi pekerti luhur menuju bangsa yang santun',
+  'Menciptakan lingkungan sekolah yang bersih, rindang, indah, nyaman dan sehat',
+  'Selalu membudayakan sikap 5S (salam, senyum, sapa, sopan, dan santun)',
+  'Menerapkan partisipasi dengan melibatkan warga sekolah/stakeholder untuk kemandirian sekolah/MBS',
+  'Membangun citra sekolah sebagai mitra terpercaya di masyarakat',
+  'Meningkatkan profesionalisme guru sesuai dengan tupoksinya melalui berbagai kegiatan pelatihan dan bimbingan pendidikan',
+  'Menumbuhkan budaya baca bagi warga sekolah'
+];
 
 export default function Beranda() {
   const { data } = useSite();
@@ -97,29 +111,19 @@ export default function Beranda() {
         </div>
       </section>
 
-      <section className="section" id="beranda-pkks">
+      <section className="section" id="beranda-arah">
         <div className="wrap">
-          <SectionHead kode="04 / Arsip akademik" title="Penilaian Kinerja Kepala Sekolah" />
-          <div className="dua-kolom">
-            <Reveal>
-              <div className="editorial">
-                <p className="eyebrow">Tahun ajaran {m.tahunAjaran}</p>
-                <h3>Arsip yang tertata, mudah diverifikasi</h3>
-                <p>Indeks bukti fisik PKKS 2026 disusun per 12 map kompetensi, 102 butir, dengan 99 berkas dokumen aktif dan 3 butir yang bersumber dari aplikasi eksternal. Hanya butir yang secara eksplisit meminta foto di dalam dokumennya yang tercantum pada daftar kelengkapan foto.</p>
-                <ActionLink href="#pkks/indeks">Buka menu PKKS</ActionLink>
-              </div>
-            </Reveal>
-            <Reveal delay={0.1} variant="right">
-              <KeyValue rows={[
-                ['Tahun ajaran', m.tahunAjaran],
-                ['Map kompetensi', '12 map'],
-                ['Bukti fisik', '102 butir'],
-                ['Berkas aktif', '99 dokumen'],
-                ['Materi yang memerlukan foto', `${data.foto.ringkasan.wajib + data.foto.ringkasan.pendukung} butir`],
-                ['Sumber eksternal', '3 butir · ARKAS / ATISISBADA']
-              ]} />
-            </Reveal>
-          </div>
+          <SectionHead kode="04 / Arah sekolah" title="Visi, misi & tujuan" desc="Ditetapkan dalam Kurikulum Operasional Satuan Pendidikan tahun ajaran 2026/2027 dan berlaku hingga 2029/2030." />
+          <Reveal>
+            <div className="note-card note-card--visi"><b>“Mewujudkan siswa SDN Pasirhalang yang berbudi luhur, prima dalam prestasi, santun dan berkarakter.”</b></div>
+          </Reveal>
+          <Reveal delay={0.1}>
+            <ol className="langkah langkah--misi">
+              {MISI.map((isi, i) => (
+                <li key={isi}><span>{pad(i + 1)}</span><div><b>Misi {pad(i + 1)}.</b><p>{isi}.</p></div></li>
+              ))}
+            </ol>
+          </Reveal>
         </div>
       </section>
 
@@ -127,28 +131,28 @@ export default function Beranda() {
         <div className="wrap">
           <Reveal className="section__intro section__intro--terang">
             <div>
-              <p className="eyebrow">05 / Untuk pengawas</p>
-              <h2>Akses cepat verifikasi</h2>
+              <p className="eyebrow">05 / Jelajahi</p>
+              <h2>Kenali sekolah kami</h2>
             </div>
             <GoldRule />
           </Reveal>
           <Stagger className="akses-grid">
             <Item>
-              <motion.a className="akses-card" href="#pkks/indeks" whileHover={{ y: -8 }} transition={{ type: 'spring', stiffness: 260, damping: 22 }}>
+              <motion.a className="akses-card" href="#profil" whileHover={{ y: -8 }} transition={{ type: 'spring', stiffness: 260, damping: 22 }}>
                 <span className="akses-card__icon"><FolderOpen size={22} strokeWidth={1.5} /></span>
-                <span className="mono">01 / ARSIP DOKUMEN</span>
-                <strong>Indeks 12 map PKKS</strong>
-                <p>Telusuri 102 butir bukti fisik berdasarkan kode, nama berkas, dan rujukan.</p>
-                <em>Buka indeks <ArrowUpRight size={15} /></em>
+                <span className="mono">01 / PROFIL SEKOLAH</span>
+                <strong>Identitas & data pokok</strong>
+                <p>NPSN, rombongan belajar, dewan guru, prasarana, dan jadwal pelajaran.</p>
+                <em>Buka profil <ArrowUpRight size={15} /></em>
               </motion.a>
             </Item>
             <Item>
-              <motion.a className="akses-card" href="#foto/kelengkapan" whileHover={{ y: -8 }} transition={{ type: 'spring', stiffness: 260, damping: 22 }}>
-                <span className="akses-card__icon"><Camera size={22} strokeWidth={1.5} /></span>
-                <span className="mono">02 / DOKUMENTASI KEGIATAN</span>
-                <strong>Foto per materi PKKS</strong>
-                <p>Setiap materi tertaut ke kategori kegiatan dan daftar bidikan foto yang harus tersedia.</p>
-                <em>Buka dokumentasi <ArrowUpRight size={15} /></em>
+              <motion.a className="akses-card" href="#profil-jadwal" whileHover={{ y: -8 }} transition={{ type: 'spring', stiffness: 260, damping: 22 }}>
+                <span className="akses-card__icon"><CalendarDays size={22} strokeWidth={1.5} /></span>
+                <span className="mono">02 / JADWAL & KALENDER</span>
+                <strong>KBM dan agenda setahun</strong>
+                <p>Jadwal pelajaran kelas 1–6 serta kalender pendidikan 2026/2027.</p>
+                <em>Lihat jadwal <ArrowUpRight size={15} /></em>
               </motion.a>
             </Item>
             <Item>
