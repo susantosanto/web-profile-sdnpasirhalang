@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { ArrowUpRight, BookOpen, CalendarDays, FolderOpen, Images } from 'lucide-react';
+import { ArrowUpRight, CalendarDays, FolderOpen, Images } from 'lucide-react';
 import { useSite } from '../App';
 import { GAMBAR } from '../config';
 import LogoSekolah from '../components/LogoSekolah';
@@ -168,25 +168,30 @@ export default function Beranda() {
         </div>
       </section>
 
-      <section className="section" id="beranda-map">
+      <section className="section" id="beranda-kunjung">
         <div className="wrap">
-          <SectionHead kode="06 / Peta arsip" title="Dua belas map kompetensi" desc="Indeks resmi PKKS 2026/2027. Pilih map untuk menelusuri butir di dalamnya." />
-          <Stagger className="map-grid">
-            {data.maps.map((mp) => (
-              <Item key={mp.no}>
-                <motion.a
-                  className="map-card"
-                  href={`#pkks/indeks`}
-                  whileHover={{ y: -6 }}
-                  transition={{ type: 'spring', stiffness: 280, damping: 22 }}
-                >
-                  <span className="map-card__no">{pad(mp.no)}</span>
-                  <span className="map-card__judul">{mp.judul}</span>
-                  <span className="map-card__total">{mp.total} butir <BookOpen size={13} /></span>
-                </motion.a>
-              </Item>
-            ))}
-          </Stagger>
+          <SectionHead kode="06 / Kunjungi" title="Kami menunggu kedatangan Anda" desc="Silaturahmi, pendaftaran murid baru, dan keperluan administrasi — pintu sekolah kami terbuka pada jam layanan." />
+          <div className="dua-kolom">
+            <Reveal>
+              <div className="editorial">
+                <p className="eyebrow">Kp. Pasirhalang · Cikalongwetan</p>
+                <h3>Datang, lihat, dan rasakan sendiri</h3>
+                <p>SD Negeri Pasirhalang terletak di Kampung Pasirhalang RT.03 RW.14, Desa Mandalamukti — mudah dijangkau dari pusat Kecamatan Cikalongwetan. Untuk kunjungan rombongan atau keperluan resmi, hubungi kami terlebih dahulu agar dapat menyambut dengan baik.</p>
+                <div className="kunjung-aksi">
+                  <a className="btn btn--merah" href="#kontak">Buka halaman kontak <ArrowUpRight size={15} /></a>
+                  <a className="btn btn--ghost" href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(m.lintang + ',' + m.bujur)}`} target="_blank" rel="noopener noreferrer">Lihat peta <ArrowUpRight size={15} /></a>
+                </div>
+              </div>
+            </Reveal>
+            <Reveal delay={0.1} variant="right">
+              <KeyValue rows={[
+                ['Alamat', m.alamat],
+                ['Telepon', m.telepon],
+                ['Email', m.email],
+                ['Jam layanan', 'Senin–Jumat · jam sekolah']
+              ]} />
+            </Reveal>
+          </div>
         </div>
       </section>
     </>

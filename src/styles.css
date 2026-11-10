@@ -186,6 +186,7 @@ ul, ol, dl { margin: 0; padding: 0; }
 .prakata-quote { position: relative; font-family: var(--serif); font-style: italic; font-size: clamp(19px, 2vw, 23px); line-height: 1.6; color: var(--merah-gelap); padding-left: 26px; border-left: 2px solid var(--emas); margin-bottom: 20px !important; }
 .prakata-teks p { margin-bottom: 14px; }
 .prakata-salam { font-weight: 700; color: var(--tinta); }
+.kunjung-aksi { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 22px; }
 .footer__emblem--baru { display: inline-grid; place-items: center; width: 66px; flex: 0 0 auto; }
 .footer__emblem--baru .logo-sekolah { width: 100%; height: auto; }
 .hi__emblemling--baru { background: transparent; border: 0; backdrop-filter: none; width: 34px; height: 34px; }
