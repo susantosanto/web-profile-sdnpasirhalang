@@ -170,13 +170,13 @@ export default function Beranda() {
 
       <section className="section" id="beranda-kunjung">
         <div className="wrap">
-          <SectionHead kode="06 / Kunjungi" title="Kami menunggu kedatangan Anda" desc="Silaturahmi, pendaftaran murid baru, dan keperluan administrasi — pintu sekolah kami terbuka pada jam layanan." />
+          <SectionHead kode="06 / Kunjungi" title="Pintu kami terbuka untuk Anda" desc="Kepercayaan terjalin dari perjumpaan. Untuk pendaftaran murid baru, mutasi, maupun keperluan administrasi, silakan datang langsung atau hubungi kami pada jam layanan." />
           <div className="dua-kolom">
             <Reveal>
               <div className="editorial">
                 <p className="eyebrow">Kp. Pasirhalang · Cikalongwetan</p>
-                <h3>Datang, lihat, dan rasakan sendiri</h3>
-                <p>SD Negeri Pasirhalang terletak di Kampung Pasirhalang RT.03 RW.14, Desa Mandalamukti — mudah dijangkau dari pusat Kecamatan Cikalongwetan. Untuk kunjungan rombongan atau keperluan resmi, hubungi kami terlebih dahulu agar dapat menyambut dengan baik.</p>
+                <h3>Silaturahmi adalah awal kepercayaan</h3>
+                <p>Kami mengundang Bapak/Ibu untuk datang dan melihat langsung suasana belajar di SD Negeri Pasirhalang — menyapa para guru, meninjau ruang kelas dan prasarana, serta berdialog mengenai pendidikan putra-putri Anda. Kunjungan rombongan atau keperluan resmi sebaiknya dikonfirmasi terlebih dahulu agar kami dapat menyambut dengan sebaik-baiknya.</p>
                 <div className="kunjung-aksi">
                   <a className="btn btn--merah" href="#kontak">Buka halaman kontak <ArrowUpRight size={15} /></a>
                   <a className="btn btn--ghost" href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(m.lintang + ',' + m.bujur)}`} target="_blank" rel="noopener noreferrer">Lihat peta <ArrowUpRight size={15} /></a>
