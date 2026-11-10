@@ -174,7 +174,26 @@ ul, ol, dl { margin: 0; padding: 0; }
 .lambang-card--baru { background: linear-gradient(180deg, #FFFDF9, #FBF3E4); border-color: #E6D3A6; }
 .lambang-baru { display: grid; place-items: center; position: relative; z-index: 2; margin-bottom: 18px; }
 .lambang-baru .logo-sekolah { filter: drop-shadow(0 18px 40px rgba(90,10,16,.25)); }
-.lambang-card__teks b { color: var(--merah-tua); }
+/* ---------- dosier identitas premium ---------- */
+.identitas-dossier { display: grid; grid-template-columns: 330px 1fr; gap: 24px; align-items: start; }
+.identitas-ringkas { background: linear-gradient(180deg, #42080D 0%, #7A0F14 100%); color: #fff; border: 1px solid #5B0A10; border-bottom: 2px solid var(--emas); padding: 30px 28px; box-shadow: var(--shadow); }
+.identitas-ringkas__eyebrow { color: var(--emas-muda); margin-bottom: 8px; }
+.identitas-ringkas__npsn { font-family: var(--serif); font-size: 38px; letter-spacing: .01em; color: #fff; line-height: 1.1; }
+.identitas-ringkas h3 { font-size: 21px; line-height: 1.35; margin-top: 10px; }
+.identitas-ringkas__chips { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 16px; }
+.identitas-ringkas__chips span { font-family: var(--mono); font-size: 10px; letter-spacing: .05em; padding: 5px 10px; border: 1px solid rgba(200,162,74,.55); color: var(--emas-muda); border-radius: 2px; background: rgba(255,255,255,.05); }
+.identitas-ringkas__hr { height: 1px; background: rgba(255,255,255,.16); margin: 20px 0 6px; }
+.identitas-ringkas dl { margin: 0; }
+.identitas-ringkas dl > div { display: grid; gap: 2px; padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,.12); }
+.identitas-ringkas dl > div:last-child { border-bottom: 0; }
+.identitas-ringkas dt { font-size: 9.5px; letter-spacing: .12em; text-transform: uppercase; color: rgba(255,255,255,.6); }
+.identitas-ringkas dd { margin: 0; font-size: 13.5px; font-weight: 700; }
+.identitas-daftar { margin: 0; background: #fff; border: 1px solid var(--rule); border-top: 2px solid var(--merah); box-shadow: var(--shadow-kecil); }
+.identitas-daftar > div { display: grid; grid-template-columns: 210px 1fr; gap: 16px; padding: 12px 22px; border-bottom: 1px solid var(--rule); transition: background .2s ease; }
+.identitas-daftar > div:last-child { border-bottom: 0; }
+.identitas-daftar > div:hover { background: #FFFAF7; }
+.identitas-daftar dt { font-size: 10.5px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--hint); padding-top: 2px; }
+.identitas-daftar dd { margin: 0; font-size: 13.5px; font-weight: 600; line-height: 1.6; word-break: break-word; }
 
 /* ---------- prakata Plt. Kepala Sekolah ---------- */
 .prakata-grid { display: grid; grid-template-columns: .82fr 1.18fr; gap: 52px; align-items: start; }
@@ -881,6 +900,7 @@ ul, ol, dl { margin: 0; padding: 0; }
   .header__aksi .btn--ghost { display: none; }
   .btn-kontak { padding: 10px 13px; font-size: 12px; }
   .dua-kolom, .identitas-grid, .prakata-grid { grid-template-columns: 1fr; gap: 30px; }
+  .identitas-dossier { grid-template-columns: 1fr; }
   .langkah--misi { grid-template-columns: 1fr; margin-top: 26px; }
   .stat-grid, .stat-grid--empat, .foto-ringkas, .capaian-grid { grid-template-columns: repeat(2, 1fr); }
   .akses-grid, .map-grid, .kat-grid, .kontak-cards, .guru-grid, .kaldik-grid { grid-template-columns: repeat(2, 1fr); }
@@ -947,6 +967,9 @@ ul, ol, dl { margin: 0; padding: 0; }
   .page-hero__inner { padding-block: 48px 42px; }
   .page-hero h1 { font-size: 34px; }
   .page-hero__lede { font-size: 13.5px; }
+  .identitas-daftar > div { grid-template-columns: 1fr; gap: 2px; padding: 11px 18px; }
+  .identitas-ringkas { padding: 24px 22px; }
+  .identitas-ringkas__npsn { font-size: 32px; }
   .panel__meta > div { grid-template-columns: 108px 1fr; }
   .lengkap-head, .lengkap-row { grid-template-columns: 60px 1fr 70px; gap: 8px; }
 }

@@ -25,6 +25,7 @@ export default function Profil() {
   const { data } = useSite();
   const p = data.profil;
   const m = data.meta;
+  const cari = (label) => (p.identitas.find(([k]) => k === label) || [])[1] || '—';
 
   return (
     <>
@@ -70,7 +71,30 @@ export default function Profil() {
       <section className="section section--paper" id="profil-identitas">
         <div className="wrap">
           <SectionHead kode="02 / Identitas" title="Identitas dan data periodik" />
-          <Reveal><KeyValue rows={p.identitas} /></Reveal>
+          <div className="identitas-dossier">
+            <Reveal className="identitas-ringkas" variant="zoom">
+              <p className="eyebrow identitas-ringkas__eyebrow">Nomor Pokok Sekolah Nasional</p>
+              <div className="identitas-ringkas__npsn">{cari('NPSN')}</div>
+              <h3>{cari('Nama satuan pendidikan')}</h3>
+              <div className="identitas-ringkas__chips">
+                <span>{cari('Jenjang / status')}</span>
+                <span>MBS · {cari('Manajemen berbasis sekolah')}</span>
+                <span>{cari('Waktu penyelenggaraan')}</span>
+              </div>
+              <div className="identitas-ringkas__hr" aria-hidden="true" />
+              <dl>
+                <div><dt>Kepala sekolah</dt><dd>{cari('Kepala sekolah')}</dd></div>
+                <div><dt>Tahun ajaran</dt><dd>{cari('Tahun ajaran')}</dd></div>
+              </dl>
+            </Reveal>
+            <Reveal delay={0.12} variant="right">
+              <dl className="identitas-daftar">
+                {p.identitas.map(([k, v]) => (
+                  <div key={k}><dt>{k}</dt><dd>{v}</dd></div>
+                ))}
+              </dl>
+            </Reveal>
+          </div>
         </div>
       </section>
 
