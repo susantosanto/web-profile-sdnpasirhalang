@@ -223,20 +223,38 @@ ul, ol, dl { margin: 0; padding: 0; }
 #beranda-identitas .tbl--kv tr:last-child td { border-bottom: 0; }
 #beranda-identitas .tbl--kv tr:hover td { background: #FFFAF7; }
 #beranda-identitas .tbl--kv .lbl { color: var(--merah-tua); font-weight: 700; }
-/* 03 / Prakata — bingkai foto modern + kutipan besar */
-#beranda-prakata .prakata-foto { border-radius: 22px; box-shadow: 0 34px 70px rgba(90,20,20,.20); }
+/* 03 / Prakata — editorial premium: watermark, bingkai offset, drop cap */
+#beranda-prakata { position: relative; overflow: hidden; }
+#beranda-prakata::before { content: 'PRAKATA'; position: absolute; top: 30px; right: -16px; font-family: var(--serif); font-weight: 700; font-size: clamp(88px, 13vw, 176px); line-height: 1; letter-spacing: -.02em; color: transparent; -webkit-text-stroke: 1px rgba(122,15,20,.16); pointer-events: none; user-select: none; }
+#beranda-prakata .wrap { position: relative; z-index: 1; }
+#beranda-prakata .prakata-foto { border-radius: 22px; box-shadow: 14px 14px 0 rgba(200,162,74,.28), 0 34px 70px rgba(90,20,20,.20); padding-bottom: 26px; }
 #beranda-prakata .prakata-foto img { border-radius: 12px 12px 0 0; }
-#beranda-prakata .prakata-quote { font-size: clamp(21px, 2.4vw, 26px); }
-/* 04 / Arah sekolah — kartu visi gelap + misi modern */
-#beranda-arah .note-card--visi { background: linear-gradient(135deg, #42080D 0%, #7A0F14 100%); border: 0; border-radius: 18px; padding: 34px 34px; box-shadow: 0 26px 60px rgba(90,10,16,.30); position: relative; overflow: hidden; }
+#beranda-prakata .prakata-foto__nama { margin: -34px 22px 0; position: relative; background: linear-gradient(180deg, #8A0E16, #5B0A10); border: 1px solid #5B0A10; border-bottom: 2px solid var(--emas); border-radius: 14px; }
+#beranda-prakata .prakata-foto__nama b { color: #fff; }
+#beranda-prakata .prakata-foto__nama small { color: var(--emas-muda); }
+#beranda-prakata .prakata-quote { position: relative; font-size: clamp(22px, 2.5vw, 27px); border-left: 0; padding-left: 0; margin-bottom: 24px !important; }
+#beranda-prakata .prakata-quote::before { content: '\201C'; display: block; font-family: var(--serif); font-size: 72px; line-height: .55; color: var(--emas); margin-bottom: 18px; }
+#beranda-prakata .prakata-drop::first-letter { font-family: var(--serif); font-weight: 700; font-size: 3.4em; float: left; line-height: .82; padding-right: 12px; color: var(--merah-tua); }
+.prakata-ttd { margin-top: 24px !important; padding-top: 18px; border-top: 1px solid var(--rule); }
+.prakata-ttd b { display: block; font-family: var(--serif); font-style: italic; font-size: 24px; color: var(--merah-gelap); }
+.prakata-ttd small { display: block; font-size: 10px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: #8A6716; margin-top: 5px; }
+/* 04 / Arah sekolah — visi monumental + misi bernomor hantu */
+#beranda-arah .note-card--visi { background: linear-gradient(135deg, #42080D 0%, #7A0F14 100%); border: 0; border-radius: 20px; padding: 56px 44px; text-align: center; box-shadow: 0 26px 60px rgba(90,10,16,.30); position: relative; overflow: hidden; }
 #beranda-arah .note-card--visi::before { content: ''; position: absolute; width: 340px; height: 340px; right: -120px; top: -120px; border-radius: 50%; background: radial-gradient(circle, rgba(200,162,74,.35), transparent 70%); pointer-events: none; }
-#beranda-arah .note-card--visi b { position: relative; color: #fff; }
-#beranda-arah .langkah--misi li { background: #fff; border: 1px solid #EFE4D8; border-radius: 16px; padding: 18px 20px; box-shadow: 0 12px 28px rgba(90,20,20,.07); transition: transform .25s ease, box-shadow .25s ease; }
-#beranda-arah .langkah--misi li:hover { transform: translateY(-4px); box-shadow: 0 22px 44px rgba(90,20,20,.12); }
-#beranda-arah .langkah--misi li > span { display: grid; place-items: center; width: 36px; height: 36px; flex: none; border-radius: 50%; background: linear-gradient(135deg, #E9D5A7, #C8A24A); color: #3A0C10; font-weight: 800; font-size: 12px; padding: 0; }
+#beranda-arah .note-card--visi__eyebrow { display: block; position: relative; font-size: 10.5px; font-weight: 800; letter-spacing: .26em; text-transform: uppercase; color: var(--emas-muda); margin-bottom: 18px; }
+#beranda-arah .note-card--visi b { position: relative; color: #fff; font-size: clamp(22px, 2.6vw, 30px); line-height: 1.55; }
+#beranda-arah .note-card--visi__orn { display: block; position: relative; margin-top: 24px; color: var(--emas); letter-spacing: .5em; font-size: 12px; }
+#beranda-arah .langkah--misi { margin-top: 14px; }
+#beranda-arah .langkah--misi li { background: none; border: 0; border-radius: 0; box-shadow: none; padding: 24px 0; border-bottom: 1px solid var(--rule); }
+#beranda-arah .langkah--misi li:hover { transform: none; box-shadow: none; }
+#beranda-arah .langkah--misi li > span { flex: 0 0 72px; width: auto; height: auto; display: block; background: none; border-radius: 0; padding: 0; font-family: var(--serif); font-size: 54px; font-weight: 700; line-height: 1; color: transparent; -webkit-text-stroke: 1.5px rgba(138,14,22,.45); transition: color .25s ease; }
+#beranda-arah .langkah--misi li:hover > span { color: rgba(138,14,22,.9); }
+#beranda-arah .langkah--misi b { font-size: 12.5px; letter-spacing: .1em; text-transform: uppercase; color: var(--merah-tua); }
+#beranda-arah .langkah--misi p { font-size: 13.5px; }
 @media (max-width: 560px) {
   #beranda-statistik .stat-grid { gap: 12px; }
-  #beranda-arah .note-card--visi { padding: 26px 24px; }
+  #beranda-arah .note-card--visi { padding: 40px 26px; }
+  #beranda-arah .langkah--misi li > span { flex-basis: 52px; font-size: 40px; }
 }
 .footer__emblem--baru { display: inline-grid; place-items: center; width: 66px; flex: 0 0 auto; }
 .footer__emblem--baru .logo-sekolah { width: 100%; height: auto; }

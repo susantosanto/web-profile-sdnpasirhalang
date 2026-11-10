@@ -101,10 +101,11 @@ export default function Beranda() {
             <Reveal delay={0.12} variant="right">
               <div className="editorial prakata-teks">
                 <p className="prakata-quote">“Setiap anak yang melangkahkan kaki ke sekolah ini membawa cahaya dan harapan. Tugas kamilah — dengan segenap hati — menuntun cahaya itu tumbuh menjadi pribadi yang berbudi luhur, unggul dalam prestasi, serta santun dan berkarakter, hingga kelak menerangi keluarga, masyarakat, dan bangsanya.”</p>
-                <p>Assalamu’alaikum warahmatullahi wabarakatuh. Visi tersebut menjadi kompas seluruh langkah kami: menanamkan keyakinan kepada Tuhan Yang Maha Esa, menyiapkan generasi yang unggul dalam IMTAQ dan IPTEK, serta membentuk insan yang aktif, kreatif, dan inovatif mengikuti perkembangan zaman.</p>
+                <p className="prakata-drop">Assalamu’alaikum warahmatullahi wabarakatuh. Visi tersebut menjadi kompas seluruh langkah kami: menanamkan keyakinan kepada Tuhan Yang Maha Esa, menyiapkan generasi yang unggul dalam IMTAQ dan IPTEK, serta membentuk insan yang aktif, kreatif, dan inovatif mengikuti perkembangan zaman.</p>
                 <p>Untuk mewujudkannya, seluruh program sekolah kami jalankan dengan sungguh-sungguh: pembelajaran yang berpusat pada siswa, pembinaan budi pekerti menuju bangsa yang santun, budaya 5S — salam, senyum, sapa, sopan, santun — yang hidup setiap hari, lingkungan yang bersih, rindang, dan nyaman, budaya baca yang terus tumbuh, serta profesionalisme guru yang senantiasa diasah. Melalui media informasi ini, profil, program, dan dokumentasi kegiatan sekolah kami sajikan secara terbuka sebagai wujud akuntabilitas sekaligus undangan untuk bertumbuh bersama.</p>
                 <p>Ke depan, kami berkomitmen menjaga setiap amanah yang dititipkan: mendidik dengan keteladanan, membimbing dengan kesabaran, dan mengantar setiap anak mencapai potensi terbaiknya. Semoga setiap ikhtiar kita dimudahkan, dan dari Pasirhalang yang sederhana ini tumbuh generasi yang berilmu, berakhlak, serta bermanfaat bagi sesama.</p>
                 <p className="prakata-salam">Wassalamu’alaikum warahmatullahi wabarakatuh.</p>
+                <p className="prakata-ttd"><b>Ahmad, S.Pd.</b><small>Plt. Kepala Sekolah · SD Negeri Pasirhalang</small></p>
               </div>
             </Reveal>
           </div>
@@ -115,7 +116,7 @@ export default function Beranda() {
         <div className="wrap">
           <SectionHead kode="04 / Arah sekolah" title="Visi, misi & tujuan" desc="Ditetapkan dalam Kurikulum Operasional Satuan Pendidikan tahun ajaran 2026/2027 dan berlaku hingga 2029/2030." />
           <Reveal>
-            <div className="note-card note-card--visi"><b>“Mewujudkan siswa SDN Pasirhalang yang berbudi luhur, prima dalam prestasi, santun dan berkarakter.”</b></div>
+            <div className="note-card note-card--visi"><span className="note-card--visi__eyebrow">Visi · Tahun pelajaran 2026/2027 s.d. 2029/2030</span><b>“Mewujudkan siswa SDN Pasirhalang yang berbudi luhur, prima dalam prestasi, santun dan berkarakter.”</b><span className="note-card--visi__orn" aria-hidden="true">— ◆ —</span></div>
           </Reveal>
           <Reveal delay={0.1}>
             <ol className="langkah langkah--misi">
