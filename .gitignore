@@ -1,0 +1,14 @@
+# Dependencies
+node_modules/
+
+# Build output (Vercel builds from source)
+dist/
+
+# Logs & local tooling
+.playwright-mcp/
+*.log
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.local
