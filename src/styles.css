@@ -222,6 +222,7 @@ ul, ol, dl { margin: 0; padding: 0; }
 .mobile-nav__row button svg.is-open { transform: rotate(180deg); }
 .mobile-nav__sub { padding: 0 0 12px 14px; display: grid; gap: 4px; }
 .mobile-nav__sub a { font-size: 12.5px; color: var(--muted); padding: 7px 0; }
+.mobile-nav__kontak { display: flex; justify-content: center; margin: 6px 0 12px; }
 
 /* ---------- hero 2026 premium ---------- */
 .hero--2026 { position: relative; background: #7A0F14; color: #fff; overflow: hidden; isolation: isolate; }
@@ -369,18 +370,21 @@ ul, ol, dl { margin: 0; padding: 0; }
 }
 .hi__scroll:hover { color: #fff; }
 @media (max-width: 980px) {
-  .hero--imm { min-height: 78vh; min-height: 100svh; }
+  /* mobile: tampilkan seluruh foto guru — contain menempel bawah di atas marun */
+  .hero--imm { min-height: 0; background: linear-gradient(180deg, #1C090C 0%, #3A0C10 55%, #2A0E11 100%); }
+  .hi__bg img { object-fit: contain; object-position: 50% 100%; }
   .hi__frame { inset: 10px; border-radius: 18px; }
-  .hi__top { top: 28px; padding-inline: 26px; }
+  /* bar brand hero disembunyikan: header sudah menampilkannya (hindari dobel) */
+  .hi__top { display: none; }
   .hi__toplinks { display: none; }
-  .hi__center { padding: 104px 24px 96px; }
+  .hi__center { padding: 84px 24px calc(100vw / 1.333 + 44px); }
   .hi__kicker { font-size: 8.5px; letter-spacing: .16em; flex-wrap: wrap; row-gap: 8px; text-align: center; }
   .hi__kicktick { width: 18px; }
   .hi__lead { font-size: 13.5px; }
   .hi__title { font-size: clamp(26px, 8vw, 38px); line-height: 1.12; }
   .hi__cta { left: 26px; bottom: 28px; }
   .hi__motto { display: none; }
-  .hi__scroll { left: 0; right: 0; bottom: 24px; justify-content: center; }
+  .hi__scroll { display: none; }
 }
 /* ===== end hero immersive ===== */
 /* ===== end hero immersive ===== */
@@ -924,10 +928,8 @@ ul, ol, dl { margin: 0; padding: 0; }
   .brand__teks small { display: none; }
   .btn-kontak { padding: 9px 12px; font-size: 11.5px; flex: none; }
   .menu-toggle { width: 36px; height: 36px; flex: none; }
-  /* hero atas: kecilkan teks brand agar muat */
-  .hi__top { top: 22px; padding-inline: 20px; }
-  .hi__brandtext { font-size: 12px; }
-  .hi__brandtext small { font-size: 8px; letter-spacing: .14em; }
+  /* mobile: CTA pindah ke dalam drawer agar header lega dan nama tampil utuh */
+  .header__aksi .btn-kontak { display: none; }
   /* govbar: potong teks panjang */
   .govbar__left { min-width: 0; overflow: hidden; }
   .govbar__left span { font-size: 8.5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }

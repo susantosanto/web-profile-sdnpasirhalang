@@ -102,6 +102,7 @@ export default function Header({ view }) {
               transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
             >
               <div className="wrap mobile-nav__inner">
+                <a className="btn-kontak mobile-nav__kontak" href="#kontak">Hubungi kami <ArrowUpRight size={15} strokeWidth={2.2} /></a>
                 {NAV.map((n) => (
                   <div key={n.id} className="mobile-nav__group">
                     <div className="mobile-nav__row">
