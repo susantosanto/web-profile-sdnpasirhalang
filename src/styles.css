@@ -586,10 +586,15 @@ ul, ol, dl { margin: 0; padding: 0; }
 
 /* ---------- guru premium cards ---------- */
 .guru-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
-.guru-card { position: relative; background: #fff; border: 1px solid var(--rule); border-top: 3px solid var(--merah); padding: 26px 24px; overflow: hidden; transition: box-shadow .25s ease, transform .25s ease; }
+.guru-card { position: relative; background: #fff; border: 1px solid var(--rule); border-top: 3px solid var(--merah); padding: 0; overflow: hidden; transition: box-shadow .25s ease, transform .25s ease; }
 .guru-card:hover { box-shadow: var(--shadow); transform: translateY(-4px); }
 .guru-card::after { content:''; position: absolute; top: -46px; right: -46px; width: 130px; height: 130px; border-radius: 50%; background: radial-gradient(circle, rgba(200,162,74,.16), transparent 70%); pointer-events: none; }
+.guru-card__foto { display: block; aspect-ratio: 3 / 4; overflow: hidden; background: var(--kertas-2); }
+.guru-card__foto img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 18%; display: block; transition: transform .4s ease; }
+.guru-card:hover .guru-card__foto img { transform: scale(1.04); }
+.guru-card__badan { padding: 22px 24px 24px; position: relative; z-index: 2; }
 .guru-card__avatar { display: grid; place-items: center; width: 52px; height: 52px; border-radius: 50%; background: linear-gradient(135deg, var(--merah), var(--merah-gelap)); color: var(--emas-muda); font-family: var(--serif); font-size: 19px; font-weight: 700; margin-bottom: 14px; box-shadow: 0 8px 20px rgba(90,10,16,.25); }
+.guru-card__avatar--lengkap { margin: 22px auto 14px; }
 .guru-card b { display: block; font-family: var(--serif); font-size: 19px; margin: 10px 0 2px; }
 .guru-card__peran { display: block; font-size: 11.5px; font-weight: 700; color: var(--merah); margin-bottom: 14px; }
 .guru-card dl { margin: 0; border-top: 1px solid var(--rule); }
@@ -1002,7 +1007,8 @@ ul, ol, dl { margin: 0; padding: 0; }
   .prakata-foto { max-width: 340px; margin-inline: auto; }
   .lambang-card__ring { width: 190px; height: 190px; }
   .akses-card { padding: 24px 20px; }
-  .guru-card { padding: 22px 18px; }
+  .guru-card { padding: 0; }
+  .guru-card__badan { padding: 18px 16px 20px; }
   .guru-card dl > div { grid-template-columns: 76px 1fr; gap: 8px; }
   .guru-card b { font-size: 17px; }
   .kaldik-card { padding: 18px 16px 12px; }

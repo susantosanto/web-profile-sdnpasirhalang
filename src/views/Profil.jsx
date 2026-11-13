@@ -1,20 +1,21 @@
 import { useSite } from '../App';
+import { asset } from '../config';
 import { CountUp, GoldRule, Item, Reveal, Stagger } from '../components/motion';
 import { DataTable, KeyValue, SectionHead } from '../components/Ui';
 import Kalender from '../components/Kalender';
 import Jadwal from '../components/Jadwal';
 
 const GURU = [
-  { nama: 'Ahmad, S.Pd.', peran: 'PLT Kepala Sekolah · Wali Kelas 1', status: 'PNS', jenis: 'Guru Kelas', pend: 'S1 Guru Kelas SD/MI', tmt: '1992', mapel: 'Guru Kelas, Mulok Bahasa Daerah, PJOK', jjm: 30 },
-  { nama: 'Deni Mulyani, S.Pd.', peran: 'Wali Kelas 6', status: 'PPPK', jenis: 'Guru Kelas', pend: 'S1 FKIP', tmt: '2022', mapel: 'Guru Kelas, Mulok, PJOK', jjm: 30 },
-  { nama: 'Fika Agustina, S.Pd.', peran: 'Wali Kelas 2', status: 'PPPK', jenis: 'Guru Kelas', pend: 'S1 · Sertifikasi Guru Kelas SD/MI', tmt: '2022', mapel: 'Guru Kelas, Mulok, PJOK', jjm: 30 },
-  { nama: 'Herman', peran: 'Penjaga Sekolah', status: 'Honor Sekolah', jenis: 'Tenaga Kependidikan', pend: 'SD/sederajat', tmt: '2010', mapel: '—', jjm: 0 },
-  { nama: 'Meyta Murthy Lasari, S.E.', peran: 'Wali Kelas 5a', status: 'Guru Honor Sekolah', jenis: 'Guru Kelas', pend: 'S1 Manajemen', tmt: '2023', mapel: 'Guru Kelas, B. Inggris, Mulok, PJOK', jjm: 40 },
-  { nama: "Nur'Asiah, S.Pd.", peran: 'Guru PAI', status: 'PPPK Paruh Waktu', jenis: 'Guru Agama Islam', pend: 'S1 Ilmu Pendidikan Agama Islam', tmt: '2025', mapel: 'PAI dan Budi Pekerti', jjm: 28 },
-  { nama: 'Rinda Sri Agung Wahyuni, S.Pd.', peran: 'Wali Kelas 4', status: 'PPPK', jenis: 'Guru Kelas', pend: 'S1 FKIP · Sertifikasi Guru Kelas', tmt: '2022', mapel: 'Guru Kelas, Mulok, PJOK', jjm: 30 },
-  { nama: 'Siti Aisah Nur Fitri, S.Pd.', peran: 'Wali Kelas 5b', status: 'PPPK Paruh Waktu', jenis: 'Guru Kelas', pend: 'S1 Pendidikan Matematika', tmt: '2025', mapel: 'Guru Kelas, Mulok, PJOK', jjm: 30 },
-  { nama: 'Susanto, S.Kom.', peran: 'Tenaga Administrasi Sekolah', status: 'PPPK Paruh Waktu', jenis: 'Tenaga Kependidikan', pend: 'S1 Sistem Informasi (Ilmu Komputer)', tmt: '2025', mapel: '—', jjm: 0 },
-  { nama: 'Vani, S.Ag.', peran: 'Wali Kelas 3', status: 'Guru Honor Sekolah', jenis: 'Guru Kelas', pend: 'S1 Ilmu Al-Qur’an dan Tafsir', tmt: '2023', mapel: 'Guru Kelas, Mulok, PJOK', jjm: 30 },
+  { nama: 'Ahmad, S.Pd.', foto: 'guru/ahmad.jpg', peran: 'PLT Kepala Sekolah · Wali Kelas 1', status: 'PNS', jenis: 'Guru Kelas', pend: 'S1 Guru Kelas SD/MI', tmt: '1992', mapel: 'Guru Kelas, Mulok Bahasa Daerah, PJOK', jjm: 30 },
+  { nama: 'Deni Mulyani, S.Pd.', foto: null, peran: 'Wali Kelas 6', status: 'PPPK', jenis: 'Guru Kelas', pend: 'S1 FKIP', tmt: '2022', mapel: 'Guru Kelas, Mulok, PJOK', jjm: 30 },
+  { nama: 'Fika Agustina, S.Pd.', foto: 'guru/fika.jpg', peran: 'Wali Kelas 2', status: 'PPPK', jenis: 'Guru Kelas', pend: 'S1 · Sertifikasi Guru Kelas SD/MI', tmt: '2022', mapel: 'Guru Kelas, Mulok, PJOK', jjm: 30 },
+  { nama: 'Herman', foto: null, peran: 'Penjaga Sekolah', status: 'Honor Sekolah', jenis: 'Tenaga Kependidikan', pend: 'SD/sederajat', tmt: '2010', mapel: '—', jjm: 0 },
+  { nama: 'Meyta Murthy Lasari, S.E.', foto: null, peran: 'Wali Kelas 5a', status: 'Guru Honor Sekolah', jenis: 'Guru Kelas', pend: 'S1 Manajemen', tmt: '2023', mapel: 'Guru Kelas, B. Inggris, Mulok, PJOK', jjm: 40 },
+  { nama: "Nur'Asiah, S.Pd.", foto: 'guru/nurasiah.jpg', peran: 'Guru PAI', status: 'PPPK Paruh Waktu', jenis: 'Guru Agama Islam', pend: 'S1 Ilmu Pendidikan Agama Islam', tmt: '2025', mapel: 'PAI dan Budi Pekerti', jjm: 28 },
+  { nama: 'Rinda Sri Agung Wahyuni, S.Pd.', foto: 'guru/rinda.jpg', peran: 'Wali Kelas 4', status: 'PPPK', jenis: 'Guru Kelas', pend: 'S1 FKIP · Sertifikasi Guru Kelas', tmt: '2022', mapel: 'Guru Kelas, Mulok, PJOK', jjm: 30 },
+  { nama: 'Siti Aisah Nur Fitri, S.Pd.', foto: 'guru/siti-aisah.jpg', peran: 'Wali Kelas 5b', status: 'PPPK Paruh Waktu', jenis: 'Guru Kelas', pend: 'S1 Pendidikan Matematika', tmt: '2025', mapel: 'Guru Kelas, Mulok, PJOK', jjm: 30 },
+  { nama: 'Susanto, S.Kom.', foto: 'guru/susanto.png', peran: 'Tenaga Administrasi Sekolah', status: 'PPPK Paruh Waktu', jenis: 'Tenaga Kependidikan', pend: 'S1 Sistem Informasi (Ilmu Komputer)', tmt: '2025', mapel: '—', jjm: 0 },
+  { nama: 'Vani, S.Ag.', foto: 'guru/vani.jpg', peran: 'Wali Kelas 3', status: 'Guru Honor Sekolah', jenis: 'Guru Kelas', pend: 'S1 Ilmu Al-Qur’an dan Tafsir', tmt: '2023', mapel: 'Guru Kelas, Mulok, PJOK', jjm: 30 },
 ];
 
 function inisial(nama) {
@@ -104,7 +105,12 @@ export default function Profil() {
           <Stagger className="guru-grid">
             {GURU.map((g) => (
               <Item key={g.nama} className="guru-card">
-                <span className="guru-card__avatar">{inisial(g.nama)}</span>
+                {g.foto ? (
+                  <span className="guru-card__foto"><img src={asset(`images/${g.foto}`)} alt={`Foto ${g.nama}`} loading="lazy" /></span>
+                ) : (
+                  <span className="guru-card__avatar guru-card__avatar--lengkap">{inisial(g.nama)}</span>
+                )}
+                <div className="guru-card__badan">
                 <span className={`tag ${g.jenis.includes('Kependidikan') ? 'tag--emas' : 'tag--merah'}`}>{g.jenis}</span>
                 <b>{g.nama}</b>
                 <small className="guru-card__peran">{g.peran}</small>
@@ -115,6 +121,7 @@ export default function Profil() {
                   <div><dt>Ampuan</dt><dd>{g.mapel}</dd></div>
                   {g.jjm > 0 && <div><dt>JJM</dt><dd>{g.jjm} JP</dd></div>}
                 </dl>
+                </div>
               </Item>
             ))}
           </Stagger>
