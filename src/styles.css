@@ -938,11 +938,6 @@ section .dir-kelompok:first-of-type { margin-top: 20px; }
 .footer__ttd small { display: block; font-size: 9.5px; letter-spacing: .14em; text-transform: uppercase; color: rgba(255,255,255,.55); }
 .footer__ttd b { display: block; font-family: var(--serif); font-size: 17px; color: var(--emas-muda); margin-top: 4px; }
 .footer__bottom { display: flex; justify-content: space-between; gap: 20px; border-top: 1px solid rgba(255,255,255,.12); padding-block: 18px; font-size: 11px; color: rgba(255,255,255,.55); }
-.akses-grid, .map-grid, .kat-grid, .kontak-cards, .kaldik-grid { grid-template-columns: repeat(2, 1fr); }
-.stat-grid, .stat-grid--empat, .foto-ringkas, .capaian-grid, .akses-grid, .map-grid, .kat-grid, .kontak-cards, .foto-grid, .kaldik-grid { grid-template-columns: 1fr; }
-.scroll-progress, .govbar, .site-header, .footer, .to-top, .scrim, .panel,
-  .hero__float, .btn, .chip-row { display: none !important; }
-
 /* ---------- responsive ---------- */
 @media (max-width: 1100px) {
   .desktop-nav { display: none; }
