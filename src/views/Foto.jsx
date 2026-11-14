@@ -40,6 +40,10 @@ export default function Foto() {
 
   const pilih = (id) => {
     setKategori((k) => (k === id ? 'semua' : id));
+    window.setTimeout(() => {
+      const el = document.getElementById('foto-kebutuhan');
+      if (el && id !== kategori) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }, 60);
   };
 
   return (
@@ -59,7 +63,7 @@ export default function Foto() {
       </Stagger>
 
       <section className="section" id="foto-kategori">
-        <SectionHead kode="01 / Referensi" title="Kategori kegiatan PKKS" desc="Delapan kategori referensi aktivitas PKKS. Kategori dengan 0 butir tetap ditampilkan sebagai penanda bahwa tidak ada foto yang disyaratkan pada aktivitas tersebut." />
+        <SectionHead kode="01 / Referensi" title="Kategori kegiatan" desc="Delapan kelompok aktivitas sekolah. Pilih kartu untuk melihat foto apa saja yang perlu disiapkan pada tabel kebutuhan di bawah." />
         <Stagger className="kat-grid">
           {f.kategori.map((k) => (
             <Item key={k.id}>
@@ -87,18 +91,7 @@ export default function Foto() {
       </section>
 
       <section className="section section--paper band-full" id="foto-galeri">
-        <SectionHead kode="02 / Galeri" title="Galeri foto terunggah" />
-        <div className="chip-row">
-          <button type="button" className={`chip ${kategori === 'semua' ? 'is-aktif' : ''}`} onClick={() => setKategori('semua')}>Semua kategori</button>
-          {f.kategori.map((k) => (
-            <button type="button" key={k.id} className={`chip ${kategori === k.id ? 'is-aktif' : ''}`} onClick={() => pilih(k.id)}>{k.nama}</button>
-          ))}
-        </div>
-        <p className="status-koneksi">
-          {galeri.length === 0
-            ? '0 foto terunggah — simpan berkas di public/foto/ lalu daftarkan pada DRIVE_CONFIG.photos.'
-            : `${galeriTampil.length} foto ditampilkan.`}
-        </p>
+        <SectionHead kode="02 / Galeri" title="Galeri foto" desc="Dokumentasi kegiatan yang sudah tersedia akan tampil di sini, terkelompok otomatis mengikuti kategori." />
         {galeriTampil.length ? (
           <div className="foto-grid">
             {galeriTampil.map((g, i) => (
@@ -111,14 +104,21 @@ export default function Foto() {
         ) : (
           <EmptyState
             icon={Images}
-            title="Belum ada foto kegiatan"
-            text="Galeri sengaja dibiarkan kosong sampai foto asli tersedia. Daftar bidikan yang dibutuhkan tetap dapat diperiksa pada tabel kelengkapan di bawah."
+            title="Dokumentasi segera hadir"
+            text="Foto kegiatan masih dalam tahap pengumpulan. Sambil menunggu, daftar foto apa saja yang perlu disiapkan dapat dilihat pada tabel kebutuhan di bawah."
           />
         )}
       </section>
 
       <section className="section" id="foto-kelengkapan">
-        <SectionHead kode="03 / Verifikasi" title="Kelengkapan foto per materi PKKS" desc="Hanya 12 materi yang relevan. Cari kode atau nama materi, lalu buka baris untuk melihat kutipan dasar klasifikasi dan daftar bidikan foto yang harus dipenuhi. Angka 0/11 berarti belum ada foto dari sebelas bidikan yang diminta dokumen 4.2.a." />
+        <SectionHead kode="03 / Kebutuhan" title="Foto apa yang perlu disiapkan" desc="Daftar bidikan foto per materi — panduan bagi guru dan operator dalam mendokumentasikan kegiatan. Pilih kategori, cari, atau saring berdasarkan tingkat kebutuhan." />
+
+        <div className="chip-row" role="tablist" aria-label="Saring kategori">
+          <button type="button" role="tab" aria-selected={kategori === 'semua'} className={`chip${kategori === 'semua' ? ' is-aktif' : ''}`} onClick={() => setKategori('semua')}>Semua kategori</button>
+          {f.kategori.map((k) => (
+            <button type="button" role="tab" aria-selected={kategori === k.id} key={k.id} className={`chip${kategori === k.id ? ' is-aktif' : ''}`} onClick={() => setKategori(k.id)}>{k.nama}</button>
+          ))}
+        </div>
 
         <div className="pkks-tools pkks-tools--tiga">
           <label className="field">
@@ -177,10 +177,14 @@ export default function Foto() {
             );
           })}
           {baris.length === 0 ? (
-            <EmptyState icon={Search} title="Tidak ada materi yang cocok" text="Ubah kata kunci, kategori, map, atau tingkat kebutuhan." />
+            kategori !== 'semua' ? (
+              <EmptyState icon={Search} title="Kategori ini tidak menuntut foto apa pun" text={`Tidak ada bidikan yang perlu disiapkan untuk ${namaKat(data, kategori)}. Coba kategori lain atau hapus penyaringan.`} />
+            ) : (
+              <EmptyState icon={Search} title="Tidak ada materi yang cocok" text="Ubah kata kunci, map, atau tingkat kebutuhan." />
+            )
           ) : null}
         </div>
-        <p className="catatan">Menampilkan {baris.length} dari {relevan.length} materi yang relevan dengan foto. {f.ringkasan.tidak} butir lainnya tidak memerlukan foto kegiatan.</p>
+        <p className="catatan">Menampilkan {baris.length} dari {relevan.length} materi yang membutuhkan dokumentasi. {f.ringkasan.tidak} butir lainnya tidak memerlukan foto kegiatan.</p>
       </section>
     </div>
   );
