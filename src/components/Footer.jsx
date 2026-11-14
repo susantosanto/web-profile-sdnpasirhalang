@@ -50,7 +50,7 @@ export default function Footer({ data }) {
 
       <div className="wrap footer__bottom">
         <span>© 2026 SD Negeri Pasirhalang · Diperbarui {m.diperbarui}</span>
-        <span>Dokumen &amp; foto kegiatan PKKS {m.tahunAjaran}</span>
+        <span>Dokumentasi kegiatan {m.tahunAjaran}</span>
       </div>
     </footer>
   );

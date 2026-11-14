@@ -4,11 +4,9 @@ import { ArrowUp } from 'lucide-react';
 import siteData from './data/siteData.json';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import Panel from './components/Panel';
 import Beranda from './views/Beranda';
 import Profil from './views/Profil';
 import TataTertib from './views/TataTertib';
-import Pkks from './views/Pkks';
 import Foto from './views/Foto';
 import Kontak from './views/Kontak';
 import { parseHash } from './lib/site';
@@ -18,28 +16,20 @@ const SiteCtx = createContext(null);
 export const useSite = () => useContext(SiteCtx);
 
 const PETA = {
-  ringkasan: 'pkks-ringkasan',
-  mutu: 'pkks-mutu',
-  indeks: 'pkks-indeks',
-  dokumentasi: 'pkks-dokumentasi',
-  'map-07': 'map-07',
   kategori: 'foto-kategori',
-  galeri: 'foto-galeri',
-  kelengkapan: 'foto-kelengkapan'
+  galeri: 'foto-galeri'
 };
 
 const JUDUL = {
   beranda: 'Beranda',
   profil: 'Profil sekolah',
   tatib: 'Tata tertib',
-  pkks: 'PKKS 2026/2027',
   foto: 'Foto kegiatan',
   kontak: 'Kontak'
 };
 
 export default function App() {
   const [route, setRoute] = useState(() => parseHash(window.location.hash));
-  const [panel, setPanel] = useState({ mode: null, kode: null });
   const [showTop, setShowTop] = useState(false);
   const prevView = useRef(route.view);
 
@@ -61,18 +51,7 @@ export default function App() {
     const viewChanged = prevView.current !== route.view;
     prevView.current = route.view;
 
-    if (route.target.indexOf('kode-') === 0 && route.view === 'foto') {
-      setPanel({ mode: 'foto', kode: route.target.slice(5) });
-    } else {
-      setPanel({ mode: null, kode: null });
-    }
-
     const timer = window.setTimeout(() => {
-      if (route.target.indexOf('kode-') === 0) {
-        const el = document.getElementById('foto-kelengkapan');
-        if (el) el.scrollIntoView({ behavior: 'auto', block: 'start' });
-        return;
-      }
       if (!route.target) {
         window.scrollTo({ top: 0, behavior: 'auto' });
         return;
@@ -84,27 +63,12 @@ export default function App() {
     return () => window.clearTimeout(timer);
   }, [route.view, route.target]);
 
-  const bukaDokumen = (kode) => setPanel({ mode: 'dok', kode });
-  const bukaFoto = (kode) => {
-    setPanel({ mode: 'foto', kode });
-    if (window.location.hash !== `#foto/kode-${kode}`) {
-      window.history.replaceState(null, '', `#foto/kode-${kode}`);
-    }
-  };
-  const tutupPanel = () => {
-    setPanel({ mode: null, kode: null });
-    if (window.location.hash.indexOf('/kode-') !== -1) {
-      window.location.hash = '#foto/kelengkapan';
-    }
-  };
-
-  const ctx = { data: siteData, view: route.view, bukaDokumen, bukaFoto };
+  const ctx = { data: siteData, view: route.view };
 
   const halaman = {
     beranda: <Beranda />,
     profil: <Profil />,
     tatib: <TataTertib />,
-    pkks: <Pkks />,
     foto: <Foto />,
     kontak: <Kontak />
   };
@@ -129,13 +93,6 @@ export default function App() {
       </AnimatePresence>
 
       <Footer data={siteData} />
-      <Panel
-        mode={panel.mode}
-        kode={panel.kode}
-        data={siteData}
-        onClose={tutupPanel}
-        onOpenFoto={bukaFoto}
-      />
 
       <AnimatePresence>
         {showTop ? (

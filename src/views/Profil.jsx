@@ -114,7 +114,7 @@ export default function Profil() {
           <Reveal>
             <p className="eyebrow page-hero__eyebrow">Menu · Profil sekolah</p>
             <h1>Profil sekolah</h1>
-            <p className="page-hero__lede">Data identitas, murid, pendidik dan tenaga kependidikan, serta prasarana. Seluruh angka bersumber dari unduhan Dapodik 27 Oktober 2026 dan nilai baku yang diverifikasi pada proyek PKKS.</p>
+            <p className="page-hero__lede">Data identitas, murid, pendidik dan tenaga kependidikan, serta prasarana. Seluruh angka bersumber dari unduhan Dapodik 27 Oktober 2026 dan nilai baku yang diverifikasi sekolah.</p>
             <div className="page-hero__rule" aria-hidden="true" />
             <div className="page-hero__meta">
               <span>NPSN {m.npsn}</span>
