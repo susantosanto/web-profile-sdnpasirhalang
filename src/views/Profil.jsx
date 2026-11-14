@@ -235,24 +235,18 @@ export default function Profil() {
           <SectionHead kode="04 / Pendidik" title="Dewan guru & tendik" desc="10 pendidik dan tenaga kependidikan SDN Pasirhalang — data pokok Dapodik 27 Oktober 2026. NUPTK, NIP, NIK dan tanggal lahir tidak ditampilkan." />
           <Stagger className="guru-grid">
             {GURU.map((g) => (
-              <Item key={g.nama} className="guru-card guru-card--foto">
+              <Item key={g.nama} className="guru-card guru-card--baris">
                 {g.foto ? (
-                  <span className="guru-card__foto">
+                  <span className="guru-card__thumb">
                     <img src={asset(`images/${g.foto}`)} alt={`Foto ${g.nama}`} loading="lazy" />
                     <span className={`tag ${g.jenis.includes('Kependidikan') ? 'tag--emas' : 'tag--merah'}`}>{g.jenis}</span>
-                    <span className="guru-card__cap"><b>{g.nama}</b><small>{g.peran}</small></span>
                   </span>
                 ) : (
-                  <span className="guru-card__blank" aria-hidden="true">{inisial(g.nama)}</span>
+                  <span className="guru-card__thumb guru-card__thumb--inisial" aria-hidden="true">{inisial(g.nama)}</span>
                 )}
                 <div className="guru-card__badan">
-                  {!g.foto ? (
-                    <>
-                      <span className={`tag ${g.jenis.includes('Kependidikan') ? 'tag--emas' : 'tag--merah'}`}>{g.jenis}</span>
-                      <b>{g.nama}</b>
-                      <small className="guru-card__peran">{g.peran}</small>
-                    </>
-                  ) : null}
+                  <b>{g.nama}</b>
+                  <small className="guru-card__peran">{g.peran}</small>
                   <dl>
                     <div><dt>Status</dt><dd>{g.status}</dd></div>
                     <div><dt>Pendidikan</dt><dd>{g.pend}</dd></div>

@@ -585,21 +585,18 @@ ul, ol, dl { margin: 0; padding: 0; }
 .hero__strip-inner i { width: 1px; height: 18px; background: rgba(255,255,255,.18); flex: 0 0 auto; }
 
 /* ---------- guru premium cards ---------- */
-.guru-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.guru-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
 .guru-card { position: relative; background: #fff; border: 1px solid var(--rule); border-top: 3px solid var(--merah); padding: 0; overflow: hidden; transition: box-shadow .25s ease, transform .25s ease; }
 .guru-card:hover { box-shadow: var(--shadow); transform: translateY(-4px); }
 .guru-card::after { content:''; position: absolute; top: -46px; right: -46px; width: 130px; height: 130px; border-radius: 50%; background: radial-gradient(circle, rgba(200,162,74,.16), transparent 70%); pointer-events: none; }
-.guru-card--foto .guru-card__foto { position: relative; display: block; aspect-ratio: 4 / 5; overflow: hidden; background: #2A0E11; }
-.guru-card__foto img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 15%; display: block; transition: transform .5s ease; }
-.guru-card:hover .guru-card__foto img { transform: scale(1.05); }
-.guru-card__foto::after { content: ''; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(26,8,10,0) 42%, rgba(26,8,10,.55) 72%, rgba(26,8,10,.88) 100%); pointer-events: none; }
-.guru-card__foto .tag { position: absolute; top: 14px; left: 14px; z-index: 2; box-shadow: 0 6px 18px rgba(0,0,0,.30); }
-.guru-card__cap { position: absolute; left: 0; right: 0; bottom: 0; z-index: 2; padding: 56px 20px 18px; color: #fff; }
-.guru-card__cap b { display: block; font-family: var(--serif); font-size: 21px !important; line-height: 1.25; margin: 0 !important; text-shadow: 0 2px 14px rgba(0,0,0,.5); }
-.guru-card__cap small { display: block; margin-top: 5px; font-size: 10px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; color: var(--emas-muda); text-shadow: 0 1px 10px rgba(0,0,0,.5); }
-.guru-card__blank { position: relative; display: grid; place-items: center; aspect-ratio: 4 / 5; overflow: hidden; background: linear-gradient(150deg, #4A090E 0%, #7A0F14 60%, #2A0E11 100%); font-family: var(--serif); font-weight: 700; font-size: 68px; color: var(--emas-muda); }
-.guru-card__blank::after { content: ''; position: absolute; inset: 0; background: radial-gradient(220px 220px at 50% 30%, rgba(200,162,74,.30), transparent 70%); pointer-events: none; }
-.guru-card__badan { padding: 22px 24px 24px; position: relative; z-index: 2; }
+.guru-card--baris { display: flex; align-items: stretch; }
+.guru-card__thumb { position: relative; flex: 0 0 150px; min-height: 196px; overflow: hidden; background: #2A0E11; }
+.guru-card__thumb img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 15%; display: block; transition: transform .5s ease; }
+.guru-card:hover .guru-card__thumb img { transform: scale(1.05); }
+.guru-card__thumb .tag { position: absolute; top: 10px; left: 10px; z-index: 2; font-size: 8px; padding: 3px 7px; box-shadow: 0 6px 18px rgba(0,0,0,.30); }
+.guru-card__thumb--inisial { display: grid; place-items: center; background: linear-gradient(150deg, #4A090E 0%, #7A0F14 60%, #2A0E11 100%); font-family: var(--serif); font-weight: 700; font-size: 34px; color: var(--emas-muda); }
+.guru-card__badan { flex: 1; min-width: 0; padding: 18px 20px 16px; position: relative; z-index: 2; }
+.guru-card__badan dl > div { grid-template-columns: 78px 1fr; gap: 8px; padding: 5px 0; }
 
 /* ---------- bagan struktur organisasi ---------- */
 .org { margin-top: 8px; }
@@ -1010,6 +1007,7 @@ ul, ol, dl { margin: 0; padding: 0; }
   .org__node--kepala { order: -1; }
   .org__koor { grid-template-columns: repeat(2, 1fr); }
   .org__dua { grid-template-columns: 1fr; }
+  .guru-card__thumb { flex-basis: 122px; min-height: 180px; }
   .section { padding: 60px 0; }
   .pkks-tools, .pkks-tools--tiga { display: grid; grid-template-columns: 1fr; }
   .foto-grid { grid-template-columns: repeat(2, 1fr); }
@@ -1055,7 +1053,9 @@ ul, ol, dl { margin: 0; padding: 0; }
   .lambang-card__ring { width: 190px; height: 190px; }
   .akses-card { padding: 24px 20px; }
   .guru-card { padding: 0; }
-  .guru-card__badan { padding: 18px 16px 20px; }
+  .guru-card__thumb { flex-basis: 112px; min-height: 0; }
+  .guru-card__badan { padding: 16px 16px 14px; }
+  .guru-card__badan dl > div { grid-template-columns: 68px 1fr; }
   .guru-card dl > div { grid-template-columns: 76px 1fr; gap: 8px; }
   .guru-card b { font-size: 17px; }
   .kaldik-card { padding: 18px 16px 12px; }
