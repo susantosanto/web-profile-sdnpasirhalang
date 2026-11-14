@@ -1,3 +1,5 @@
+import { useState } from 'react';
+import { ChevronDown } from 'lucide-react';
 import { useSite } from '../App';
 import { asset } from '../config';
 import { CountUp, GoldRule, Item, Reveal, Stagger } from '../components/motion';
@@ -21,6 +23,19 @@ const GURU = [
 function inisial(nama) {
   return nama.replace(/,.*$/, '').split(/[\s.]+/).filter(Boolean).slice(0, 2).map((w) => w[0]).join('').toUpperCase();
 }
+
+const FILTER_GURU = [
+  ['semua', 'Semua'],
+  ['kelas', 'Guru kelas'],
+  ['mapel', 'Guru mapel'],
+  ['tendik', 'Tendik']
+];
+
+const cocokGuru = (g, f) =>
+  f === 'semua' ||
+  (f === 'kelas' && g.jenis === 'Guru Kelas') ||
+  (f === 'mapel' && g.jenis === 'Guru Agama Islam') ||
+  (f === 'tendik' && g.jenis.includes('Kependidikan'));
 
 const fotoOf = (nama) => (GURU.find((g) => g.nama === nama) || {}).foto || null;
 const imgSrc = (nama) => { const f = fotoOf(nama); return f ? asset(`images/${f}`) : null; };
@@ -59,6 +74,8 @@ export default function Profil() {
   const { data } = useSite();
   const p = data.profil;
   const m = data.meta;
+  const [filterGuru, setFilterGuru] = useState('semua');
+  const daftarGuru = GURU.filter((g) => cocokGuru(g, filterGuru));
   const cari = (label) => (p.identitas.find(([k]) => k === label) || [])[1] || '—';
 
   return (
@@ -233,31 +250,37 @@ export default function Profil() {
       <section className="section" id="profil-guru">
         <div className="wrap">
           <SectionHead kode="04 / Pendidik" title="Dewan guru & tendik" desc="10 pendidik dan tenaga kependidikan SDN Pasirhalang — data pokok Dapodik 27 Oktober 2026. NUPTK, NIP, NIK dan tanggal lahir tidak ditampilkan." />
-          <Stagger className="guru-grid">
-            {GURU.map((g) => (
-              <Item key={g.nama} className="guru-card guru-card--baris">
-                {g.foto ? (
-                  <span className="guru-card__thumb">
-                    <img src={asset(`images/${g.foto}`)} alt={`Foto ${g.nama}`} loading="lazy" />
-                    <span className={`tag ${g.jenis.includes('Kependidikan') ? 'tag--emas' : 'tag--merah'}`}>{g.jenis}</span>
-                  </span>
-                ) : (
-                  <span className="guru-card__thumb guru-card__thumb--inisial" aria-hidden="true">{inisial(g.nama)}</span>
-                )}
-                <div className="guru-card__badan">
-                  <b>{g.nama}</b>
-                  <small className="guru-card__peran">{g.peran}</small>
-                  <dl>
-                    <div><dt>Status</dt><dd>{g.status}</dd></div>
-                    <div><dt>Pendidikan</dt><dd>{g.pend}</dd></div>
-                    <div><dt>TMT</dt><dd>{g.tmt}</dd></div>
-                    <div><dt>Ampuan</dt><dd>{g.mapel}</dd></div>
-                    {g.jjm > 0 && <div><dt>JJM</dt><dd>{g.jjm} JP</dd></div>}
-                  </dl>
-                </div>
+          <div className="chip-row" role="tablist" aria-label="Saring dewan guru">
+            {FILTER_GURU.map(([id, label]) => (
+              <button key={id} type="button" role="tab" aria-selected={filterGuru === id} className={`chip${filterGuru === id ? ' is-aktif' : ''}`} onClick={() => setFilterGuru(id)}>{label}</button>
+            ))}
+          </div>
+          <Stagger className="dir-list">
+            {daftarGuru.map((g, i) => (
+              <Item key={g.nama} className="dir-item">
+                <details className="dir-row" name="dir-guru">
+                  <summary>
+                    <span className="dir-no">{pad(i + 1)}</span>
+                    <span className="dir-foto">{g.foto ? <img src={asset(`images/${g.foto}`)} alt={`Foto ${g.nama}`} loading="lazy" /> : inisial(g.nama)}</span>
+                    <span className="dir-ident"><b>{g.nama}</b><small>{g.peran}</small></span>
+                    <span className={`tag ${g.status.includes('Honor') ? 'tag--emas' : 'tag--merah'}`}>{g.status}</span>
+                    <span className="dir-chev"><ChevronDown size={16} /></span>
+                  </summary>
+                  <div className="dir-detail">
+                    <dl>
+                      <div><dt>Jenis</dt><dd>{g.jenis}</dd></div>
+                      <div><dt>Status</dt><dd>{g.status}</dd></div>
+                      <div><dt>Pendidikan</dt><dd>{g.pend}</dd></div>
+                      <div><dt>TMT</dt><dd>{g.tmt}</dd></div>
+                      <div><dt>Ampuan</dt><dd>{g.mapel}</dd></div>
+                      {g.jjm > 0 && <div><dt>JJM</dt><dd>{g.jjm} JP</dd></div>}
+                    </dl>
+                  </div>
+                </details>
               </Item>
             ))}
           </Stagger>
+          <p className="catatan">Menampilkan {daftarGuru.length} dari 10 pendidik dan tenaga kependidikan. Buka baris untuk melihat pendidikan, TMT, dan ampuan.</p>
         </div>
       </section>
 
