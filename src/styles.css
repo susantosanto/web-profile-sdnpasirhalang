@@ -589,9 +589,16 @@ ul, ol, dl { margin: 0; padding: 0; }
 .guru-card { position: relative; background: #fff; border: 1px solid var(--rule); border-top: 3px solid var(--merah); padding: 0; overflow: hidden; transition: box-shadow .25s ease, transform .25s ease; }
 .guru-card:hover { box-shadow: var(--shadow); transform: translateY(-4px); }
 .guru-card::after { content:''; position: absolute; top: -46px; right: -46px; width: 130px; height: 130px; border-radius: 50%; background: radial-gradient(circle, rgba(200,162,74,.16), transparent 70%); pointer-events: none; }
-.guru-card__foto { display: block; aspect-ratio: 3 / 4; overflow: hidden; background: var(--kertas-2); }
-.guru-card__foto img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 18%; display: block; transition: transform .4s ease; }
-.guru-card:hover .guru-card__foto img { transform: scale(1.04); }
+.guru-card--foto .guru-card__foto { position: relative; display: block; aspect-ratio: 4 / 5; overflow: hidden; background: #2A0E11; }
+.guru-card__foto img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 15%; display: block; transition: transform .5s ease; }
+.guru-card:hover .guru-card__foto img { transform: scale(1.05); }
+.guru-card__foto::after { content: ''; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(26,8,10,0) 42%, rgba(26,8,10,.55) 72%, rgba(26,8,10,.88) 100%); pointer-events: none; }
+.guru-card__foto .tag { position: absolute; top: 14px; left: 14px; z-index: 2; box-shadow: 0 6px 18px rgba(0,0,0,.30); }
+.guru-card__cap { position: absolute; left: 0; right: 0; bottom: 0; z-index: 2; padding: 56px 20px 18px; color: #fff; }
+.guru-card__cap b { display: block; font-family: var(--serif); font-size: 21px !important; line-height: 1.25; margin: 0 !important; text-shadow: 0 2px 14px rgba(0,0,0,.5); }
+.guru-card__cap small { display: block; margin-top: 5px; font-size: 10px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; color: var(--emas-muda); text-shadow: 0 1px 10px rgba(0,0,0,.5); }
+.guru-card__blank { position: relative; display: grid; place-items: center; aspect-ratio: 4 / 5; overflow: hidden; background: linear-gradient(150deg, #4A090E 0%, #7A0F14 60%, #2A0E11 100%); font-family: var(--serif); font-weight: 700; font-size: 68px; color: var(--emas-muda); }
+.guru-card__blank::after { content: ''; position: absolute; inset: 0; background: radial-gradient(220px 220px at 50% 30%, rgba(200,162,74,.30), transparent 70%); pointer-events: none; }
 .guru-card__badan { padding: 22px 24px 24px; position: relative; z-index: 2; }
 
 /* ---------- bagan struktur organisasi ---------- */
@@ -628,11 +635,8 @@ ul, ol, dl { margin: 0; padding: 0; }
 .org__dasar { max-width: 560px; margin: 0 auto; background: var(--merah-wash); border: 1px solid var(--merah-garis); padding: 22px 26px; text-align: center; }
 .org__dasar b { display: block; font-family: var(--serif); font-size: 20px; margin: 4px 0; }
 .org__dasar small { color: var(--muted); font-size: 12px; }
-.org__sub { margin-top: 44px; }
 .org__uraian { margin-top: 18px; }
 .org__uraian .tbl td:first-child { width: 26%; }
-.guru-card__avatar { display: grid; place-items: center; width: 52px; height: 52px; border-radius: 50%; background: linear-gradient(135deg, var(--merah), var(--merah-gelap)); color: var(--emas-muda); font-family: var(--serif); font-size: 19px; font-weight: 700; margin-bottom: 14px; box-shadow: 0 8px 20px rgba(90,10,16,.25); }
-.guru-card__avatar--lengkap { margin: 22px auto 14px; }
 .guru-card b { display: block; font-family: var(--serif); font-size: 19px; margin: 10px 0 2px; }
 .guru-card__peran { display: block; font-size: 11.5px; font-weight: 700; color: var(--merah); margin-bottom: 14px; }
 .guru-card dl { margin: 0; border-top: 1px solid var(--rule); }

@@ -25,19 +25,6 @@ function inisial(nama) {
 const fotoOf = (nama) => (GURU.find((g) => g.nama === nama) || {}).foto || null;
 const imgSrc = (nama) => { const f = fotoOf(nama); return f ? asset(`images/${f}`) : null; };
 
-const PERSONEL = [
-  ['1', 'Ahmad, S.Pd.', 'PNS', 'Kepala Sekolah', 'Wali Kelas I'],
-  ['2', 'Fika Agustina, S.Pd.', 'PPPK', 'Guru Kelas', 'Wali Kelas II'],
-  ['3', 'Vani, S.Ag.', 'Guru Honor Sekolah', 'Guru Kelas', 'Wali Kelas III'],
-  ['4', 'Rinda Sri Agung Wahyuni, S.Pd.', 'PPPK', 'Guru Kelas', 'Wali Kelas IV'],
-  ['5', 'Meyta Murthy Lasari, S.E.', 'Guru Honor Sekolah', 'Guru Kelas', 'Wali Kelas V-A'],
-  ['6', 'Siti Aisah Nur Fitri, S.Pd.', 'PPPK Paruh Waktu', 'Guru Kelas', 'Wali Kelas V-B'],
-  ['7', 'Deni Mulyani, S.Pd.', 'PPPK', 'Guru Kelas', 'Wali Kelas VI'],
-  ['8', "Nur'Asiah, S.Pd.", 'PPPK Paruh Waktu', 'Guru Agama Islam', 'Guru PAI'],
-  ['9', 'Susanto, S.Kom.', 'PPPK Paruh Waktu', 'Tenaga Administrasi', 'Pengelola sarana prasarana'],
-  ['10', 'Herman', 'Tenaga Honor Sekolah', 'Penjaga Sekolah', 'Pengelola sarana prasarana']
-];
-
 const URAIAN = [
   ['Kepala Sekolah', 'Memimpin dan mengelola satuan pendidikan; menyusun perencanaan (visi, misi, RKJM, RKT, RKAS); membina dan mengawasi pendidik dan tenaga kependidikan; melaksanakan supervisi; memimpin SPMI; mengelola sarana, keuangan, dan administrasi; menjalin kemitraan dengan komite dan masyarakat.'],
   ['Koordinator Kurikulum dan Pembelajaran', 'Membantu menyusun dan mengembangkan kurikulum satuan pendidikan; mengoordinasikan jadwal, perangkat ajar, dan asesmen; mendampingi guru dalam pembelajaran; membantu pelaksanaan supervisi.'],
@@ -228,14 +215,6 @@ export default function Profil() {
             </Reveal>
           </div>
 
-          <h4 className="sub-judul org__sub">Daftar personel dan jabatan</h4>
-          <Reveal>
-            <DataTable
-              head={['No', 'Nama lengkap', 'Status', 'Jabatan', 'Tugas tambahan']}
-              rows={PERSONEL}
-            />
-          </Reveal>
-
           <details className="koreksi org__uraian">
             <summary>Uraian tugas dan tanggung jawab — 11 jabatan</summary>
             <table className="tbl">
@@ -256,23 +235,31 @@ export default function Profil() {
           <SectionHead kode="04 / Pendidik" title="Dewan guru & tendik" desc="10 pendidik dan tenaga kependidikan SDN Pasirhalang — data pokok Dapodik 27 Oktober 2026. NUPTK, NIP, NIK dan tanggal lahir tidak ditampilkan." />
           <Stagger className="guru-grid">
             {GURU.map((g) => (
-              <Item key={g.nama} className="guru-card">
+              <Item key={g.nama} className="guru-card guru-card--foto">
                 {g.foto ? (
-                  <span className="guru-card__foto"><img src={asset(`images/${g.foto}`)} alt={`Foto ${g.nama}`} loading="lazy" /></span>
+                  <span className="guru-card__foto">
+                    <img src={asset(`images/${g.foto}`)} alt={`Foto ${g.nama}`} loading="lazy" />
+                    <span className={`tag ${g.jenis.includes('Kependidikan') ? 'tag--emas' : 'tag--merah'}`}>{g.jenis}</span>
+                    <span className="guru-card__cap"><b>{g.nama}</b><small>{g.peran}</small></span>
+                  </span>
                 ) : (
-                  <span className="guru-card__avatar guru-card__avatar--lengkap">{inisial(g.nama)}</span>
+                  <span className="guru-card__blank" aria-hidden="true">{inisial(g.nama)}</span>
                 )}
                 <div className="guru-card__badan">
-                <span className={`tag ${g.jenis.includes('Kependidikan') ? 'tag--emas' : 'tag--merah'}`}>{g.jenis}</span>
-                <b>{g.nama}</b>
-                <small className="guru-card__peran">{g.peran}</small>
-                <dl>
-                  <div><dt>Status</dt><dd>{g.status}</dd></div>
-                  <div><dt>Pendidikan</dt><dd>{g.pend}</dd></div>
-                  <div><dt>TMT</dt><dd>{g.tmt}</dd></div>
-                  <div><dt>Ampuan</dt><dd>{g.mapel}</dd></div>
-                  {g.jjm > 0 && <div><dt>JJM</dt><dd>{g.jjm} JP</dd></div>}
-                </dl>
+                  {!g.foto ? (
+                    <>
+                      <span className={`tag ${g.jenis.includes('Kependidikan') ? 'tag--emas' : 'tag--merah'}`}>{g.jenis}</span>
+                      <b>{g.nama}</b>
+                      <small className="guru-card__peran">{g.peran}</small>
+                    </>
+                  ) : null}
+                  <dl>
+                    <div><dt>Status</dt><dd>{g.status}</dd></div>
+                    <div><dt>Pendidikan</dt><dd>{g.pend}</dd></div>
+                    <div><dt>TMT</dt><dd>{g.tmt}</dd></div>
+                    <div><dt>Ampuan</dt><dd>{g.mapel}</dd></div>
+                    {g.jjm > 0 && <div><dt>JJM</dt><dd>{g.jjm} JP</dd></div>}
+                  </dl>
                 </div>
               </Item>
             ))}
