@@ -7,6 +7,7 @@ import Footer from './components/Footer';
 import Panel from './components/Panel';
 import Beranda from './views/Beranda';
 import Profil from './views/Profil';
+import TataTertib from './views/TataTertib';
 import Pkks from './views/Pkks';
 import Foto from './views/Foto';
 import Kontak from './views/Kontak';
@@ -30,6 +31,7 @@ const PETA = {
 const JUDUL = {
   beranda: 'Beranda',
   profil: 'Profil sekolah',
+  tatib: 'Tata tertib',
   pkks: 'PKKS 2026/2027',
   foto: 'Foto kegiatan',
   kontak: 'Kontak'
@@ -101,6 +103,7 @@ export default function App() {
   const halaman = {
     beranda: <Beranda />,
     profil: <Profil />,
+    tatib: <TataTertib />,
     pkks: <Pkks />,
     foto: <Foto />,
     kontak: <Kontak />

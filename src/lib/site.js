@@ -1,10 +1,11 @@
 import { DRIVE_CONFIG as CFG } from '../config';
 
-export const VIEWS = ['beranda', 'profil', 'pkks', 'foto', 'kontak'];
+export const VIEWS = ['beranda', 'profil', 'tatib', 'pkks', 'foto', 'kontak'];
 
 export const NAV = [
   { id: 'beranda', label: 'Beranda' },
   { id: 'profil', label: 'Profil sekolah' },
+  { id: 'tatib', label: 'Tata tertib' },
   {
     id: 'pkks', label: 'PKKS',
     sub: [
