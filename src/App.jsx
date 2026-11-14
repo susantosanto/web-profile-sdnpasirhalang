@@ -7,6 +7,7 @@ import Footer from './components/Footer';
 import Beranda from './views/Beranda';
 import Profil from './views/Profil';
 import TataTertib from './views/TataTertib';
+import Administrasi from './views/Administrasi';
 import Foto from './views/Foto';
 import Kontak from './views/Kontak';
 import { parseHash } from './lib/site';
@@ -24,6 +25,7 @@ const JUDUL = {
   beranda: 'Beranda',
   profil: 'Profil sekolah',
   tatib: 'Tata tertib',
+  administrasi: 'Administrasi dokumen',
   foto: 'Foto kegiatan',
   kontak: 'Kontak'
 };
@@ -69,6 +71,7 @@ export default function App() {
     beranda: <Beranda />,
     profil: <Profil />,
     tatib: <TataTertib />,
+    administrasi: <Administrasi />,
     foto: <Foto />,
     kontak: <Kontak />
   };

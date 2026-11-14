@@ -1,9 +1,10 @@
-export const VIEWS = ['beranda', 'profil', 'tatib', 'foto', 'kontak'];
+export const VIEWS = ['beranda', 'profil', 'tatib', 'administrasi', 'foto', 'kontak'];
 
 export const NAV = [
   { id: 'beranda', label: 'Beranda' },
   { id: 'profil', label: 'Profil sekolah' },
   { id: 'tatib', label: 'Tata tertib' },
+  { id: 'administrasi', label: 'Administrasi' },
   {
     id: 'foto', label: 'Foto kegiatan',
     sub: [
