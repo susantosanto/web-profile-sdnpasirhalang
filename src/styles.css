@@ -584,17 +584,16 @@ ul, ol, dl { margin: 0; padding: 0; }
 .hero__strip-inner b { font-family: var(--serif); font-size: 19px; color: var(--emas-muda); }
 .hero__strip-inner i { width: 1px; height: 18px; background: rgba(255,255,255,.18); flex: 0 0 auto; }
 
-/* ---------- dosier guru: foto di sisi, data di sisi ---------- */
+/* ---------- dosier guru: foto bulat premium ---------- */
 .dossier-list { display: grid; gap: 18px; margin-top: 20px; }
-.dossier-balik { direction: rtl; }
-.dossier-balik > * { direction: ltr; }
-.dossier-card { display: grid; grid-template-columns: 240px 1fr; background: #fff; border: 1px solid var(--rule); border-radius: 20px; overflow: hidden; transition: border-color .25s ease, box-shadow .25s ease; }
-.dossier-card:hover { border-color: var(--emas); box-shadow: 0 30px 60px rgba(90,10,16,.14); }
-.dossier-visual { position: relative; min-height: 300px; overflow: hidden; background: #2A0E11; border-right: 3px solid var(--emas); }
-.dossier-balik .dossier-visual { border-right: 0; border-left: 3px solid var(--emas); }
-.dossier-visual img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 15%; display: block; }
-.dossier-visual--mono { display: grid; place-items: center; background: linear-gradient(150deg, #4A090E 0%, #7A0F14 60%, #2A0E11 100%); font-family: var(--serif); font-weight: 700; font-size: 76px; color: var(--emas-muda); }
-.dossier-badan { padding: 30px 32px; min-width: 0; }
+.dossier-card { display: flex; align-items: center; gap: 26px; background: #fff; border: 1px solid var(--rule); border-radius: 22px; padding: 26px 30px 26px 26px; overflow: hidden; position: relative; transition: border-color .25s ease, box-shadow .25s ease, transform .25s ease; }
+.dossier-card:hover { border-color: var(--emas); box-shadow: 0 26px 60px rgba(90,10,16,.14); transform: translateY(-3px); }
+.dossier-card::before { content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 4px; background: linear-gradient(180deg, var(--merah), var(--emas)); }
+.dossier-visual { position: relative; flex: none; width: 148px; height: 148px; border-radius: 50%; overflow: hidden; background: #2A0E11; border: 3px solid var(--emas); box-shadow: 0 0 0 6px var(--merah-wash), 0 18px 44px rgba(90,10,16,.28); }
+.dossier-visual img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 15%; display: block; transition: transform .5s ease; }
+.dossier-card:hover .dossier-visual img { transform: scale(1.07); }
+.dossier-visual--mono { display: grid; place-items: center; background: linear-gradient(150deg, #4A090E 0%, #7A0F14 60%, #2A0E11 100%); font-family: var(--serif); font-weight: 700; font-size: 52px; color: var(--emas-muda); }
+.dossier-badan { padding: 0; min-width: 0; flex: 1; }
 .dossier-badan .org__peran { display: block; margin-bottom: 8px; }
 .dossier-badan > b { display: block; font-family: var(--serif); font-size: 27px; line-height: 1.2; }
 .dossier-badan > small { display: block; font-size: 11.5px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; color: var(--merah); margin-top: 6px; }
@@ -1042,12 +1041,10 @@ ul, ol, dl { margin: 0; padding: 0; }
   .org__node--kepala { order: -1; }
   .org__koor { grid-template-columns: repeat(2, 1fr); }
   .org__dua { grid-template-columns: 1fr; }
-  .dossier-card { grid-template-columns: 1fr; }
-  .dossier-balik { direction: ltr; }
-  .dossier-visual { aspect-ratio: 16 / 10; min-height: 0; border-right: 0; border-bottom: 3px solid var(--emas); }
-  .dossier-balik .dossier-visual { border-left: 0; }
-  .dossier-badan { padding: 24px 22px; }
-  .dossier-badan > b { font-size: 23px; }
+  .dossier-card { gap: 18px; padding: 20px 20px 20px 18px; border-radius: 18px; }
+  .dossier-visual { width: 104px; height: 104px; font-size: 34px; }
+  .dossier-badan > b { font-size: 20px; }
+  .dossier-badan dl > div { grid-template-columns: 96px 1fr; }
   .section { padding: 60px 0; }
   .pkks-tools, .pkks-tools--tiga { display: grid; grid-template-columns: 1fr; }
   .foto-grid { grid-template-columns: repeat(2, 1fr); }
@@ -1092,7 +1089,7 @@ ul, ol, dl { margin: 0; padding: 0; }
   .prakata-foto { max-width: 340px; margin-inline: auto; }
   .lambang-card__ring { width: 190px; height: 190px; }
   .akses-card { padding: 24px 20px; }
-  .dossier-badan dl > div { grid-template-columns: 104px 1fr; }
+  .dossier-badan dl > div { grid-template-columns: 1fr; gap: 1px; }
   .kaldik-card { padding: 18px 16px 12px; }
   .table-wrap { -webkit-overflow-scrolling: touch; }
   .table-wrap .tbl td { white-space: nowrap; }

@@ -269,8 +269,8 @@ export default function Profil() {
             ))}
           </div>
           <Stagger className="dossier-list">
-            {daftarGuru.map((g, i) => (
-              <Item key={g.nama} className={i % 2 ? 'dossier-balik' : ''}>
+            {daftarGuru.map((g) => (
+              <Item key={g.nama}>
                 <article className="dossier-card">
                   {g.foto ? (
                     <span className="dossier-visual"><img src={asset(`images/${g.foto}`)} alt={`Foto ${g.nama}`} loading="lazy" /></span>
