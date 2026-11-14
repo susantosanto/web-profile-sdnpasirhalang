@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react';
 import { motion } from 'framer-motion';
-import { ArrowUpRight, Images, Search, SlidersHorizontal, Sparkles } from 'lucide-react';
+import { ArrowUpRight, Search, SlidersHorizontal, Sparkles } from 'lucide-react';
 import { useSite } from '../App';
 import { Item, ProgressBar, Reveal, Stagger } from '../components/motion';
 import { EmptyState, PageFolio, SectionHead, Tag } from '../components/Ui';
@@ -37,6 +37,16 @@ export default function Foto() {
   const galeriTampil = kategori === 'semua'
     ? galeri
     : galeri.filter((g) => (f.butir[g.kode]?.k || []).includes(kategori));
+
+  // Slot liputan: bidikan yang belum terpenuhi — galeri yang hidup walau foto belum ada.
+  // Didasarkan pada temuan NN/g "Photos as Web Content": tampilkan foto yang membawa
+  // informasi (bidikan sesuai dokumen), bukan gambar hiasan.
+  const slotLiputan = useMemo(() => (
+    relevan
+      .map((d) => ({ d, st: statusFoto(data, d.kode) }))
+      .filter(({ st }) => st.perlu > st.ada)
+      .slice(0, 6)
+  ), [relevan, data]);
 
   const pilih = (id) => {
     setKategori((k) => (k === id ? 'semua' : id));
@@ -91,8 +101,8 @@ export default function Foto() {
       </section>
 
       <section className="section section--paper band-full" id="foto-galeri">
-        <SectionHead kode="02 / Galeri" title="Galeri foto" desc="Dokumentasi kegiatan yang sudah tersedia akan tampil di sini, terkelompok otomatis mengikuti kategori." />
-        {galeriTampil.length ? (
+        <SectionHead kode="02 / Etalase" title="Etalase dokumentasi" desc="Setiap foto yang tampil adalah bukti kegiatan yang diminta dokumen — bukan hiasan. Slot berbingkai putus-putus adalah bidikan yang masih menunggu diliput; buka untuk melihat daftar bidikannya." />
+        {galeriTampil.length > 0 && (
           <div className="foto-grid">
             {galeriTampil.map((g, i) => (
               <motion.figure className="foto-card" key={`${g.kode}-${i}`} initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.06 }}>
@@ -101,12 +111,31 @@ export default function Foto() {
               </motion.figure>
             ))}
           </div>
-        ) : (
-          <EmptyState
-            icon={Images}
-            title="Dokumentasi segera hadir"
-            text="Foto kegiatan masih dalam tahap pengumpulan. Sambil menunggu, daftar foto apa saja yang perlu disiapkan dapat dilihat pada tabel kebutuhan di bawah."
-          />
+        )}
+        {slotLiputan.length > 0 && (
+          <>
+            <h3 className="sub-judul">Slot liputan terbuka</h3>
+            <div className="foto-grid">
+              {slotLiputan.map(({ d, st }, i) => (
+                <motion.button
+                  type="button"
+                  className="slot-card"
+                  key={d.kode}
+                  onClick={() => bukaFoto(d.kode)}
+                  initial={{ opacity: 0, y: 16 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: i * 0.06 }}
+                  whileHover={{ y: -4 }}
+                >
+                  <span className="slot-card__kode mono">{d.kode} · Map {pad(d.map)}</span>
+                  <b>{d.bukti}</b>
+                  <span className="slot-card__bar"><span className="progress"><i style={{ width: `${st.perlu ? Math.round((st.ada / st.perlu) * 100) : 0}%` }} /></span><span className="mono">{st.ada}/{st.perlu}</span></span>
+                  <em>Menunggu dokumentasi <ArrowUpRight size={13} /></em>
+                </motion.button>
+              ))}
+            </div>
+          </>
         )}
       </section>
 
