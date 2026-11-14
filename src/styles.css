@@ -584,33 +584,26 @@ ul, ol, dl { margin: 0; padding: 0; }
 .hero__strip-inner b { font-family: var(--serif); font-size: 19px; color: var(--emas-muda); }
 .hero__strip-inner i { width: 1px; height: 18px; background: rgba(255,255,255,.18); flex: 0 0 auto; }
 
-/* ---------- bento dewan guru + dosier ---------- */
-.bento-guru { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-top: 20px; }
-.bento-span { grid-column: span 2; }
-.bento-tile { position: relative; display: block; width: 100%; height: 100%; text-align: left; background: #2A0E11; border: 1px solid var(--rule); border-radius: 18px; overflow: hidden; cursor: pointer; padding: 0; transition: border-color .25s ease, box-shadow .25s ease; }
-.bento-tile:hover { border-color: var(--emas); box-shadow: 0 26px 60px rgba(90,10,16,.28); }
-.bento-visual { display: block; aspect-ratio: 1 / 1; overflow: hidden; background: linear-gradient(150deg, #4A090E, #7A0F14); }
-.bento-visual img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 15%; display: block; transition: transform .5s ease; }
-.bento-tile:hover .bento-visual img { transform: scale(1.06); }
-.bento-visual--mono { display: grid; place-items: center; font-family: var(--serif); font-weight: 700; font-size: 52px; color: var(--emas-muda); }
-.bento-tile::after { content: ''; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(26,8,10,0) 40%, rgba(26,8,10,.55) 72%, rgba(26,8,10,.9) 100%); pointer-events: none; }
-.bento-tile .tag { position: absolute; top: 12px; left: 12px; z-index: 2; font-size: 8.5px; padding: 4px 8px; box-shadow: 0 6px 18px rgba(0,0,0,.35); }
-.bento-cap { position: absolute; left: 0; right: 0; bottom: 0; z-index: 2; padding: 48px 16px 16px; color: #fff; }
-.bento-cap b { display: block; font-family: var(--serif); font-size: 18px; line-height: 1.25; }
-.bento-cap small { display: block; margin-top: 4px; font-size: 10px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--emas-muda); }
-.bento-cap em { display: block; font-style: normal; font-size: 10px; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; color: #fff; margin-top: 8px; opacity: 0; transform: translateY(4px); transition: opacity .25s ease, transform .25s ease; }
-.bento-tile:hover .bento-cap em, .bento-tile:focus-visible .bento-cap em { opacity: 1; transform: none; }
-@media (hover: none) { .bento-cap em { opacity: 1; transform: none; } }
-.bento-tile--ks { display: grid; grid-template-columns: 1fr 1fr; background: linear-gradient(135deg, #42080D, #7A0F14); }
-.bento-tile--ks .bento-visual { aspect-ratio: auto; height: 100%; min-height: 240px; }
-.bento-tile--ks::after { background: linear-gradient(90deg, rgba(26,8,10,0) 30%, rgba(26,8,10,.35) 100%); }
-.bento-tile--ks .bento-cap { position: static; padding: 26px 24px; align-self: center; }
-.bento-tile--ks .bento-cap b { font-size: 25px; }
-.dossier .panel__body h3 { font-size: 27px; margin-top: 8px; }
-.dossier-foto { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; object-position: 50% 15%; border-radius: 14px; border: 1px solid var(--emas); }
-.dossier-mono { display: grid; place-items: center; aspect-ratio: 4 / 3; border-radius: 14px; background: linear-gradient(150deg, #4A090E, #7A0F14); font-family: var(--serif); font-weight: 700; font-size: 72px; color: var(--emas-muda); border: 1px solid var(--emas); }
-.dossier-peran { font-size: 12.5px; font-weight: 700; color: var(--merah); margin-top: 6px; }
-.dossier-tags { display: flex; flex-wrap: wrap; gap: 7px; margin: 16px 0 20px; }
+/* ---------- dosier guru: foto di sisi, data di sisi ---------- */
+.dossier-list { display: grid; gap: 18px; margin-top: 20px; }
+.dossier-balik { direction: rtl; }
+.dossier-balik > * { direction: ltr; }
+.dossier-card { display: grid; grid-template-columns: 240px 1fr; background: #fff; border: 1px solid var(--rule); border-radius: 20px; overflow: hidden; transition: border-color .25s ease, box-shadow .25s ease; }
+.dossier-card:hover { border-color: var(--emas); box-shadow: 0 30px 60px rgba(90,10,16,.14); }
+.dossier-visual { position: relative; min-height: 300px; overflow: hidden; background: #2A0E11; border-right: 3px solid var(--emas); }
+.dossier-balik .dossier-visual { border-right: 0; border-left: 3px solid var(--emas); }
+.dossier-visual img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 15%; display: block; }
+.dossier-visual--mono { display: grid; place-items: center; background: linear-gradient(150deg, #4A090E 0%, #7A0F14 60%, #2A0E11 100%); font-family: var(--serif); font-weight: 700; font-size: 76px; color: var(--emas-muda); }
+.dossier-badan { padding: 30px 32px; min-width: 0; }
+.dossier-badan .org__peran { display: block; margin-bottom: 8px; }
+.dossier-badan > b { display: block; font-family: var(--serif); font-size: 27px; line-height: 1.2; }
+.dossier-badan > small { display: block; font-size: 11.5px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; color: var(--merah); margin-top: 6px; }
+.dossier-tags { display: flex; flex-wrap: wrap; gap: 7px; margin: 16px 0 6px; }
+.dossier-badan dl { margin: 12px 0 0; border-top: 1px solid var(--rule); }
+.dossier-badan dl > div { display: grid; grid-template-columns: 130px 1fr; gap: 12px; padding: 8px 0; border-bottom: 1px dashed #EEE7E0; font-size: 13px; }
+.dossier-badan dl > div:last-child { border-bottom: 0; }
+.dossier-badan dt { font-size: 10px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--hint); padding-top: 2px; }
+.dossier-badan dd { margin: 0; line-height: 1.6; }
 
 /* ---------- bagan struktur organisasi ---------- */
 .org { margin-top: 8px; }
@@ -1023,8 +1016,12 @@ ul, ol, dl { margin: 0; padding: 0; }
   .org__node--kepala { order: -1; }
   .org__koor { grid-template-columns: repeat(2, 1fr); }
   .org__dua { grid-template-columns: 1fr; }
-  .bento-guru { grid-template-columns: repeat(2, 1fr); }
-  .bento-tile--ks .bento-cap b { font-size: 21px; }
+  .dossier-card { grid-template-columns: 1fr; }
+  .dossier-balik { direction: ltr; }
+  .dossier-visual { aspect-ratio: 16 / 10; min-height: 0; border-right: 0; border-bottom: 3px solid var(--emas); }
+  .dossier-balik .dossier-visual { border-left: 0; }
+  .dossier-badan { padding: 24px 22px; }
+  .dossier-badan > b { font-size: 23px; }
   .section { padding: 60px 0; }
   .pkks-tools, .pkks-tools--tiga { display: grid; grid-template-columns: 1fr; }
   .foto-grid { grid-template-columns: repeat(2, 1fr); }
@@ -1069,13 +1066,7 @@ ul, ol, dl { margin: 0; padding: 0; }
   .prakata-foto { max-width: 340px; margin-inline: auto; }
   .lambang-card__ring { width: 190px; height: 190px; }
   .akses-card { padding: 24px 20px; }
-  .bento-guru { grid-template-columns: repeat(2, 1fr); gap: 10px; }
-  .bento-cap { padding: 40px 12px 12px; }
-  .bento-cap b { font-size: 14px; }
-  .bento-cap small { font-size: 8.5px; }
-  .bento-tile--ks { grid-column: span 2; grid-template-columns: 1fr; }
-  .bento-tile--ks .bento-visual { aspect-ratio: 16 / 10; min-height: 0; }
-  .bento-tile--ks .bento-cap b { font-size: 18px; }
+  .dossier-badan dl > div { grid-template-columns: 104px 1fr; }
   .kaldik-card { padding: 18px 16px 12px; }
   .table-wrap { -webkit-overflow-scrolling: touch; }
   .table-wrap .tbl td { white-space: nowrap; }

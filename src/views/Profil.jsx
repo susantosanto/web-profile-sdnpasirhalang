@@ -1,6 +1,4 @@
 import { useState } from 'react';
-import { AnimatePresence, motion } from 'framer-motion';
-import { X } from 'lucide-react';
 import { useSite } from '../App';
 import { asset } from '../config';
 import { pad } from '../lib/site';
@@ -90,7 +88,6 @@ export default function Profil() {
   const p = data.profil;
   const m = data.meta;
   const [filterGuru, setFilterGuru] = useState('semua');
-  const [anggota, setAnggota] = useState(null);
   const daftarGuru = GURU.filter((g) => cocokGuru(g, filterGuru));
   const cari = (label) => (p.identitas.find(([k]) => k === label) || [])[1] || '—';
 
@@ -271,79 +268,35 @@ export default function Profil() {
               <button key={id} type="button" role="tab" aria-selected={filterGuru === id} className={`chip${filterGuru === id ? ' is-aktif' : ''}`} onClick={() => setFilterGuru(id)}>{label}</button>
             ))}
           </div>
-          <Stagger className="bento-guru">
-            {daftarGuru.map((g) => {
-              const ks = g.nama === 'Ahmad, S.Pd.' && filterGuru === 'semua';
-              return (
-                <Item key={g.nama} className={ks ? 'bento-span' : ''}>
-                  <motion.button
-                    type="button"
-                    className={`bento-tile${ks ? ' bento-tile--ks' : ''}`}
-                    onClick={() => setAnggota(g.nama)}
-                    whileHover={{ y: -6 }}
-                    transition={{ type: 'spring', stiffness: 280, damping: 22 }}
-                  >
-                    {g.foto ? (
-                      <span className="bento-visual"><img src={asset(`images/${g.foto}`)} alt={`Foto ${g.nama}`} loading="lazy" /></span>
-                    ) : (
-                      <span className="bento-visual bento-visual--mono" aria-hidden="true">{inisial(g.nama)}</span>
-                    )}
-                    <span className={`tag ${g.jenis.includes('Kependidikan') ? 'tag--emas' : 'tag--merah'}`}>{g.status}</span>
-                    <span className="bento-cap"><b>{g.nama}</b><small>{g.peran}</small><em>Buka dosier ›</em></span>
-                  </motion.button>
-                </Item>
-              );
-            })}
-          </Stagger>
-          <p className="catatan">Menampilkan {daftarGuru.length} dari 10 pendidik dan tenaga kependidikan. Pilih kartu untuk membuka dosier lengkap.</p>
-
-          <AnimatePresence>
-            {anggota ? (
-              <>
-                <motion.div
-                  className="scrim"
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  exit={{ opacity: 0 }}
-                  onClick={() => setAnggota(null)}
-                />
-                <motion.aside
-                  className="panel dossier"
-                  role="dialog"
-                  aria-label={`Dosier ${anggota.nama}`}
-                  initial={{ x: 60, opacity: 0 }}
-                  animate={{ x: 0, opacity: 1 }}
-                  exit={{ x: 60, opacity: 0 }}
-                  transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
-                >
-                  <div className="panel__top">
-                    <span className="mono">Dosier pendidik</span>
-                    <button className="btn btn--icon" type="button" onClick={() => setAnggota(null)} aria-label="Tutup dosier"><X size={18} /></button>
-                  </div>
-                  <div className="panel__body">
-                    {anggota.foto ? (
-                      <img className="dossier-foto" src={asset(`images/${anggota.foto}`)} alt={`Foto ${anggota.nama}`} />
-                    ) : (
-                      <div className="dossier-mono" aria-hidden="true">{inisial(anggota.nama)}</div>
-                    )}
-                    <p className="eyebrow">{anggota.jenis}</p>
-                    <h3>{anggota.nama}</h3>
-                    <p className="dossier-peran">{anggota.peran}</p>
+          <Stagger className="dossier-list">
+            {daftarGuru.map((g, i) => (
+              <Item key={g.nama} className={i % 2 ? 'dossier-balik' : ''}>
+                <article className="dossier-card">
+                  {g.foto ? (
+                    <span className="dossier-visual"><img src={asset(`images/${g.foto}`)} alt={`Foto ${g.nama}`} loading="lazy" /></span>
+                  ) : (
+                    <span className="dossier-visual dossier-visual--mono" aria-hidden="true">{inisial(g.nama)}</span>
+                  )}
+                  <div className="dossier-badan">
+                    <span className="org__peran">{g.jenis}</span>
+                    <b>{g.nama}</b>
+                    <small>{g.peran}</small>
                     <div className="dossier-tags">
-                      <span className="tag tag--merah">{anggota.status}</span>
-                      <span className="tag">TMT {anggota.tmt}</span>
-                      {anggota.jjm > 0 && <span className="tag">{anggota.jjm} JP / pekan</span>}
+                      <span className={`tag ${g.status.includes('Honor') ? 'tag--emas' : 'tag--merah'}`}>{g.status}</span>
+                      <span className="tag">TMT {g.tmt}</span>
+                      {g.jjm > 0 && <span className="tag">{g.jjm} JP / pekan</span>}
                     </div>
-                    <KeyValue rows={[
-                      ['Pendidikan', anggota.pend],
-                      ['Ampuan', anggota.mapel],
-                      ['Tugas tambahan', PERSONEL_TUGAS[anggota.nama] || '—']
-                    ]} />
+                    <dl>
+                      <div><dt>Pendidikan</dt><dd>{g.pend}</dd></div>
+                      <div><dt>Ampuan</dt><dd>{g.mapel}</dd></div>
+                      <div><dt>Tugas tambahan</dt><dd>{PERSONEL_TUGAS[g.nama] || '—'}</dd></div>
+                    </dl>
                   </div>
-                </motion.aside>
-              </>
-            ) : null}
-          </AnimatePresence>
+                </article>
+              </Item>
+            ))}
+          </Stagger>
+          <p className="catatan">Menampilkan {daftarGuru.length} dari 10 pendidik dan tenaga kependidikan.</p>
         </div>
       </section>
 
