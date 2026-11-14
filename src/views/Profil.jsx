@@ -289,7 +289,7 @@ export default function Profil() {
                       <span className="bento-visual bento-visual--mono" aria-hidden="true">{inisial(g.nama)}</span>
                     )}
                     <span className={`tag ${g.jenis.includes('Kependidikan') ? 'tag--emas' : 'tag--merah'}`}>{g.status}</span>
-                    <span className="bento-cap"><b>{g.nama}</b><small>{g.peran}</small></span>
+                    <span className="bento-cap"><b>{g.nama}</b><small>{g.peran}</small><em>Buka dosier ›</em></span>
                   </motion.button>
                 </Item>
               );

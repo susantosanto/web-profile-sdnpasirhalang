@@ -598,6 +598,9 @@ ul, ol, dl { margin: 0; padding: 0; }
 .bento-cap { position: absolute; left: 0; right: 0; bottom: 0; z-index: 2; padding: 48px 16px 16px; color: #fff; }
 .bento-cap b { display: block; font-family: var(--serif); font-size: 18px; line-height: 1.25; }
 .bento-cap small { display: block; margin-top: 4px; font-size: 10px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--emas-muda); }
+.bento-cap em { display: block; font-style: normal; font-size: 10px; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; color: #fff; margin-top: 8px; opacity: 0; transform: translateY(4px); transition: opacity .25s ease, transform .25s ease; }
+.bento-tile:hover .bento-cap em, .bento-tile:focus-visible .bento-cap em { opacity: 1; transform: none; }
+@media (hover: none) { .bento-cap em { opacity: 1; transform: none; } }
 .bento-tile--ks { display: grid; grid-template-columns: 1fr 1fr; background: linear-gradient(135deg, #42080D, #7A0F14); }
 .bento-tile--ks .bento-visual { aspect-ratio: auto; height: 100%; min-height: 240px; }
 .bento-tile--ks::after { background: linear-gradient(90deg, rgba(26,8,10,0) 30%, rgba(26,8,10,.35) 100%); }
