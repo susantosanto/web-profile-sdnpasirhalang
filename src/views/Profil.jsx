@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { useSite } from '../App';
 import { asset } from '../config';
 import { pad } from '../lib/site';
@@ -37,18 +36,34 @@ const PERSONEL_TUGAS = {
   'Herman': 'Pengelola sarana prasarana'
 };
 
-const FILTER_GURU = [
-  ['semua', 'Semua'],
-  ['kelas', 'Guru kelas'],
-  ['mapel', 'Guru mapel'],
-  ['tendik', 'Tendik']
-];
-
-const cocokGuru = (g, f) =>
-  f === 'semua' ||
-  (f === 'kelas' && g.jenis === 'Guru Kelas') ||
-  (f === 'mapel' && g.jenis === 'Guru Agama Islam') ||
-  (f === 'tendik' && g.jenis.includes('Kependidikan'));
+function KartuGuru({ g }) {
+  return (
+    <Item key={g.nama}>
+      <article className="dossier-card">
+        {g.foto ? (
+          <span className="dossier-visual"><img src={asset(`images/${g.foto}`)} alt={`Foto ${g.nama}`} loading="lazy" /></span>
+        ) : (
+          <span className="dossier-visual dossier-visual--mono" aria-hidden="true">{inisial(g.nama)}</span>
+        )}
+        <div className="dossier-badan">
+          <span className="org__peran">{g.jenis}</span>
+          <b>{g.nama}</b>
+          <small>{g.peran}</small>
+          <div className="dossier-tags">
+            <span className={`tag ${g.status.includes('Honor') ? 'tag--emas' : 'tag--merah'}`}>{g.status}</span>
+            <span className="tag">TMT {g.tmt}</span>
+            {g.jjm > 0 && <span className="tag">{g.jjm} JP / pekan</span>}
+          </div>
+          <dl>
+            <div><dt>Pendidikan</dt><dd>{g.pend}</dd></div>
+            <div><dt>Ampuan</dt><dd>{g.mapel}</dd></div>
+            <div><dt>Tugas tambahan</dt><dd>{PERSONEL_TUGAS[g.nama] || '—'}</dd></div>
+          </dl>
+        </div>
+      </article>
+    </Item>
+  );
+}
 
 const fotoOf = (nama) => (GURU.find((g) => g.nama === nama) || {}).foto || null;
 const imgSrc = (nama) => { const f = fotoOf(nama); return f ? asset(`images/${f}`) : null; };
@@ -87,8 +102,8 @@ export default function Profil() {
   const { data } = useSite();
   const p = data.profil;
   const m = data.meta;
-  const [filterGuru, setFilterGuru] = useState('semua');
-  const daftarGuru = GURU.filter((g) => cocokGuru(g, filterGuru));
+  const pendidik = GURU.filter((g) => !g.jenis.includes('Kependidikan'));
+  const tendik = GURU.filter((g) => g.jenis.includes('Kependidikan'));
   const cari = (label) => (p.identitas.find(([k]) => k === label) || [])[1] || '—';
 
   return (
@@ -263,40 +278,14 @@ export default function Profil() {
       <section className="section" id="profil-guru">
         <div className="wrap">
           <SectionHead kode="04 / Pendidik" title="Dewan guru & tendik" desc="10 pendidik dan tenaga kependidikan SDN Pasirhalang — data pokok Dapodik 27 Oktober 2026. NUPTK, NIP, NIK dan tanggal lahir tidak ditampilkan." />
-          <div className="chip-row" role="tablist" aria-label="Saring dewan guru">
-            {FILTER_GURU.map(([id, label]) => (
-              <button key={id} type="button" role="tab" aria-selected={filterGuru === id} className={`chip${filterGuru === id ? ' is-aktif' : ''}`} onClick={() => setFilterGuru(id)}>{label}</button>
-            ))}
-          </div>
+          <h3 className="dir-kelompok"><span>A — Pendidik</span><em>{pendidik.length} guru</em></h3>
           <Stagger className="dossier-list">
-            {daftarGuru.map((g) => (
-              <Item key={g.nama}>
-                <article className="dossier-card">
-                  {g.foto ? (
-                    <span className="dossier-visual"><img src={asset(`images/${g.foto}`)} alt={`Foto ${g.nama}`} loading="lazy" /></span>
-                  ) : (
-                    <span className="dossier-visual dossier-visual--mono" aria-hidden="true">{inisial(g.nama)}</span>
-                  )}
-                  <div className="dossier-badan">
-                    <span className="org__peran">{g.jenis}</span>
-                    <b>{g.nama}</b>
-                    <small>{g.peran}</small>
-                    <div className="dossier-tags">
-                      <span className={`tag ${g.status.includes('Honor') ? 'tag--emas' : 'tag--merah'}`}>{g.status}</span>
-                      <span className="tag">TMT {g.tmt}</span>
-                      {g.jjm > 0 && <span className="tag">{g.jjm} JP / pekan</span>}
-                    </div>
-                    <dl>
-                      <div><dt>Pendidikan</dt><dd>{g.pend}</dd></div>
-                      <div><dt>Ampuan</dt><dd>{g.mapel}</dd></div>
-                      <div><dt>Tugas tambahan</dt><dd>{PERSONEL_TUGAS[g.nama] || '—'}</dd></div>
-                    </dl>
-                  </div>
-                </article>
-              </Item>
-            ))}
+            {pendidik.map((g) => <KartuGuru key={g.nama} g={g} />)}
           </Stagger>
-          <p className="catatan">Menampilkan {daftarGuru.length} dari 10 pendidik dan tenaga kependidikan.</p>
+          <h3 className="dir-kelompok"><span>B — Tenaga kependidikan</span><em>{tendik.length} tendik</em></h3>
+          <Stagger className="dossier-list">
+            {tendik.map((g) => <KartuGuru key={g.nama} g={g} />)}
+          </Stagger>
         </div>
       </section>
 

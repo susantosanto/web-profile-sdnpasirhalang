@@ -585,6 +585,11 @@ ul, ol, dl { margin: 0; padding: 0; }
 .hero__strip-inner i { width: 1px; height: 18px; background: rgba(255,255,255,.18); flex: 0 0 auto; }
 
 /* ---------- dosier guru: foto bulat premium ---------- */
+.dir-kelompok { display: flex; align-items: baseline; justify-content: space-between; gap: 14px; font-family: var(--sans); font-size: 11px; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; color: var(--merah); margin: 34px 0 4px; padding-bottom: 12px; border-bottom: 2px solid var(--merah); }
+.dir-kelompok span { display: flex; align-items: center; gap: 10px; }
+.dir-kelompok span::before { content: ''; width: 26px; height: 2px; background: var(--emas); }
+.dir-kelompok em { font-style: normal; font-family: var(--mono); font-size: 10.5px; color: var(--hint); letter-spacing: .06em; }
+section .dir-kelompok:first-of-type { margin-top: 20px; }
 .dossier-list { display: grid; gap: 18px; margin-top: 20px; }
 .dossier-card { display: flex; align-items: center; gap: 26px; background: #fff; border: 1px solid var(--rule); border-radius: 22px; padding: 26px 30px 26px 26px; overflow: hidden; position: relative; transition: border-color .25s ease, box-shadow .25s ease, transform .25s ease; }
 .dossier-card:hover { border-color: var(--emas); box-shadow: 0 26px 60px rgba(90,10,16,.14); transform: translateY(-3px); }
