@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { ChevronDown } from 'lucide-react';
 import { useSite } from '../App';
 import { asset } from '../config';
+import { pad } from '../lib/site';
 import { CountUp, GoldRule, Item, Reveal, Stagger } from '../components/motion';
 import { DataTable, KeyValue, SectionHead } from '../components/Ui';
 import Kalender from '../components/Kalender';
