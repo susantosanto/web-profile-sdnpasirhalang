@@ -1,4 +1,6 @@
-import { ArrowUpRight, Download, FileText, Scale } from 'lucide-react';
+import { useState } from 'react';
+import { AnimatePresence, motion } from 'framer-motion';
+import { ArrowUpRight, Download, FileText, X } from 'lucide-react';
 import { useSite } from '../App';
 import { asset } from '../config';
 import { DataTable, SectionHead } from '../components/Ui';
@@ -37,12 +39,12 @@ const KEWAJIBAN = [
 ];
 
 const WAKTU_ROWS = [
-  ['Kelas I', 'Senin–Jumat', '06.30 (pembiasaan) / 07.00 (KBM)', '09.00–09.15', '10.45 (Jumat: 09.00)'],
-  ['Kelas II', 'Senin–Jumat', '06.30 (pembiasaan) / 07.00 (KBM)', '09.20–09.50', '11.35 (Jumat: 11.00)'],
-  ['Kelas III', 'Senin–Jumat', '06.30 (pembiasaan) / 07.00 (KBM)', '09.20–09.50', '11.35'],
-  ['Kelas IV', 'Senin–Jumat', '06.30 (pembiasaan) / 07.00 (KBM)', '09.20–09.50', '12.45 (Senin & Kamis: 12.10; Jumat: 11.00)'],
-  ['Kelas V', 'Senin–Jumat', '06.30 (pembiasaan) / 07.00 (KBM)', '09.20–09.50', '13.20 (Jumat: 11.00)'],
-  ['Kelas VI', 'Senin–Jumat', '06.30 (pembiasaan) / 07.00 (KBM)', '09.20–09.50', '12.45']
+  ['Kelas I', '06.30', '07.00', '09.00–09.15', '10.45 (Jumat: 09.00)'],
+  ['Kelas II', '06.30', '07.00', '09.20–09.50', '11.35 (Jumat: 11.00)'],
+  ['Kelas III', '06.30', '07.00', '09.20–09.50', '11.35'],
+  ['Kelas IV', '06.30', '07.00', '09.20–09.50', '12.45 (Senin & Kamis: 12.10; Jumat: 11.00)'],
+  ['Kelas V', '06.30', '07.00', '09.20–09.50', '13.20 (Jumat: 11.00)'],
+  ['Kelas VI', '06.30', '07.00', '09.20–09.50', '12.45']
 ];
 
 const ANTAR_JEMPUT = [
@@ -106,6 +108,7 @@ function Daftar({ items }) {
 export default function TataTertib() {
   const { data } = useSite();
   const m = data.meta;
+  const [bukaPdf, setBukaPdf] = useState(false);
   return (
     <>
       <div className="page-hero">
@@ -164,10 +167,10 @@ export default function TataTertib() {
 
       <section className="section" id="tatib-waktu">
         <div className="wrap">
-          <SectionHead kode="Bab III / Waktu" title="Waktu sekolah & antar-jemput" desc="Pasal 5 — Jam operasional pembelajaran. Jam pulang kelas I mengikuti Jadwal Pelajaran Kelas I Tahun 2026." />
+          <SectionHead kode="Bab III / Waktu" title="Waktu sekolah & antar-jemput" desc="Pasal 5 — Berlaku Senin–Jumat. Pembiasaan pagi 06.30, KBM 07.00. Jam pulang kelas I mengikuti Jadwal Pelajaran Kelas I Tahun 2026." />
           <Reveal>
             <DataTable
-              head={['Tingkat kelas', 'Hari', 'Jam masuk', 'Istirahat', 'Jam kepulangan']}
+              head={['Kelas', 'Pembiasaan', 'KBM', 'Istirahat', 'Kepulangan']}
               rows={WAKTU_ROWS}
             />
           </Reveal>
@@ -240,30 +243,55 @@ export default function TataTertib() {
 
       <section className="section section--paper" id="tatib-lampiran">
         <div className="wrap">
-          <SectionHead kode="Lampiran resmi" title="Sumber resmi dinas" desc="Dokumen peraturan perundang-undangan yang menjadi rujukan pembinaan disiplin." />
-          <Stagger className="kontak-cards">
-            <Item>
-              <div className="kontak-card">
-                <span><FileText size={20} strokeWidth={1.5} /></span>
-                <b>PP Nomor 53 Tahun 2010</b>
-                <p>Disiplin Pegawai Negeri Sipil — Peraturan Pemerintah Republik Indonesia sebagai rujukan resmi pembinaan disiplin aparatur.</p>
-                <div className="koordinat-aksi__tombol">
-                  <a className="btn btn--merah" href={PDF_PP} target="_blank" rel="noopener noreferrer">Baca dokumen <ArrowUpRight size={14} /></a>
-                  <a className="btn btn--ghost" href={PDF_PP} download="PP-53-2010-Disiplin-PNS.pdf"><Download size={15} /> Unduh PDF</a>
-                </div>
+          <SectionHead kode="Lampiran resmi" title="Sumber resmi dinas" desc="Dokumen peraturan perundang-undangan yang menjadi rujukan pembinaan disiplin — dibaca langsung tanpa meninggalkan situs ini." />
+          <Reveal>
+            <div className="lampiran-pp">
+              <span className="lampiran-pp__ikon"><FileText size={26} strokeWidth={1.4} /></span>
+              <div className="lampiran-pp__teks">
+                <p className="mono">Peraturan Pemerintah RI</p>
+                <b>PP Nomor 53 Tahun 2010 tentang Disiplin Pegawai Negeri Sipil</b>
+                <small>Dokumen PDF · 24 halaman · dapat dibaca di tempat atau diunduh</small>
               </div>
-            </Item>
-            <Item>
-              <div className="kontak-card">
-                <span><Scale size={20} strokeWidth={1.5} /></span>
-                <b>Dokumen sekolah</b>
-                <p>Tata tertib dan kode etik peserta didik di atas mengacu pada UU Sisdiknas, UU Perlindungan Anak, dan Permendikbudristek PPKSP.</p>
-                <div className="koordinat-aksi__tombol">
-                  <a className="btn btn--ghost" href="#tatib-dasar">Kembali ke Bab I <ArrowUpRight size={14} /></a>
-                </div>
+              <div className="lampiran-pp__aksi">
+                <button className="btn btn--merah" type="button" onClick={() => setBukaPdf(true)}>Baca dokumen <ArrowUpRight size={15} /></button>
+                <a className="btn btn--ghost" href={PDF_PP} download="PP-53-2010-Disiplin-PNS.pdf"><Download size={15} /> Unduh</a>
               </div>
-            </Item>
-          </Stagger>
+            </div>
+          </Reveal>
+
+          <AnimatePresence>
+            {bukaPdf && (
+              <>
+                <motion.div
+                  className="scrim"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  onClick={() => setBukaPdf(false)}
+                />
+                <motion.div
+                  className="pdf-modal"
+                  role="dialog"
+                  aria-label="PP Nomor 53 Tahun 2010"
+                  initial={{ opacity: 0, y: 32, scale: 0.98 }}
+                  animate={{ opacity: 1, y: 0, scale: 1 }}
+                  exit={{ opacity: 0, y: 32, scale: 0.98 }}
+                  transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
+                >
+                  <div className="pdf-modal__top">
+                    <span><b>PP Nomor 53 Tahun 2010</b><small>Disiplin Pegawai Negeri Sipil</small></span>
+                    <span className="pdf-modal__tombol">
+                      <a className="btn btn--kecil" href={PDF_PP} download="PP-53-2010-Disiplin-PNS.pdf"><Download size={14} /> Unduh</a>
+                      <button className="btn btn--icon" type="button" onClick={() => setBukaPdf(false)} aria-label="Tutup dokumen"><X size={18} /></button>
+                    </span>
+                  </div>
+                  <div className="pdf-modal__frame">
+                    <iframe title="PP Nomor 53 Tahun 2010 tentang Disiplin PNS" src={PDF_PP} />
+                  </div>
+                </motion.div>
+              </>
+            )}
+          </AnimatePresence>
         </div>
       </section>
     </>

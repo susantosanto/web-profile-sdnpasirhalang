@@ -892,6 +892,25 @@ ul, ol, dl { margin: 0; padding: 0; }
 .kontak-card b { display: block; font-family: var(--serif); font-size: 20px; margin-bottom: 8px; }
 .kontak-card p { font-size: 12.8px; color: var(--muted); line-height: 1.8; }
 .kontak-card a { display: inline-flex; align-items: center; gap: 5px; font-size: 11.5px; font-weight: 700; color: var(--merah); margin-top: 12px; }
+.kontak-card a.btn--merah { color: #fff; }
+.kontak-card a.btn--ghost { color: var(--tinta); }
+
+/* ---------- lampiran PP + modal PDF ---------- */
+.lampiran-pp { display: flex; align-items: center; gap: 22px; background: #fff; border: 1px solid var(--rule); border-left: 3px solid var(--emas); padding: 26px 28px; box-shadow: var(--shadow-kecil); }
+.lampiran-pp__ikon { display: grid; place-items: center; width: 60px; height: 60px; flex: none; border-radius: 50%; background: var(--merah-wash); color: var(--merah); border: 1px solid var(--merah-garis); }
+.lampiran-pp__teks { flex: 1; min-width: 0; }
+.lampiran-pp__teks .mono { color: var(--emas); letter-spacing: .12em; }
+.lampiran-pp__teks b { display: block; font-family: var(--serif); font-size: 22px; line-height: 1.3; margin-top: 6px; }
+.lampiran-pp__teks small { display: block; font-size: 12px; color: var(--muted); margin-top: 6px; }
+.lampiran-pp__aksi { display: flex; flex-wrap: wrap; gap: 10px; flex: none; }
+.pdf-modal { position: fixed; z-index: 120; inset: 4vh 4vw; display: flex; flex-direction: column; background: #fff; border: 1px solid var(--rule); border-top: 3px solid var(--merah); box-shadow: 0 40px 120px rgba(20,5,8,.45); overflow: hidden; }
+.pdf-modal__top { display: flex; align-items: center; justify-content: space-between; gap: 14px; padding: 14px 20px; border-bottom: 1px solid var(--rule); flex: none; }
+.pdf-modal__top b { display: block; font-family: var(--serif); font-size: 19px; }
+.pdf-modal__top small { display: block; font-size: 11px; color: var(--muted); }
+.pdf-modal__tombol { display: flex; align-items: center; gap: 8px; flex: none; }
+.pdf-modal__frame { flex: 1; min-height: 0; background: var(--kertas-2); }
+.pdf-modal__frame iframe { width: 100%; height: 100%; border: 0; display: block; }
+#tatib-waktu .table-wrap .tbl { min-width: 520px; }
 .note-card { background: #fff; border-left: 3px solid var(--emas); padding: 22px 24px; }
 .note-card b { font-size: 13.5px; }
 .note-card--visi { border-left-width: 3px; }
@@ -1088,7 +1107,10 @@ ul, ol, dl { margin: 0; padding: 0; }
   .tbl--kv .lbl { font-size: 9.5px; letter-spacing: .1em; text-transform: uppercase; }
   .page-hero__inner { padding-block: 48px 42px; }
   .page-hero h1 { font-size: 34px; }
-  .page-hero__lede { font-size: 13.5px; }
+  .lampiran-pp { flex-direction: column; align-items: flex-start; padding: 24px 20px; }
+  .pdf-modal { inset: 2vh 3vw; }
+  .pdf-modal__top { padding: 12px 14px; }
+  .pdf-modal__top b { font-size: 16px; }
   .kontak-peta--besar .kontak-peta__frame { height: 380px; }
   .identitas-daftar > div { grid-template-columns: 1fr; gap: 2px; padding: 11px 18px; }
   .identitas-ringkas { padding: 24px 22px; }
