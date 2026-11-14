@@ -593,6 +593,44 @@ ul, ol, dl { margin: 0; padding: 0; }
 .guru-card__foto img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 18%; display: block; transition: transform .4s ease; }
 .guru-card:hover .guru-card__foto img { transform: scale(1.04); }
 .guru-card__badan { padding: 22px 24px 24px; position: relative; z-index: 2; }
+
+/* ---------- bagan struktur organisasi ---------- */
+.org { margin-top: 8px; }
+.org__label { font-family: var(--mono); font-size: 10px; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; color: #8A6716; text-align: center; margin: 32px 0 14px; }
+.org > .org__label:first-of-type { margin-top: 6px; }
+.org__puncak { display: grid; grid-template-columns: 1fr 1.25fr 1fr; gap: 16px; align-items: stretch; }
+.org__tim { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.org__koor { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+.org__node { background: #fff; border: 1px solid var(--rule); border-top: 3px solid var(--emas); padding: 20px 18px; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 6px; }
+.org__node b { font-family: var(--serif); font-size: 17px; line-height: 1.3; }
+.org__node small { font-size: 11.5px; color: var(--muted); line-height: 1.5; }
+.org__peran { font-size: 9.5px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; color: var(--merah); }
+.org__node--kepala { background: linear-gradient(180deg, #4A090E, #7A0F14); border-color: #5B0A10; border-bottom: 2px solid var(--emas); color: #fff; }
+.org__node--kepala b { font-size: 22px; }
+.org__node--kepala small, .org__node--kepala .org__peran { color: var(--emas-muda); }
+.org__node--tim { border-top-color: var(--merah); }
+.org__node--koor { padding: 18px 14px; }
+.org__foto { width: 62px; height: 62px; border-radius: 50%; overflow: hidden; border: 2px solid var(--emas); background: var(--kertas-2); display: grid; place-items: center; font-family: var(--serif); font-weight: 700; font-size: 17px; color: var(--merah); flex: none; }
+.org__foto img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.org__node--kepala .org__foto { width: 84px; height: 84px; border-width: 3px; font-size: 22px; }
+.org__hub { display: block; width: 2px; height: 26px; background: linear-gradient(180deg, var(--emas), var(--merah)); margin: 0 auto; position: relative; }
+.org__hub::after { content: ''; position: absolute; left: 50%; bottom: -4px; transform: translateX(-50%); width: 9px; height: 9px; border-radius: 50%; background: var(--merah); }
+.org__dua { display: grid; grid-template-columns: 1.2fr 1fr; gap: 16px; align-items: start; }
+.org__panel { background: #fff; border: 1px solid var(--rule); border-top: 3px solid var(--merah); padding: 24px; }
+.org__panel-judul { font-size: 10.5px; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; color: var(--merah); margin-bottom: 6px; padding-bottom: 12px; border-bottom: 1px solid var(--rule); }
+.org__wali { list-style: none; }
+.org__wali li { display: flex; align-items: center; gap: 12px; padding: 9px 0; border-bottom: 1px dashed #EEE7E0; }
+.org__wali li:last-child { border-bottom: 0; }
+.org__wali .org__foto { width: 40px; height: 40px; font-size: 13px; border-width: 1.5px; }
+.org__wali b { display: block; font-size: 12.5px; }
+.org__wali small { display: block; font-size: 11.5px; color: var(--muted); }
+.org__panel-catatan { font-size: 11.5px; color: var(--hint); font-style: italic; margin-top: 12px; line-height: 1.6; }
+.org__dasar { max-width: 560px; margin: 0 auto; background: var(--merah-wash); border: 1px solid var(--merah-garis); padding: 22px 26px; text-align: center; }
+.org__dasar b { display: block; font-family: var(--serif); font-size: 20px; margin: 4px 0; }
+.org__dasar small { color: var(--muted); font-size: 12px; }
+.org__sub { margin-top: 44px; }
+.org__uraian { margin-top: 18px; }
+.org__uraian .tbl td:first-child { width: 26%; }
 .guru-card__avatar { display: grid; place-items: center; width: 52px; height: 52px; border-radius: 50%; background: linear-gradient(135deg, var(--merah), var(--merah-gelap)); color: var(--emas-muda); font-family: var(--serif); font-size: 19px; font-weight: 700; margin-bottom: 14px; box-shadow: 0 8px 20px rgba(90,10,16,.25); }
 .guru-card__avatar--lengkap { margin: 22px auto 14px; }
 .guru-card b { display: block; font-family: var(--serif); font-size: 19px; margin: 10px 0 2px; }
@@ -964,6 +1002,10 @@ ul, ol, dl { margin: 0; padding: 0; }
   .langkah--misi { grid-template-columns: 1fr; margin-top: 26px; }
   .stat-grid, .stat-grid--empat, .foto-ringkas, .capaian-grid { grid-template-columns: repeat(2, 1fr); }
   .akses-grid, .map-grid, .kat-grid, .kontak-cards, .guru-grid, .kaldik-grid { grid-template-columns: repeat(2, 1fr); }
+  .org__puncak { grid-template-columns: 1fr; }
+  .org__node--kepala { order: -1; }
+  .org__koor { grid-template-columns: repeat(2, 1fr); }
+  .org__dua { grid-template-columns: 1fr; }
   .section { padding: 60px 0; }
   .pkks-tools, .pkks-tools--tiga { display: grid; grid-template-columns: 1fr; }
   .foto-grid { grid-template-columns: repeat(2, 1fr); }
@@ -1001,6 +1043,7 @@ ul, ol, dl { margin: 0; padding: 0; }
   .section__intro h2, .sec-head h2 { font-size: 26px; }
   .sec-desc { font-size: 12.8px; }
   .stat-grid, .stat-grid--empat, .foto-ringkas, .capaian-grid, .akses-grid, .map-grid, .kat-grid, .kontak-cards, .foto-grid, .guru-grid, .kaldik-grid { grid-template-columns: 1fr; }
+  .org__tim, .org__koor { grid-template-columns: 1fr; }
   .stat-card { padding: 20px; }
   .stat-card__value { font-size: 34px; }
   .lambang-card { padding: 28px 20px; }

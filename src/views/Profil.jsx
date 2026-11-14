@@ -22,6 +22,52 @@ function inisial(nama) {
   return nama.replace(/,.*$/, '').split(/[\s.]+/).filter(Boolean).slice(0, 2).map((w) => w[0]).join('').toUpperCase();
 }
 
+const fotoOf = (nama) => (GURU.find((g) => g.nama === nama) || {}).foto || null;
+const imgSrc = (nama) => { const f = fotoOf(nama); return f ? asset(`images/${f}`) : null; };
+
+const PERSONEL = [
+  ['1', 'Ahmad, S.Pd.', 'PNS', 'Kepala Sekolah', 'Wali Kelas I'],
+  ['2', 'Fika Agustina, S.Pd.', 'PPPK', 'Guru Kelas', 'Wali Kelas II'],
+  ['3', 'Vani, S.Ag.', 'Guru Honor Sekolah', 'Guru Kelas', 'Wali Kelas III'],
+  ['4', 'Rinda Sri Agung Wahyuni, S.Pd.', 'PPPK', 'Guru Kelas', 'Wali Kelas IV'],
+  ['5', 'Meyta Murthy Lasari, S.E.', 'Guru Honor Sekolah', 'Guru Kelas', 'Wali Kelas V-A'],
+  ['6', 'Siti Aisah Nur Fitri, S.Pd.', 'PPPK Paruh Waktu', 'Guru Kelas', 'Wali Kelas V-B'],
+  ['7', 'Deni Mulyani, S.Pd.', 'PPPK', 'Guru Kelas', 'Wali Kelas VI'],
+  ['8', "Nur'Asiah, S.Pd.", 'PPPK Paruh Waktu', 'Guru Agama Islam', 'Guru PAI'],
+  ['9', 'Susanto, S.Kom.', 'PPPK Paruh Waktu', 'Tenaga Administrasi', 'Pengelola sarana prasarana'],
+  ['10', 'Herman', 'Tenaga Honor Sekolah', 'Penjaga Sekolah', 'Pengelola sarana prasarana']
+];
+
+const URAIAN = [
+  ['Kepala Sekolah', 'Memimpin dan mengelola satuan pendidikan; menyusun perencanaan (visi, misi, RKJM, RKT, RKAS); membina dan mengawasi pendidik dan tenaga kependidikan; melaksanakan supervisi; memimpin SPMI; mengelola sarana, keuangan, dan administrasi; menjalin kemitraan dengan komite dan masyarakat.'],
+  ['Koordinator Kurikulum dan Pembelajaran', 'Membantu menyusun dan mengembangkan kurikulum satuan pendidikan; mengoordinasikan jadwal, perangkat ajar, dan asesmen; mendampingi guru dalam pembelajaran; membantu pelaksanaan supervisi.'],
+  ['Koordinator Kesiswaan dan Karakter', 'Mengoordinasikan penerimaan peserta didik baru, pembiasaan karakter, ekstrakurikuler, dan perlindungan murid; mendata prestasi dan kehadiran peserta didik.'],
+  ['Koordinator Sarana Prasarana', 'Mengoordinasikan pendataan, pemeliharaan, dan penggunaan sarana prasarana; mengelola inventaris barang dan bangunan; mengusulkan kebutuhan perbaikan dan pengadaan.'],
+  ['Koordinator Kemitraan / Humas', 'Mengoordinasikan hubungan dengan orang tua, komite, dan masyarakat; menyusun kegiatan kemitraan belajar; mengelola publikasi kegiatan sekolah.'],
+  ['Wali Kelas / Guru Kelas', 'Merencanakan, melaksanakan, dan menilai pembelajaran di kelas; mengelola kelas; membimbing murid; melaporkan hasil belajar kepada orang tua; melaksanakan refleksi dan tindak lanjut.'],
+  ['Guru PAI / PJOK / Muatan Lain', 'Melaksanakan pembelajaran mata pelajaran yang diampu; mengembangkan perangkat ajar dan asesmen; mendukung kegiatan pembiasaan dan ekstrakurikuler.'],
+  ['Tenaga Administrasi / Operator', 'Mengelola administrasi persuratan, kepegawaian, peserta didik, dan keuangan; mengelola data Dapodik dan aplikasi pendukung; menyiapkan laporan.'],
+  ['Pustakawan / Pengelola Perpustakaan', 'Mengelola koleksi, sirkulasi, dan tata tertib perpustakaan; mendukung budaya baca dan tulis; menyusun laporan tahunan perpustakaan.'],
+  ['Komite Sekolah', 'Memberi pertimbangan, dukungan, pengawasan, dan mediasi dalam penyelenggaraan pendidikan; menjadi unsur dalam Tim Penjaminan Mutu.'],
+  ['Tim Penjaminan Mutu', 'Mengoordinasikan pelaksanaan SPMI; melakukan pembinaan dan pendampingan; melaksanakan pemetaan mutu; melakukan pemantauan dan evaluasi; memberikan rekomendasi strategi pemenuhan mutu.']
+];
+
+const WALI = [
+  ['I', 'Ahmad, S.Pd.'],
+  ['II', 'Fika Agustina, S.Pd.'],
+  ['III', 'Vani, S.Ag.'],
+  ['IV', 'Rinda Sri Agung Wahyuni, S.Pd.'],
+  ['V-A', 'Meyta Murthy Lasari, S.E.'],
+  ['V-B', 'Siti Aisah Nur Fitri, S.Pd.'],
+  ['VI', 'Deni Mulyani, S.Pd.']
+];
+
+function OrgFoto({ nama, ukuran = 44 }) {
+  const src = imgSrc(nama);
+  if (src) return (<span className="org__foto"><img src={src} alt={`Foto ${nama}`} loading="lazy" /></span>);
+  return (<span className="org__foto org__foto--inisial">{inisial(nama)}</span>);
+}
+
 export default function Profil() {
   const { data } = useSite();
   const p = data.profil;
@@ -99,9 +145,115 @@ export default function Profil() {
         </div>
       </section>
 
+      <section className="section" id="profil-struktur">
+        <div className="wrap">
+          <SectionHead kode="03 / Struktur" title="Struktur organisasi" desc="Bagan organisasi dan pembagian tugas tahun pelajaran 2026/2027 — mengacu Permendikdasmen No. 26 Tahun 2025 tentang Standar Pengelolaan dan SK Kepala Sekolah." />
+          <div className="org">
+            <p className="org__label">Pimpinan dan pembina</p>
+            <Stagger className="org__puncak">
+              <Item className="org__node">
+                <span className="org__peran">Komite sekolah</span>
+                <b>Salimudin</b>
+                <small>Garis koordinasi</small>
+              </Item>
+              <Item className="org__node org__node--kepala">
+                <OrgFoto nama="Ahmad, S.Pd." />
+                <span className="org__peran">Kepala sekolah</span>
+                <b>Ahmad, S.Pd.</b>
+                <small>Tahun pelajaran 2026/2027</small>
+              </Item>
+              <Item className="org__node">
+                <span className="org__peran">Pengawas sekolah</span>
+                <b>Dr. Atikah Sari, M.Pd.</b>
+                <small>Alur pembinaan</small>
+              </Item>
+            </Stagger>
+            <span className="org__hub" aria-hidden="true" />
+            <p className="org__label">Tim sekolah</p>
+            <Stagger className="org__tim">
+              <Item className="org__node org__node--tim">
+                <span className="org__peran">Tim penjaminan mutu (SPMI)</span>
+                <b>Ketua: Ahmad, S.Pd.</b>
+                <small>Sekretaris: Susanto, S.Kom.</small>
+              </Item>
+              <Item className="org__node org__node--tim">
+                <span className="org__peran">Tim pengembang kurikulum</span>
+                <b>Ketua: Deni Mulyani, S.Pd.</b>
+                <small>Sekretaris: Susanto, S.Kom.</small>
+              </Item>
+            </Stagger>
+            <span className="org__hub" aria-hidden="true" />
+            <p className="org__label">Koordinator bidang</p>
+            <Stagger className="org__koor">
+              {[
+                ['Kurikulum & pembelajaran', 'Deni Mulyani, S.Pd.'],
+                ['Kesiswaan & karakter', 'Rinda Sri Agung Wahyuni, S.Pd.'],
+                ['Sarana prasarana', 'Susanto, S.Kom.'],
+                ['Kemitraan / humas', 'Siti Aisah Nur Fitri, S.Pd.']
+              ].map(([bidang, nama]) => (
+                <Item key={bidang} className="org__node org__node--koor">
+                  <OrgFoto nama={nama} />
+                  <span className="org__peran">{bidang}</span>
+                  <b>{nama}</b>
+                </Item>
+              ))}
+            </Stagger>
+            <span className="org__hub" aria-hidden="true" />
+            <p className="org__label">Pelaksana</p>
+            <div className="org__dua">
+              <Reveal className="org__panel">
+                <p className="org__panel-judul">Pendidik — wali kelas</p>
+                <ul className="org__wali">
+                  {WALI.map(([kls, nama]) => (
+                    <li key={kls}><OrgFoto nama={nama} /><span><b>Kelas {kls}</b><small>{nama}</small></span></li>
+                  ))}
+                  <li><OrgFoto nama="Nur'Asiah, S.Pd." /><span><b>Guru PAI</b><small>Nur'Asiah, S.Pd.</small></span></li>
+                </ul>
+                <p className="org__panel-catatan">Guru PJOK dan muatan lain (Bahasa Inggris / Bahasa Daerah) dirangkap guru kelas.</p>
+              </Reveal>
+              <Reveal delay={0.1} variant="right" className="org__panel">
+                <p className="org__panel-judul">Tenaga kependidikan</p>
+                <ul className="org__wali">
+                  <li><OrgFoto nama="Susanto, S.Kom." /><span><b>Administrasi</b><small>Susanto, S.Kom.</small></span></li>
+                  <li><OrgFoto nama="Herman" /><span><b>Penjaga sekolah</b><small>Herman</small></span></li>
+                </ul>
+                <p className="org__panel-catatan">Mengelola administrasi, data Dapodik, serta pemeliharaan sarana prasarana.</p>
+              </Reveal>
+            </div>
+            <span className="org__hub" aria-hidden="true" />
+            <Reveal className="org__dasar">
+              <span className="org__peran">Penerima layanan</span>
+              <b>Peserta didik dan orang tua / wali</b>
+              <small>Perwakilan: Salimudin</small>
+            </Reveal>
+          </div>
+
+          <h4 className="sub-judul org__sub">Daftar personel dan jabatan</h4>
+          <Reveal>
+            <DataTable
+              head={['No', 'Nama lengkap', 'Status', 'Jabatan', 'Tugas tambahan']}
+              rows={PERSONEL}
+            />
+          </Reveal>
+
+          <details className="koreksi org__uraian">
+            <summary>Uraian tugas dan tanggung jawab — 11 jabatan</summary>
+            <table className="tbl">
+              <thead><tr><th>Jabatan</th><th>Tugas dan tanggung jawab</th></tr></thead>
+              <tbody>
+                {URAIAN.map(([jabatan, tugas]) => (
+                  <tr key={jabatan}><td className="lbl"><b>{jabatan}</b></td><td>{tugas}</td></tr>
+                ))}
+              </tbody>
+            </table>
+          </details>
+          <p className="catatan">Sumber: dokumen 3.2 Struktur Organisasi dan Pembagian Tugas. NIP/NUPTK tidak ditampilkan pada situs publik.</p>
+        </div>
+      </section>
+
       <section className="section" id="profil-guru">
         <div className="wrap">
-          <SectionHead kode="03 / Pendidik" title="Dewan guru & tendik" desc="10 pendidik dan tenaga kependidikan SDN Pasirhalang — data pokok Dapodik 27 Oktober 2026. NUPTK, NIP, NIK dan tanggal lahir tidak ditampilkan." />
+          <SectionHead kode="04 / Pendidik" title="Dewan guru & tendik" desc="10 pendidik dan tenaga kependidikan SDN Pasirhalang — data pokok Dapodik 27 Oktober 2026. NUPTK, NIP, NIK dan tanggal lahir tidak ditampilkan." />
           <Stagger className="guru-grid">
             {GURU.map((g) => (
               <Item key={g.nama} className="guru-card">
@@ -130,7 +282,7 @@ export default function Profil() {
 
       <section className="section section--paper" id="profil-rombongan">
         <div className="wrap">
-          <SectionHead kode="04 / Rombongan" title="Rombongan belajar" desc="7 rombongan belajar pada 6 ruang kelas — kelas 4 memakai Ruang Guru, kelas 5a memakai Ruang Kelas 4, dan kelas 5b memakai Ruang Kelas 5." />
+          <SectionHead kode="05 / Rombongan" title="Rombongan belajar" desc="7 rombongan belajar pada 6 ruang kelas — kelas 4 memakai Ruang Guru, kelas 5a memakai Ruang Kelas 4, dan kelas 5b memakai Ruang Kelas 5." />
           <Reveal>
             <DataTable
               head={['Kelas', 'Tingkat', 'L', 'P', 'Jumlah', 'Wali kelas', 'Kurikulum', 'Ruang']}
@@ -142,7 +294,7 @@ export default function Profil() {
 
       <section className="section" id="profil-ptk">
         <div className="wrap">
-          <SectionHead kode="05 / Kepegawaian" title="Pendidik dan tenaga kependidikan" />
+          <SectionHead kode="06 / Kepegawaian" title="Pendidik dan tenaga kependidikan" />
           <div className="dua-kolom">
             <Reveal>
               <div className="ptk-total">
@@ -166,7 +318,7 @@ export default function Profil() {
 
       <section className="section section--paper" id="profil-prasarana">
         <div className="wrap">
-          <SectionHead kode="08 / Prasarana" title="Prasarana" desc="16 ruang dan fasilitas yang tercatat pada unduhan Dapodik." />
+          <SectionHead kode="09 / Prasarana" title="Prasarana" desc="16 ruang dan fasilitas yang tercatat pada unduhan Dapodik." />
           <Reveal>
             <DataTable
               head={['No', 'Nama prasarana', 'Ukuran']}

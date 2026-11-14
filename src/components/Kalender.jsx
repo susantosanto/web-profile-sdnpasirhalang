@@ -79,7 +79,7 @@ export default function Kalender() {
   return (
     <section className="section section--merah" id="profil-kaldik">
       <div className="wrap">
-        <SectionHead kode="06 / Kalender" title="Kalender pendidikan 2026/2027" desc="Edaran Disdik Kab. Bandung Barat No. 400.3.1/1074-disdik/2026 — diselaraskan untuk SDN Pasirhalang." />
+        <SectionHead kode="07 / Kalender" title="Kalender pendidikan 2026/2027" desc="Edaran Disdik Kab. Bandung Barat No. 400.3.1/1074-disdik/2026 — diselaraskan untuk SDN Pasirhalang." />
         <div className="chip-row" role="tablist" aria-label="Filter semester">
           {SEMS.map((s) => (
             <button key={s} type="button" role="tab" aria-selected={sem === s} className={`chip${sem === s ? ' is-aktif' : ''}`} onClick={() => setSem(s)}>{s}</button>

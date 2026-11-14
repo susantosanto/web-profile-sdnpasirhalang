@@ -112,7 +112,7 @@ export default function Jadwal() {
   return (
     <section className="section" id="profil-jadwal">
       <div className="wrap">
-      <SectionHead kode="07 / Jadwal" title="Jadwal pelajaran 2026/2027" desc="Semester ganjil · 5 hari sekolah · disahkan Cikalongwetan, 15 Juli 2026 oleh Ahmad, S.Pd. Jadwal kelas 1 ditetapkan 20 Juli 2026." />
+      <SectionHead kode="08 / Jadwal" title="Jadwal pelajaran 2026/2027" desc="Semester ganjil · 5 hari sekolah · disahkan Cikalongwetan, 15 Juli 2026 oleh Ahmad, S.Pd. Jadwal kelas 1 ditetapkan 20 Juli 2026." />
       <div className="chip-row" role="tablist" aria-label="Pilih kelas">
         {KELAS.map((k) => (
           <button key={k} type="button" role="tab" aria-selected={kelas === k} className={`chip${kelas === k ? ' is-aktif' : ''}`} onClick={() => setKelas(k)}>{k === 'VA' ? 'Kelas 5A' : k === 'VB' ? 'Kelas 5B' : `Kelas ${k}`}</button>
