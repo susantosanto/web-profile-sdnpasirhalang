@@ -19,7 +19,7 @@ export default function Footer({ data }) {
             </div>
           </div>
           <p className="footer__desc">
-            Dokumen dan foto kegiatan Penilaian Kinerja Kepala Sekolah Tahun Ajaran {m.tahunAjaran}.
+            Situs resmi SD Negeri Pasirhalang — profil sekolah, tata tertib, galeri kegiatan, dan kontak.
             Seluruh data bersumber dari berkas resmi sekolah dan unduhan Dapodik 27 Oktober 2026.
           </p>
         </div>
