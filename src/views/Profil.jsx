@@ -8,10 +8,10 @@ import Jadwal from '../components/Jadwal';
 
 const GURU = [
   { nama: 'Ahmad, S.Pd.', foto: 'guru/ahmad.jpg', peran: 'PLT Kepala Sekolah · Wali Kelas 1', status: 'PNS', jenis: 'Guru Kelas', pend: 'S1 Guru Kelas SD/MI', tmt: '1992', mapel: 'Guru Kelas, Mulok Bahasa Daerah, PJOK', jjm: 30 },
-  { nama: 'Deni Mulyani, S.Pd.', foto: null, peran: 'Wali Kelas 6', status: 'PPPK', jenis: 'Guru Kelas', pend: 'S1 FKIP', tmt: '2022', mapel: 'Guru Kelas, Mulok, PJOK', jjm: 30 },
+  { nama: 'Deni Mulyani, S.Pd.', foto: 'guru/deni.jpg', peran: 'Wali Kelas 6', status: 'PPPK', jenis: 'Guru Kelas', pend: 'S1 FKIP', tmt: '2022', mapel: 'Guru Kelas, Mulok, PJOK', jjm: 30 },
   { nama: 'Fika Agustina, S.Pd.', foto: 'guru/fika.jpg', peran: 'Wali Kelas 2', status: 'PPPK', jenis: 'Guru Kelas', pend: 'S1 · Sertifikasi Guru Kelas SD/MI', tmt: '2022', mapel: 'Guru Kelas, Mulok, PJOK', jjm: 30 },
   { nama: 'Herman', foto: null, peran: 'Penjaga Sekolah', status: 'Honor Sekolah', jenis: 'Tenaga Kependidikan', pend: 'SD/sederajat', tmt: '2010', mapel: '—', jjm: 0 },
-  { nama: 'Meyta Murthy Lasari, S.E.', foto: null, peran: 'Wali Kelas 5a', status: 'Guru Honor Sekolah', jenis: 'Guru Kelas', pend: 'S1 Manajemen', tmt: '2023', mapel: 'Guru Kelas, B. Inggris, Mulok, PJOK', jjm: 40 },
+  { nama: 'Meyta Murthy Lasari, S.E.', foto: 'guru/meyta.jpg', peran: 'Wali Kelas 5a', status: 'Guru Honor Sekolah', jenis: 'Guru Kelas', pend: 'S1 Manajemen', tmt: '2023', mapel: 'Guru Kelas, B. Inggris, Mulok, PJOK', jjm: 40 },
   { nama: "Nur'Asiah, S.Pd.", foto: 'guru/nurasiah.jpg', peran: 'Guru PAI', status: 'PPPK Paruh Waktu', jenis: 'Guru Agama Islam', pend: 'S1 Ilmu Pendidikan Agama Islam', tmt: '2025', mapel: 'PAI dan Budi Pekerti', jjm: 28 },
   { nama: 'Rinda Sri Agung Wahyuni, S.Pd.', foto: 'guru/rinda.jpg', peran: 'Wali Kelas 4', status: 'PPPK', jenis: 'Guru Kelas', pend: 'S1 FKIP · Sertifikasi Guru Kelas', tmt: '2022', mapel: 'Guru Kelas, Mulok, PJOK', jjm: 30 },
   { nama: 'Siti Aisah Nur Fitri, S.Pd.', foto: 'guru/siti-aisah.jpg', peran: 'Wali Kelas 5b', status: 'PPPK Paruh Waktu', jenis: 'Guru Kelas', pend: 'S1 Pendidikan Matematika', tmt: '2025', mapel: 'Guru Kelas, Mulok, PJOK', jjm: 30 },
