@@ -3,6 +3,7 @@ import { AnimatePresence, motion } from 'framer-motion';
 import { ArrowUpRight, Camera, Images, Sparkles, X } from 'lucide-react';
 import { useSite } from '../App';
 import { GALERI_KEGIATAN, KATEGORI_FOTO, asset } from '../config';
+import KAIH_SUBS from '../data/kaih_subs.json';
 import { Item, Reveal, Stagger } from '../components/motion';
 import { EmptyState, SectionHead } from '../components/Ui';
 
@@ -10,6 +11,7 @@ export default function Foto() {
   const { data } = useSite();
   const m = data.meta;
   const [kategori, setKategori] = useState('semua');
+  const [sub, setSub] = useState('semua');
   const [terbuka, setTerbuka] = useState(-1);
 
   const jumlahKat = useMemo(() => {
@@ -20,12 +22,19 @@ export default function Foto() {
 
   const tampil = kategori === 'semua'
     ? GALERI_KEGIATAN
-    : GALERI_KEGIATAN.filter((g) => g.kategori === kategori);
+    : GALERI_KEGIATAN.filter((g) => g.kategori === kategori && (sub === 'semua' || !g.sub || g.sub === sub));
+
+  const pilihSub = (id) => {
+    setSub((s) => (s === id ? 'semua' : id));
+    setTerbuka(-1);
+  };
 
   const namaKat = (id) => (KATEGORI_FOTO.find((k) => k.id === id) || {}).nama || id;
+  const namaSub = (id) => (!id ? '' : (KAIH_SUBS.find((s) => s.id === id) || {}).nama || '');
 
   const pilih = (id) => {
     setKategori((k) => (k === id ? 'semua' : id));
+    setSub('semua');
     setTerbuka(-1);
     window.setTimeout(() => {
       const el = document.getElementById('foto-galeri');
@@ -95,6 +104,14 @@ export default function Foto() {
               <button type="button" role="tab" key={k.id} aria-selected={kategori === k.id} className={`chip${kategori === k.id ? ' is-aktif' : ''}`} onClick={() => setKategori(k.id)}>{k.nama}</button>
             ))}
           </div>
+          {kategori === 'g7-kaih' ? (
+            <div className="chip-row chip-row--sub" role="tablist" aria-label="Saring pembiasaan 7 KAIH" style={{ marginTop: '0.55rem' }}>
+              <button type="button" role="tab" aria-selected={sub === 'semua'} className={`chip chip--kecil${sub === 'semua' ? ' is-aktif' : ''}`} onClick={() => pilihSub('semua')}>Semua pembiasaan</button>
+              {KAIH_SUBS.map((s) => (
+                <button type="button" role="tab" key={s.id} aria-selected={sub === s.id} className={`chip chip--kecil${sub === s.id ? ' is-aktif' : ''}`} onClick={() => pilihSub(s.id)}>{s.nama} ({s.n})</button>
+              ))}
+            </div>
+          ) : null}
           {tampil.length > 0 ? (
             <div className="foto-grid">
               {tampil.map((g, i) => (
@@ -113,7 +130,7 @@ export default function Foto() {
                   whileHover={{ y: -4 }}
                 >
                   <img src={asset(g.src)} alt={g.judul} loading="lazy" />
-                  <figcaption><b>{g.judul}</b><small>{g.tanggal} · {namaKat(g.kategori)}</small></figcaption>
+                  <figcaption><b>{g.judul}</b><small>{g.tanggal} · {namaSub(g.sub) || namaKat(g.kategori)}</small></figcaption>
                 </motion.figure>
               ))}
             </div>
@@ -148,7 +165,7 @@ export default function Foto() {
             >
               <img src={asset(tampil[terbuka].src)} alt={tampil[terbuka].judul} />
               <figcaption>
-                <span><b>{tampil[terbuka].judul}</b><small>{tampil[terbuka].tanggal} · {namaKat(tampil[terbuka].kategori)}</small></span>
+                <span><b>{tampil[terbuka].judul}</b><small>{tampil[terbuka].tanggal} · {namaSub(tampil[terbuka].sub) || namaKat(tampil[terbuka].kategori)}</small></span>
                 <span className="foto-modal__tombol">
                   {terbuka > 0 && <button className="btn btn--icon" type="button" aria-label="Foto sebelumnya" onClick={() => setTerbuka(terbuka - 1)}>‹</button>}
                   {terbuka < tampil.length - 1 && <button className="btn btn--icon" type="button" aria-label="Foto berikutnya" onClick={() => setTerbuka(terbuka + 1)}>›</button>}

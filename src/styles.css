@@ -1059,3 +1059,7 @@ section .dir-kelompok:first-of-type { margin-top: 20px; }
   .section, .folio { padding: 20px 0; }
   body { background: #fff; }
 }
+
+/* Sub-filter galeri 7 KAIH */
+.chip-row--sub { margin-top: 0.55rem; }
+.chip--kecil { font-size: 0.72rem; padding: 0.3rem 0.7rem; opacity: 0.92; }

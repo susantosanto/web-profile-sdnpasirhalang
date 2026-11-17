@@ -1,0 +1,42 @@
+[
+  {
+    "id": "makan-bergizi",
+    "nama": "Pembiasaan Makan Sehat & Bergizi (Isi Piringku)",
+    "n": 7
+  },
+  {
+    "id": "gemar-belajar",
+    "nama": "Pembiasaan Gemar Belajar (Literasi)",
+    "n": 1
+  },
+  {
+    "id": "bermasyarakat",
+    "nama": "Pembiasaan Bermasyarakat & Gotong Royong",
+    "n": 2
+  },
+  {
+    "id": "senam-pagi",
+    "nama": "Senam Pagi Anak Indonesia Hebat",
+    "n": 14
+  },
+  {
+    "id": "berdoa",
+    "nama": "Berdoa Sesuai Keyakinan",
+    "n": 3
+  },
+  {
+    "id": "kepanduan",
+    "nama": "Kepanduan & Ekstrakurikuler",
+    "n": 7
+  },
+  {
+    "id": "kemitraan",
+    "nama": "Kemitraan Orangtua & Pemangku Kepentingan",
+    "n": 3
+  },
+  {
+    "id": "nilai-spiritual",
+    "nama": "Penguatan Nilai Spiritual, Moral & Etika",
+    "n": 7
+  }
+]
