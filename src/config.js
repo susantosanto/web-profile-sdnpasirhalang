@@ -63,6 +63,7 @@ export const GALERI_KEGIATAN = [
   { src: 'foto/g7-kaih/nilai-spiritual/nilai-spiritual-5.jpg', kategori: 'g7-kaih', sub: 'nilai-spiritual', judul: 'Penguatan Nilai Spiritual, Moral & Etika', tanggal: 'Semester Ganjil 2026/2027' },
   { src: 'foto/g7-kaih/nilai-spiritual/nilai-spiritual-6.jpg', kategori: 'g7-kaih', sub: 'nilai-spiritual', judul: 'Penguatan Nilai Spiritual, Moral & Etika', tanggal: 'Semester Ganjil 2026/2027' },
   { src: 'foto/g7-kaih/nilai-spiritual/nilai-spiritual-7.jpg', kategori: 'g7-kaih', sub: 'nilai-spiritual', judul: 'Penguatan Nilai Spiritual, Moral & Etika', tanggal: 'Semester Ganjil 2026/2027' },
+  { src: 'foto/lomba/lomba-1.jpg', kategori: 'lomba', judul: 'Lomba Tingkat Gugus', tanggal: 'November 2026' },
 ];
 
 const BASE = import.meta.env.BASE_URL || './';
