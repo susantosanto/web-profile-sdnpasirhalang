@@ -14,7 +14,8 @@
    =========================================================================== */
 export const KATEGORI_FOTO = [
   { id: 'g7-kaih', nama: 'G7 KAIH', ringkas: 'Gerakan 7 Kebiasaan Anak Indonesia Hebat dan pembiasaan positif dalam keseharian murid.' },
-  { id: 'lomba', nama: 'Lomba', ringkas: 'Ajang prestasi murid tingkat gugus hingga kabupaten.' }
+  { id: 'lomba', nama: 'Lomba', ringkas: 'Ajang prestasi murid tingkat gugus hingga kabupaten.' },
+  { id: 'bimtek', nama: 'Bimtek Gugus', ringkas: 'Bimbingan teknis guru tingkat gugus untuk peningkatan mutu pembelajaran.' }
 ];
 
 export const GALERI_KEGIATAN = [
@@ -77,6 +78,14 @@ export const GALERI_KEGIATAN = [
   { src: 'foto/lomba/lomba-13.jpg', kategori: 'lomba', judul: 'Lomba Tingkat Gugus', tanggal: 'November 2026' },
   { src: 'foto/lomba/lomba-14.jpg', kategori: 'lomba', judul: 'Lomba Tingkat Gugus', tanggal: 'November 2026' },
   { src: 'foto/lomba/lomba-15.jpg', kategori: 'lomba', judul: 'Lomba Tingkat Gugus', tanggal: 'November 2026' },
+  { src: 'foto/bimtek/bimtek-1.jpg', kategori: 'bimtek', judul: 'Bimtek Guru Tingkat Gugus', tanggal: 'Februari 2025' },
+  { src: 'foto/bimtek/bimtek-2.jpg', kategori: 'bimtek', judul: 'Bimtek Guru Tingkat Gugus', tanggal: 'Februari 2025' },
+  { src: 'foto/bimtek/bimtek-3.jpg', kategori: 'bimtek', judul: 'Bimtek Guru Tingkat Gugus', tanggal: 'Februari 2025' },
+  { src: 'foto/bimtek/bimtek-4.jpg', kategori: 'bimtek', judul: 'Bimtek Guru Tingkat Gugus', tanggal: 'Februari 2025' },
+  { src: 'foto/bimtek/bimtek-5.jpg', kategori: 'bimtek', judul: 'Bimtek Guru Tingkat Gugus', tanggal: 'Februari 2025' },
+  { src: 'foto/bimtek/bimtek-6.jpg', kategori: 'bimtek', judul: 'Bimtek Guru Tingkat Gugus', tanggal: 'Februari 2025' },
+  { src: 'foto/bimtek/bimtek-7.jpg', kategori: 'bimtek', judul: 'Bimtek Guru Tingkat Gugus', tanggal: 'Februari 2025' },
+  { src: 'foto/bimtek/bimtek-8.jpg', kategori: 'bimtek', judul: 'Bimtek Guru Tingkat Gugus', tanggal: 'Februari 2025' },
 ];
 
 const BASE = import.meta.env.BASE_URL || './';
