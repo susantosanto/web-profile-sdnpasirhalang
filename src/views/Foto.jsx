@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { ArrowUpRight, Camera, Images, Sparkles, X } from 'lucide-react';
 import { useSite } from '../App';
@@ -28,6 +28,17 @@ export default function Foto() {
     setSub((s) => (s === id ? 'semua' : id));
     setTerbuka(-1);
   };
+
+  useEffect(() => {
+    if (terbuka < 0) return undefined;
+    const onKey = (e) => {
+      if (e.key === 'Escape') setTerbuka(-1);
+      else if (e.key === 'ArrowLeft') setTerbuka((t) => Math.max(0, t - 1));
+      else if (e.key === 'ArrowRight') setTerbuka((t) => Math.min(tampil.length - 1, t + 1));
+    };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, [terbuka, tampil.length]);
 
   const namaKat = (id) => (KATEGORI_FOTO.find((k) => k.id === id) || {}).nama || id;
   const namaSub = (id) => (!id ? '' : (KAIH_SUBS.find((s) => s.id === id) || {}).nama || '');
@@ -68,6 +79,13 @@ export default function Foto() {
               <h2>Telusuri per kegiatan</h2>
             </div>
           </Reveal>
+          <Reveal>
+            <div className="foto-stat">
+              <div><b>{GALERI_KEGIATAN.length}</b><span>Dokumentasi terkumpul</span></div>
+              <div><b>{KATEGORI_FOTO.length}</b><span>Kategori kegiatan</span></div>
+              <div><b>{KAIH_SUBS.length}</b><span>Pembiasaan G7 KAIH</span></div>
+            </div>
+          </Reveal>
           <Stagger className="kat-grid">
             {KATEGORI_FOTO.map((k) => (
               <Item key={k.id}>
@@ -78,10 +96,16 @@ export default function Foto() {
                   whileHover={{ y: -6 }}
                   transition={{ type: 'spring', stiffness: 280, damping: 22 }}
                 >
-                  <span className="kat-card__icon">{k.id === 'g7-kaih' ? <Sparkles size={18} strokeWidth={1.6} /> : k.id === 'lomba' ? <Images size={18} strokeWidth={1.6} /> : <Camera size={18} strokeWidth={1.6} />}</span>
+                  <div className="kat-card__top">
+                    <span className="kat-card__icon">{k.id === 'g7-kaih' ? <Sparkles size={18} strokeWidth={1.6} /> : k.id === 'lomba' ? <Images size={18} strokeWidth={1.6} /> : <Camera size={18} strokeWidth={1.6} />}</span>
+                    <span className="kat-card__index">{String(KATEGORI_FOTO.indexOf(k) + 1).padStart(2, '0')}</span>
+                  </div>
                   <strong>{k.nama}</strong>
                   <p>{k.ringkas}</p>
-                  <span className="kat-card__meta">{jumlahKat[k.id] || 0} foto</span>
+                  <div className="kat-card__bottom">
+                    <span className="kat-card__meta">{jumlahKat[k.id] || 0} foto</span>
+                    <span className="kat-card__arrow"><ArrowUpRight size={16} strokeWidth={1.8} /></span>
+                  </div>
                   {kategori === k.id ? <motion.i layoutId="kat-aktif" className="kat-card__garis" /> : null}
                 </motion.button>
               </Item>
@@ -113,7 +137,7 @@ export default function Foto() {
             </div>
           ) : null}
           {tampil.length > 0 ? (
-            <div className="foto-grid">
+            <div className={`foto-grid${tampil.length >= 5 ? ' foto-grid--bintang' : ''}`}>
               {tampil.map((g, i) => (
                 <motion.figure
                   className="foto-card foto-card--klik"
@@ -129,8 +153,13 @@ export default function Foto() {
                   transition={{ delay: Math.min(i * 0.05, 0.3) }}
                   whileHover={{ y: -4 }}
                 >
+                  <span className="foto-card__no">{String(i + 1).padStart(2, '0')}</span>
                   <img src={asset(g.src)} alt={g.judul} loading="lazy" />
-                  <figcaption><b>{g.judul}</b><small>{g.tanggal} · {namaSub(g.sub) || namaKat(g.kategori)}</small></figcaption>
+                  <span className="foto-card__veil" aria-hidden="true"><b>{g.judul}</b></span>
+                  <figcaption>
+                    <b>{g.judul}</b>
+                    <small>{namaKat(g.kategori)} <i className="foto-card__titik" aria-hidden="true" /> {g.tanggal}</small>
+                  </figcaption>
                 </motion.figure>
               ))}
             </div>
@@ -165,7 +194,11 @@ export default function Foto() {
             >
               <img src={asset(tampil[terbuka].src)} alt={tampil[terbuka].judul} />
               <figcaption>
-                <span><b>{tampil[terbuka].judul}</b><small>{tampil[terbuka].tanggal} · {namaSub(tampil[terbuka].sub) || namaKat(tampil[terbuka].kategori)}</small></span>
+                <span>
+                  <small className="foto-modal__hitung">{terbuka + 1} / {tampil.length}</small>
+                  <b>{tampil[terbuka].judul}</b>
+                  <small>{tampil[terbuka].tanggal} · {namaSub(tampil[terbuka].sub) || namaKat(tampil[terbuka].kategori)}</small>
+                </span>
                 <span className="foto-modal__tombol">
                   {terbuka > 0 && <button className="btn btn--icon" type="button" aria-label="Foto sebelumnya" onClick={() => setTerbuka(terbuka - 1)}>‹</button>}
                   {terbuka < tampil.length - 1 && <button className="btn btn--icon" type="button" aria-label="Foto berikutnya" onClick={() => setTerbuka(terbuka + 1)}>›</button>}
