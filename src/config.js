@@ -13,8 +13,7 @@
    Setelah mengubah berkas ini jalankan: npm run build
    =========================================================================== */
 export const KATEGORI_FOTO = [
-  { id: 'g7-kaih', nama: 'G7 KAIH', ringkas: 'Gerakan 7 Kebiasaan Anak Indonesia Hebat dalam keseharian murid.' },
-  { id: 'pembiasaan', nama: 'Pembiasaan', ringkas: 'Apel pagi, literasi, ibadah, dan budaya 5S setiap hari.' },
+  { id: 'g7-kaih', nama: 'G7 KAIH', ringkas: 'Gerakan 7 Kebiasaan Anak Indonesia Hebat dan pembiasaan positif dalam keseharian murid.' },
   { id: 'lomba', nama: 'Lomba', ringkas: 'Ajang prestasi murid tingkat gugus hingga kabupaten.' }
 ];
 

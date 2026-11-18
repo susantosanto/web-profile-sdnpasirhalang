@@ -50,7 +50,7 @@ export default function Foto() {
           <Reveal>
             <p className="eyebrow page-hero__eyebrow">Menu · Foto kegiatan</p>
             <h1>Galeri kegiatan sekolah</h1>
-            <p className="page-hero__lede">Dokumentasi G7 KAIH, pembiasaan, lomba, dan geliat keseharian warga SD Negeri Pasirhalang — dari upacara pagi hingga prestasi murid.</p>
+            <p className="page-hero__lede">Dokumentasi G7 KAIH, lomba, dan geliat keseharian warga SD Negeri Pasirhalang — dari upacara pagi hingga prestasi murid.</p>
             <div className="page-hero__rule" aria-hidden="true" />
             <div className="page-hero__meta">
               <span>{GALERI_KEGIATAN.length} foto</span>
